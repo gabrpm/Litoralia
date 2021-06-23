@@ -11,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - CameraFotografica
   - 
   - 
   - 
@@ -40,4 +40,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Cenario
+    uniqueID: 455854103
+    locked: 0
+  - name: Especies
+    uniqueID: 324717833
+    locked: 0
+  - name: Jogador
+    uniqueID: 3061011373
+    locked: 0
+  - name: Maquina
+    uniqueID: 628744649
     locked: 0

@@ -16,6 +16,7 @@ public class ControladorJogador : MonoBehaviour
     InputActions controles;
     PlayerInput input;
     MovimentacaoJogador scriptMovimentacao;
+    ComportamentoCamera scriptCamera;
     
     void Awake()
     {
@@ -31,6 +32,7 @@ public class ControladorJogador : MonoBehaviour
     void AtribuirScripts() {
         input = GetComponent<PlayerInput>();
         scriptMovimentacao = GetComponent<MovimentacaoJogador>();
+        scriptCamera = GetComponentInChildren<ComportamentoCamera>();
     }
 
     //Sempre que uma ação é realizada, as funções de controle são chamadas.
@@ -39,9 +41,17 @@ public class ControladorJogador : MonoBehaviour
         if (obj.action.name == controles.Jogador.Mover.name) {
             scriptMovimentacao.DefinirDirecao(obj.ReadValue<Vector2>());
         }
+
+        if (obj.action.name == controles.Jogador.ModoFotografia.name) {
+            GameManager.instancia.AlterarModo();
+        }
+
+        if (obj.action.name == controles.Jogador.Olhar.name) {
+            scriptCamera.AjustarPosicaoMouse(obj.ReadValue<Vector2>());
+        }
     }
 
     private void Input_onActionCanceled(InputAction.CallbackContext obj) {
-
+        
     }
 }

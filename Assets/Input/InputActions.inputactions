@@ -14,7 +14,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Look",
+                    "name": "Olhar",
                     "type": "Value",
                     "id": "6aa86680-eab6-4377-ba99-6737838eb422",
                     "expectedControlType": "Vector2",
@@ -25,6 +25,14 @@
                     "name": "Fire",
                     "type": "Button",
                     "id": "33cb81c1-66ff-4c65-b11b-b1e1759d7d75",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "ModoFotografia",
+                    "type": "Button",
+                    "id": "f2abbdc1-5e22-4618-a500-fe4fae0bbf0b",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -170,18 +178,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "Look",
+                    "action": "Olhar",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
                     "id": "8c8e490b-c610-4785-884f-f04217b23ca4",
-                    "path": "<Pointer>/delta",
+                    "path": "<Mouse>/position",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse;Touch",
-                    "action": "Look",
+                    "action": "Olhar",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -192,7 +200,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Joystick",
-                    "action": "Look",
+                    "action": "Olhar",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -248,6 +256,28 @@
                     "processors": "",
                     "groups": "XR",
                     "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d9944582-e1f0-432f-9c5b-70ec36f46275",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "ModoFotografia",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5e95598f-c5a1-41c0-bfcd-c5950e17a394",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "ModoFotografia",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

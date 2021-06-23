@@ -27,7 +27,7 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Look"",
+                    ""name"": ""Olhar"",
                     ""type"": ""Value"",
                     ""id"": ""6aa86680-eab6-4377-ba99-6737838eb422"",
                     ""expectedControlType"": ""Vector2"",
@@ -38,6 +38,14 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""name"": ""Fire"",
                     ""type"": ""Button"",
                     ""id"": ""33cb81c1-66ff-4c65-b11b-b1e1759d7d75"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""ModoFotografia"",
+                    ""type"": ""Button"",
+                    ""id"": ""f2abbdc1-5e22-4618-a500-fe4fae0bbf0b"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -183,18 +191,18 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Gamepad"",
-                    ""action"": ""Look"",
+                    ""action"": ""Olhar"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
                     ""id"": ""8c8e490b-c610-4785-884f-f04217b23ca4"",
-                    ""path"": ""<Pointer>/delta"",
+                    ""path"": ""<Mouse>/position"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse;Touch"",
-                    ""action"": ""Look"",
+                    ""action"": ""Olhar"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -205,7 +213,7 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Joystick"",
-                    ""action"": ""Look"",
+                    ""action"": ""Olhar"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -261,6 +269,28 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""processors"": """",
                     ""groups"": ""XR"",
                     ""action"": ""Fire"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d9944582-e1f0-432f-9c5b-70ec36f46275"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""ModoFotografia"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5e95598f-c5a1-41c0-bfcd-c5950e17a394"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""ModoFotografia"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -839,8 +869,9 @@ public class @InputActions : IInputActionCollection, IDisposable
         // Jogador
         m_Jogador = asset.FindActionMap("Jogador", throwIfNotFound: true);
         m_Jogador_Mover = m_Jogador.FindAction("Mover", throwIfNotFound: true);
-        m_Jogador_Look = m_Jogador.FindAction("Look", throwIfNotFound: true);
+        m_Jogador_Olhar = m_Jogador.FindAction("Olhar", throwIfNotFound: true);
         m_Jogador_Fire = m_Jogador.FindAction("Fire", throwIfNotFound: true);
+        m_Jogador_ModoFotografia = m_Jogador.FindAction("ModoFotografia", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -903,15 +934,17 @@ public class @InputActions : IInputActionCollection, IDisposable
     private readonly InputActionMap m_Jogador;
     private IJogadorActions m_JogadorActionsCallbackInterface;
     private readonly InputAction m_Jogador_Mover;
-    private readonly InputAction m_Jogador_Look;
+    private readonly InputAction m_Jogador_Olhar;
     private readonly InputAction m_Jogador_Fire;
+    private readonly InputAction m_Jogador_ModoFotografia;
     public struct JogadorActions
     {
         private @InputActions m_Wrapper;
         public JogadorActions(@InputActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @Mover => m_Wrapper.m_Jogador_Mover;
-        public InputAction @Look => m_Wrapper.m_Jogador_Look;
+        public InputAction @Olhar => m_Wrapper.m_Jogador_Olhar;
         public InputAction @Fire => m_Wrapper.m_Jogador_Fire;
+        public InputAction @ModoFotografia => m_Wrapper.m_Jogador_ModoFotografia;
         public InputActionMap Get() { return m_Wrapper.m_Jogador; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -924,12 +957,15 @@ public class @InputActions : IInputActionCollection, IDisposable
                 @Mover.started -= m_Wrapper.m_JogadorActionsCallbackInterface.OnMover;
                 @Mover.performed -= m_Wrapper.m_JogadorActionsCallbackInterface.OnMover;
                 @Mover.canceled -= m_Wrapper.m_JogadorActionsCallbackInterface.OnMover;
-                @Look.started -= m_Wrapper.m_JogadorActionsCallbackInterface.OnLook;
-                @Look.performed -= m_Wrapper.m_JogadorActionsCallbackInterface.OnLook;
-                @Look.canceled -= m_Wrapper.m_JogadorActionsCallbackInterface.OnLook;
+                @Olhar.started -= m_Wrapper.m_JogadorActionsCallbackInterface.OnOlhar;
+                @Olhar.performed -= m_Wrapper.m_JogadorActionsCallbackInterface.OnOlhar;
+                @Olhar.canceled -= m_Wrapper.m_JogadorActionsCallbackInterface.OnOlhar;
                 @Fire.started -= m_Wrapper.m_JogadorActionsCallbackInterface.OnFire;
                 @Fire.performed -= m_Wrapper.m_JogadorActionsCallbackInterface.OnFire;
                 @Fire.canceled -= m_Wrapper.m_JogadorActionsCallbackInterface.OnFire;
+                @ModoFotografia.started -= m_Wrapper.m_JogadorActionsCallbackInterface.OnModoFotografia;
+                @ModoFotografia.performed -= m_Wrapper.m_JogadorActionsCallbackInterface.OnModoFotografia;
+                @ModoFotografia.canceled -= m_Wrapper.m_JogadorActionsCallbackInterface.OnModoFotografia;
             }
             m_Wrapper.m_JogadorActionsCallbackInterface = instance;
             if (instance != null)
@@ -937,12 +973,15 @@ public class @InputActions : IInputActionCollection, IDisposable
                 @Mover.started += instance.OnMover;
                 @Mover.performed += instance.OnMover;
                 @Mover.canceled += instance.OnMover;
-                @Look.started += instance.OnLook;
-                @Look.performed += instance.OnLook;
-                @Look.canceled += instance.OnLook;
+                @Olhar.started += instance.OnOlhar;
+                @Olhar.performed += instance.OnOlhar;
+                @Olhar.canceled += instance.OnOlhar;
                 @Fire.started += instance.OnFire;
                 @Fire.performed += instance.OnFire;
                 @Fire.canceled += instance.OnFire;
+                @ModoFotografia.started += instance.OnModoFotografia;
+                @ModoFotografia.performed += instance.OnModoFotografia;
+                @ModoFotografia.canceled += instance.OnModoFotografia;
             }
         }
     }
@@ -1100,8 +1139,9 @@ public class @InputActions : IInputActionCollection, IDisposable
     public interface IJogadorActions
     {
         void OnMover(InputAction.CallbackContext context);
-        void OnLook(InputAction.CallbackContext context);
+        void OnOlhar(InputAction.CallbackContext context);
         void OnFire(InputAction.CallbackContext context);
+        void OnModoFotografia(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

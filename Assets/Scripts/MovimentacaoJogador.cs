@@ -5,6 +5,7 @@ using UnityEditor;
 
 //Esse componente necessita desses outros para funcionar corretamente:
 [RequireComponent(typeof(ControladorJogador))]
+[RequireComponent(typeof(Rigidbody2D))]
 public class MovimentacaoJogador : MonoBehaviour
 {   
 
@@ -12,17 +13,24 @@ public class MovimentacaoJogador : MonoBehaviour
     [Range(2,15)]
     [SerializeField] float velocidade = 5;
     Vector2 direcao;
+    Rigidbody2D rb;
 
+    void Awake() {
+        rb = GetComponent<Rigidbody2D>();
+    }
     private void FixedUpdate() {
 
-        Mover();
-    
+        if(!EstadoJogo.modoFotografia) {
+            Mover();
+        }
+        
     }
     public void DefinirDirecao(Vector2 para) {
-        direcao = para;
+        direcao.x = para.x;
+        direcao.y = para.y;
     }
 
     void Mover() {
-        transform.Translate(direcao * velocidade * Time.deltaTime);
+        rb.MovePosition(rb.position + direcao * velocidade * Time.fixedDeltaTime);
     }
 }
