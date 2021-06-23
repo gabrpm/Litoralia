@@ -14,14 +14,13 @@ using UnityEngine.EventSystems;
 public class ControladorJogador : MonoBehaviour
 {
     InputActions controles;
-    PlayerInput input;
-    MovimentacaoJogador scriptMovimentacao;
-    ComportamentoCamera scriptCamera;
+    [SerializeField] PlayerInput input;
+    [SerializeField] MovimentacaoJogador scriptMovimentacao;
+    [SerializeField] ComportamentoCamera scriptCamera;
     
     void Awake()
     {
         controles = new InputActions();
-        AtribuirScripts();
         input.onActionTriggered += Input_onActionTriggered;
     }
 
@@ -29,11 +28,6 @@ public class ControladorJogador : MonoBehaviour
         input.onActionTriggered -= Input_onActionTriggered;
     }
     
-    void AtribuirScripts() {
-        input = GetComponent<PlayerInput>();
-        scriptMovimentacao = GetComponent<MovimentacaoJogador>();
-        scriptCamera = GetComponentInChildren<ComportamentoCamera>();
-    }
 
     //Sempre que uma ação é realizada, as funções de controle são chamadas.
     private void Input_onActionTriggered(InputAction.CallbackContext obj) {

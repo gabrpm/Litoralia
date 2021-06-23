@@ -14,6 +14,5 @@ public class GameManager : Singleton<GameManager>
             EstadoJogo.modoFotografia = true;
             entrarFotografia.Ocorrido();
         }
-        Debug.Log("Modo fotografia" + EstadoJogo.modoFotografia.ToString());
     }
 }

@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-//Esse componente necessita desses outros para funcionar corretamente:
-[RequireComponent(typeof(ControladorJogador))]
-[RequireComponent(typeof(Rigidbody2D))]
 public class MovimentacaoJogador : MonoBehaviour
 {   
 
