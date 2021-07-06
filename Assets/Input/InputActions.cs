@@ -35,7 +35,7 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Fire"",
+                    ""name"": ""TirarFoto"",
                     ""type"": ""Button"",
                     ""id"": ""33cb81c1-66ff-4c65-b11b-b1e1759d7d75"",
                     ""expectedControlType"": ""Button"",
@@ -46,6 +46,14 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""name"": ""ModoFotografia"",
                     ""type"": ""Button"",
                     ""id"": ""f2abbdc1-5e22-4618-a500-fe4fae0bbf0b"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Colecao"",
+                    ""type"": ""Button"",
+                    ""id"": ""1a7cbfa0-7b5d-461b-8fb7-86df81ef23b7"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -221,10 +229,10 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""143bb1cd-cc10-4eca-a2f0-a3664166fe91"",
                     ""path"": ""<Gamepad>/rightTrigger"",
-                    ""interactions"": """",
+                    ""interactions"": ""Press"",
                     ""processors"": """",
                     ""groups"": "";Gamepad"",
-                    ""action"": ""Fire"",
+                    ""action"": ""TirarFoto"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -232,10 +240,10 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""05f6913d-c316-48b2-a6bb-e225f14c7960"",
                     ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": """",
+                    ""interactions"": ""Press"",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""Fire"",
+                    ""action"": ""TirarFoto"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -246,7 +254,7 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Touch"",
-                    ""action"": ""Fire"",
+                    ""action"": ""TirarFoto"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -257,7 +265,7 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Joystick"",
-                    ""action"": ""Fire"",
+                    ""action"": ""TirarFoto"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -268,7 +276,7 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""XR"",
-                    ""action"": ""Fire"",
+                    ""action"": ""TirarFoto"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -291,6 +299,28 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
                     ""action"": ""ModoFotografia"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a0a9bae7-5ede-41ab-9f52-3906fbe33975"",
+                    ""path"": ""<Keyboard>/c"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Colecao"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f6df6ce3-0c01-4e50-a66e-6ef389346db6"",
+                    ""path"": ""<Gamepad>/select"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Colecao"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -870,8 +900,9 @@ public class @InputActions : IInputActionCollection, IDisposable
         m_Jogador = asset.FindActionMap("Jogador", throwIfNotFound: true);
         m_Jogador_Mover = m_Jogador.FindAction("Mover", throwIfNotFound: true);
         m_Jogador_Olhar = m_Jogador.FindAction("Olhar", throwIfNotFound: true);
-        m_Jogador_Fire = m_Jogador.FindAction("Fire", throwIfNotFound: true);
+        m_Jogador_TirarFoto = m_Jogador.FindAction("TirarFoto", throwIfNotFound: true);
         m_Jogador_ModoFotografia = m_Jogador.FindAction("ModoFotografia", throwIfNotFound: true);
+        m_Jogador_Colecao = m_Jogador.FindAction("Colecao", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -935,16 +966,18 @@ public class @InputActions : IInputActionCollection, IDisposable
     private IJogadorActions m_JogadorActionsCallbackInterface;
     private readonly InputAction m_Jogador_Mover;
     private readonly InputAction m_Jogador_Olhar;
-    private readonly InputAction m_Jogador_Fire;
+    private readonly InputAction m_Jogador_TirarFoto;
     private readonly InputAction m_Jogador_ModoFotografia;
+    private readonly InputAction m_Jogador_Colecao;
     public struct JogadorActions
     {
         private @InputActions m_Wrapper;
         public JogadorActions(@InputActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @Mover => m_Wrapper.m_Jogador_Mover;
         public InputAction @Olhar => m_Wrapper.m_Jogador_Olhar;
-        public InputAction @Fire => m_Wrapper.m_Jogador_Fire;
+        public InputAction @TirarFoto => m_Wrapper.m_Jogador_TirarFoto;
         public InputAction @ModoFotografia => m_Wrapper.m_Jogador_ModoFotografia;
+        public InputAction @Colecao => m_Wrapper.m_Jogador_Colecao;
         public InputActionMap Get() { return m_Wrapper.m_Jogador; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -960,12 +993,15 @@ public class @InputActions : IInputActionCollection, IDisposable
                 @Olhar.started -= m_Wrapper.m_JogadorActionsCallbackInterface.OnOlhar;
                 @Olhar.performed -= m_Wrapper.m_JogadorActionsCallbackInterface.OnOlhar;
                 @Olhar.canceled -= m_Wrapper.m_JogadorActionsCallbackInterface.OnOlhar;
-                @Fire.started -= m_Wrapper.m_JogadorActionsCallbackInterface.OnFire;
-                @Fire.performed -= m_Wrapper.m_JogadorActionsCallbackInterface.OnFire;
-                @Fire.canceled -= m_Wrapper.m_JogadorActionsCallbackInterface.OnFire;
+                @TirarFoto.started -= m_Wrapper.m_JogadorActionsCallbackInterface.OnTirarFoto;
+                @TirarFoto.performed -= m_Wrapper.m_JogadorActionsCallbackInterface.OnTirarFoto;
+                @TirarFoto.canceled -= m_Wrapper.m_JogadorActionsCallbackInterface.OnTirarFoto;
                 @ModoFotografia.started -= m_Wrapper.m_JogadorActionsCallbackInterface.OnModoFotografia;
                 @ModoFotografia.performed -= m_Wrapper.m_JogadorActionsCallbackInterface.OnModoFotografia;
                 @ModoFotografia.canceled -= m_Wrapper.m_JogadorActionsCallbackInterface.OnModoFotografia;
+                @Colecao.started -= m_Wrapper.m_JogadorActionsCallbackInterface.OnColecao;
+                @Colecao.performed -= m_Wrapper.m_JogadorActionsCallbackInterface.OnColecao;
+                @Colecao.canceled -= m_Wrapper.m_JogadorActionsCallbackInterface.OnColecao;
             }
             m_Wrapper.m_JogadorActionsCallbackInterface = instance;
             if (instance != null)
@@ -976,12 +1012,15 @@ public class @InputActions : IInputActionCollection, IDisposable
                 @Olhar.started += instance.OnOlhar;
                 @Olhar.performed += instance.OnOlhar;
                 @Olhar.canceled += instance.OnOlhar;
-                @Fire.started += instance.OnFire;
-                @Fire.performed += instance.OnFire;
-                @Fire.canceled += instance.OnFire;
+                @TirarFoto.started += instance.OnTirarFoto;
+                @TirarFoto.performed += instance.OnTirarFoto;
+                @TirarFoto.canceled += instance.OnTirarFoto;
                 @ModoFotografia.started += instance.OnModoFotografia;
                 @ModoFotografia.performed += instance.OnModoFotografia;
                 @ModoFotografia.canceled += instance.OnModoFotografia;
+                @Colecao.started += instance.OnColecao;
+                @Colecao.performed += instance.OnColecao;
+                @Colecao.canceled += instance.OnColecao;
             }
         }
     }
@@ -1140,8 +1179,9 @@ public class @InputActions : IInputActionCollection, IDisposable
     {
         void OnMover(InputAction.CallbackContext context);
         void OnOlhar(InputAction.CallbackContext context);
-        void OnFire(InputAction.CallbackContext context);
+        void OnTirarFoto(InputAction.CallbackContext context);
         void OnModoFotografia(InputAction.CallbackContext context);
+        void OnColecao(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

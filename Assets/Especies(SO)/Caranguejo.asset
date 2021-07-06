@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e4a0e24b106f0499445345fe2339b2, type: 3}
   m_Name: Caranguejo
   m_EditorClassIdentifier: 
-  nomeComum: Caranguejo-aranha
-  nomeCientifico: Mithrax hispidus
-  classificacao: Crustaceae
-  ocorrenciaNaNatureza: Litoral do Nordeste
-  grauDeAmeaca: 2
-  frase: "J\xE1 viu s\xF3 o meu carango?"
+  nomeComum: Caranguejo
+  nomeCientifico: 
+  classificacao: 
+  ocorrenciaNaNatureza: 
+  grauDeAmeaca: 0
+  frase: 
+  imagemNaNatureza: {fileID: 21300000, guid: 0bc90cd734ec80f4ab038b15dae62669, type: 3}
+  disponivelNaColecao: 1

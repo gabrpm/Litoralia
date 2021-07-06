@@ -17,7 +17,7 @@ public class MovimentacaoJogador : MonoBehaviour
     }
     private void FixedUpdate() {
 
-        if(!EstadoJogo.modoFotografia) {
+        if(!EstadoJogo.modoFotografia && !EstadoJogo.colecaoAberta) {
             Mover();
         }
         

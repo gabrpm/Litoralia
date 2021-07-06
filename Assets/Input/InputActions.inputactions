@@ -22,7 +22,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Fire",
+                    "name": "TirarFoto",
                     "type": "Button",
                     "id": "33cb81c1-66ff-4c65-b11b-b1e1759d7d75",
                     "expectedControlType": "Button",
@@ -33,6 +33,14 @@
                     "name": "ModoFotografia",
                     "type": "Button",
                     "id": "f2abbdc1-5e22-4618-a500-fe4fae0bbf0b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Colecao",
+                    "type": "Button",
+                    "id": "1a7cbfa0-7b5d-461b-8fb7-86df81ef23b7",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -208,10 +216,10 @@
                     "name": "",
                     "id": "143bb1cd-cc10-4eca-a2f0-a3664166fe91",
                     "path": "<Gamepad>/rightTrigger",
-                    "interactions": "",
+                    "interactions": "Press",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "Fire",
+                    "action": "TirarFoto",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -219,10 +227,10 @@
                     "name": "",
                     "id": "05f6913d-c316-48b2-a6bb-e225f14c7960",
                     "path": "<Mouse>/leftButton",
-                    "interactions": "",
+                    "interactions": "Press",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Fire",
+                    "action": "TirarFoto",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -233,7 +241,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Touch",
-                    "action": "Fire",
+                    "action": "TirarFoto",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -244,7 +252,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Joystick",
-                    "action": "Fire",
+                    "action": "TirarFoto",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -255,7 +263,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "XR",
-                    "action": "Fire",
+                    "action": "TirarFoto",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -278,6 +286,28 @@
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "ModoFotografia",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a0a9bae7-5ede-41ab-9f52-3906fbe33975",
+                    "path": "<Keyboard>/c",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Colecao",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f6df6ce3-0c01-4e50-a66e-6ef389346db6",
+                    "path": "<Gamepad>/select",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Colecao",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

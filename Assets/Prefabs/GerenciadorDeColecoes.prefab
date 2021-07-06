@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3221416291908871931
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6740064996161776467}
+  - component: {fileID: 6436304203469826301}
+  m_Layer: 0
+  m_Name: GerenciadorDeColecoes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6740064996161776467
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3221416291908871931}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6436304203469826301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3221416291908871931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6aa5864766046c4b9542273403ea9e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colecaoDeEspecies: {fileID: 11400000, guid: 5b8e0086187bb394189fd9ed3939fa76, type: 2}
+  evento_AbrirColecao: {fileID: 11400000, guid: 919d722cc10a008479f2c40cdc66921a, type: 2}
+  evento_FecharColecao: {fileID: 11400000, guid: 9fbe0d2e7f9f87f48b9fe028fe0bbdf1, type: 2}
+  painelDeInfo: {fileID: 0}
+  letreiroNomeComum: {fileID: 0}
+  letreiroNomeCientifico: {fileID: 0}
+  letreiroOcorrencia: {fileID: 0}
+  letreiroRisco: {fileID: 0}
+  letreiroFrase: {fileID: 0}
+  imagemNatureza: {fileID: 0}
+  imagemJogo: {fileID: 0}

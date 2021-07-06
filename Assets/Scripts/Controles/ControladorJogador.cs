@@ -43,6 +43,19 @@ public class ControladorJogador : MonoBehaviour
         if (obj.action.name == controles.Jogador.Olhar.name) {
             scriptCamera.AjustarPosicaoMouse(obj.ReadValue<Vector2>());
         }
+
+        if (obj.action.name == controles.Jogador.TirarFoto.name) {
+            scriptCamera.Fotografar();
+        }
+
+        if (obj.action.name == controles.Jogador.Colecao.name) {
+            
+            if(!EstadoJogo.colecaoAberta) {
+                GerenciadorDeColecoes.instancia.AbrirColecao(); }
+            else {
+                GerenciadorDeColecoes.instancia.FecharColecao();
+            }
+        }
     }
 
     private void Input_onActionCanceled(InputAction.CallbackContext obj) {

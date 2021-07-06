@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3e4a0e24b106f0499445345fe2339b2, type: 3}
+  m_Name: Coqueiro
+  m_EditorClassIdentifier: 
+  nomeComum: Coqueiro
+  nomeCientifico: 
+  classificacao: 
+  ocorrenciaNaNatureza: 
+  grauDeAmeaca: 0
+  frase: 
+  imagemNaNatureza: {fileID: 21300000, guid: 79c3dc60404aa7345938fa1d4ea91cc1, type: 3}
+  disponivelNaColecao: 0

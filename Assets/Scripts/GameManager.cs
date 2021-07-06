@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
-    [SerializeField] Evento entrarFotografia;
-    [SerializeField] Evento sairFotografia;
+    [SerializeField] Evento evento_EntrarFotografia;
+    [SerializeField] Evento evento_SairFotografia;
+
     public void AlterarModo() {
         if(EstadoJogo.modoFotografia == true) {
             EstadoJogo.modoFotografia = false;
-            sairFotografia.Ocorrido();
+            evento_SairFotografia.Ocorrido();
         } else {
             EstadoJogo.modoFotografia = true;
-            entrarFotografia.Ocorrido();
+            evento_EntrarFotografia.Ocorrido();
         }
     }
 }

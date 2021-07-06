@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6148292148215690789}
   - component: {fileID: 8246321745155992727}
   - component: {fileID: 9150645705705555757}
+  - component: {fileID: 162932953}
   m_Layer: 0
   m_Name: OuvirEventos
   m_TagString: Untagged
@@ -136,6 +137,34 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &162932953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637964024117770366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 892aab95605a324489b35212bbe4083d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  evento: {fileID: 11400000, guid: 04eb59e05f7786b42be52654c69f4e9f, type: 2}
+  resposta:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5447185496069154353}
+        m_TargetAssemblyTypeName: VisorCamera, Assembly-CSharp
+        m_MethodName: Fotografar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2173377487355669453
 GameObject:
   m_ObjectHideFlags: 0
@@ -146,11 +175,13 @@ GameObject:
   m_Component:
   - component: {fileID: 407260294851212655}
   - component: {fileID: 4637598811793125449}
+  - component: {fileID: 698726431981372444}
   - component: {fileID: 7615327943324751229}
   - component: {fileID: 971105307441727359}
   - component: {fileID: 6346370533381910946}
   - component: {fileID: 8854694119975675199}
   - component: {fileID: 111635018798537671}
+  - component: {fileID: 1857540297}
   m_Layer: 0
   m_Name: Personagem
   m_TagString: Jogador
@@ -223,6 +254,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &698726431981372444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2173377487355669453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd8c6635dc7d16d49af6ea239001a927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dadosEspecie: {fileID: 11400000, guid: 799b226f46bc54643b0d40db43207556, type: 2}
 --- !u!114 &7615327943324751229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,6 +372,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1857540297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2173377487355669453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd8c6635dc7d16d49af6ea239001a927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dadosEspecie: {fileID: 0}
 --- !u!1 &3012102740836303707
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,6 +482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   personagem: {fileID: 407260294851212655}
+  eventoFotografar: {fileID: 11400000, guid: 04eb59e05f7786b42be52654c69f4e9f, type: 2}
 --- !u!1 &6092783649626282699
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,6 +597,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cruz: {fileID: 2133294094339765463}
+  especieVista: {fileID: 0}
 --- !u!50 &1400932007
 Rigidbody2D:
   serializedVersion: 4

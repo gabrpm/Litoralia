@@ -6,6 +6,7 @@ public class ComportamentoCamera : MonoBehaviour
 {
     Vector2 posicaoMouse;
     [SerializeField] Transform personagem;
+    [SerializeField] Evento eventoFotografar;
 
     void Update()
     {
@@ -23,7 +24,7 @@ public class ComportamentoCamera : MonoBehaviour
         
         transform.position = new Vector3(posX, posY, 0);
 
-        Debug.Log("X: " + posX.ToString() + " Y: " + posY.ToString());
+        //Debug.Log("X: " + posX.ToString() + " Y: " + posY.ToString());
     }
 
     public void ClampearVisor() {
@@ -57,6 +58,14 @@ public class ComportamentoCamera : MonoBehaviour
         } else {
             sr.color = Color.black;
         }
+    }
+
+    public void Fotografar() {
+        if(EstadoJogo.modoFotografia) {
+            eventoFotografar.Ocorrido();
+            Debug.Log("Foto tirada!");
+        }
+        
     }
 
 }
