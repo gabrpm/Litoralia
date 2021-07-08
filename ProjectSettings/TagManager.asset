@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Especie
   - Jogador
+  - NPC
+  - Interativo
   layers:
   - Default
   - TransparentFX
