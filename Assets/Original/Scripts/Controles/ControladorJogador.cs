@@ -34,7 +34,8 @@ public class ControladorJogador : MonoBehaviour
 
         //Primeiro devem vir os comandos de vetores.
         if (obj.action.name == controles.Jogador.Mover.name) {
-            scriptMovimentacao.DefinirDirecao(obj.ReadValue<Vector2>());
+            scriptMovimentacao.mouse = false;
+            scriptMovimentacao.DefinirDirecaoTeclado(obj.ReadValue<Vector2>());
         }
 
         if (obj.action.name == controles.Jogador.Olhar.name) {
@@ -47,6 +48,12 @@ public class ControladorJogador : MonoBehaviour
         }
 
         //Agora devem vir os comandos de botões.
+        
+        if(obj.action.name == controles.Jogador.MoverPara.name) {
+            scriptMovimentacao.mouse = true;
+            scriptMovimentacao.DefinirDirecaoMouse(Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()));
+        }
+        
         if (obj.action.name == controles.Jogador.ModoFotografia.name) {
             GameManager.instancia.AlterarModo();
         }
@@ -66,6 +73,10 @@ public class ControladorJogador : MonoBehaviour
 
         if(obj.action.name == controles.Jogador.Interagir.name) {
             scriptInteracao.Interagir();
+        }
+
+        if(obj.action.name == controles.Jogador.FecharJogo.name) {
+            Application.Quit();
         }
     }
 }

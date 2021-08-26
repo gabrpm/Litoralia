@@ -17,6 +17,7 @@ public class Especie : ScriptableObject {
     [Tooltip("Essa frase pode ser uma curiosidade, uma referência ou uma piada.")]
     [SerializeField] string frase;
     [SerializeField] Sprite imagemNaNatureza;
+    [SerializeField] Sprite imagemNoJogo;
     public bool disponivelNaColecao;
 
     public string NomeComum {get {return nomeComum;}}
@@ -26,6 +27,7 @@ public class Especie : ScriptableObject {
     public string Frase {get {return frase;}}
     public RiscoDeExtincao GrauDeAmeaca {get {return grauDeAmeaca;}}
     public Sprite ImagemNaNatureza {get {return imagemNaNatureza;}}
+    public Sprite ImagemNoJogo {get {return imagemNoJogo;}}
 
     private void OnEnable() {
         disponivelNaColecao = false;

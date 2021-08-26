@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7711704164210803447}
   - component: {fileID: 2235389163190597498}
   - component: {fileID: 7939473836680032875}
+  - component: {fileID: 3632594987495211429}
   - component: {fileID: 8324807089969404642}
   - component: {fileID: 1761414135536597185}
   - component: {fileID: 8132468997982941293}
@@ -99,6 +100,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dadosEspecie: {fileID: 11400000, guid: 799b226f46bc54643b0d40db43207556, type: 2}
+--- !u!114 &3632594987495211429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8798822841341925642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9936693b39494144bbf8c6b9a430fac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  videAss: {fileID: 0}
+  especies: 0
+  conversaFinal: {fileID: 4900000, guid: 6d4af81a19f62fc43ba60b7b60a3b32c, type: 3}
 --- !u!114 &8324807089969404642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,20 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diags:
   - 001
-  - Charlie
-  - CommentModifier
-  - CrazyCap
-  - DEMO_Condition
-  - demo_Narration
-  - Example3Dialogue
-  - Example4_dialogue
-  - Item_LookUp
-  - Laura
-  - MrCube
-  - NPCOnly
-  - QuestChartDemo
-  - TriggeredDude
-  - Witch
+  - 002
   assignedIndex: 0
   assignedID: 92877
   assignedDialogue: 001

@@ -53,7 +53,7 @@ MonoBehaviour:
   previewPanning: 0
   currentDiag: 0
   locEdit: 0
-  pNodeID: 18
+  pNodeID: 0
   aNodeID: 2
   S_playerDiags:
   - commentCount: 1
@@ -76,8 +76,8 @@ MonoBehaviour:
     ID: 0
     rect:
       serializedVersion: 2
-      x: -310
-      y: 90
+      x: -360
+      y: 0
       width: 348
       height: 131
     pTag: 
@@ -140,7 +140,7 @@ MonoBehaviour:
       y: 70
       width: 348
       height: 165
-    pTag: 
+    pTag: interativo
     expand: 0
     sprite: {fileID: 0}
     vars: []
@@ -169,12 +169,16 @@ MonoBehaviour:
       x: 600
       y: -70
       width: 348
-      height: 131
-    pTag: 
-    expand: 0
+      height: 269
+    pTag: limitado
+    expand: 1
     sprite: {fileID: 0}
-    vars: []
-    varKeys: []
+    vars:
+    - 1
+    - 10
+    varKeys:
+    - limite
+    - trocarPara
     isPlayer: 0
   - commentCount: 1
     s_comment:
@@ -226,15 +230,15 @@ MonoBehaviour:
     - text: Posso sim!
       extraData: ExtraData
       inputSetIndex: 4
-      outputNodeIndex: -1
+      outputNodeIndex: 9
       outActionIndex: -1
       showmore: 0
       outRect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
+        x: 300
+        y: 81
+        width: 30
+        height: 21
       sprites: {fileID: 0}
       audios: {fileID: 0}
       visible: 1
@@ -242,10 +246,10 @@ MonoBehaviour:
     rect:
       serializedVersion: 2
       x: 990
-      y: -70
+      y: -50
       width: 348
       height: 143
-    pTag: 
+    pTag: interativo
     expand: 0
     sprite: {fileID: 0}
     vars: []
@@ -336,7 +340,7 @@ MonoBehaviour:
       y: -60
       width: 348
       height: 121
-    pTag: 
+    pTag: interativo
     expand: 0
     sprite: {fileID: 0}
     vars: []
@@ -439,11 +443,11 @@ MonoBehaviour:
     ID: 8
     rect:
       serializedVersion: 2
-      x: 2580
-      y: -40
+      x: 2940
+      y: -10
       width: 348
       height: 131
-    pTag: 
+    pTag: interativo
     expand: 0
     sprite: {fileID: 0}
     vars: []
@@ -469,10 +473,373 @@ MonoBehaviour:
     ID: 9
     rect:
       serializedVersion: 2
-      x: 3040
-      y: -40
+      x: 2560
+      y: 550
       width: 348
       height: 121
+    pTag: 
+    expand: 0
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 0
+  - commentCount: 2
+    s_comment:
+    - text: "Eu vou estar aqui quando voc\xEA terminar de registrar todas as esp\xE9cies."
+      extraData: ExtraData
+      inputSetIndex: 10
+      outputNodeIndex: 11
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 301
+        y: 59
+        width: 30
+        height: 44
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    - text: "Quer ouvir novamente alguma informa\xE7\xE3o?"
+      extraData: ExtraData
+      inputSetIndex: 10
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 10
+    rect:
+      serializedVersion: 2
+      x: 360
+      y: 640
+      width: 348
+      height: 176
+    pTag: 
+    expand: 0
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 0
+  - commentCount: 3
+    s_comment:
+    - text: Como eu tiro fotos mesmo??
+      extraData: ExtraData
+      inputSetIndex: 11
+      outputNodeIndex: 13
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 301
+        y: 59
+        width: 30
+        height: 21
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    - text: "Como abro a cole\xE7\xE3o de esp\xE9cies registradas??"
+      extraData: ExtraData
+      inputSetIndex: 11
+      outputNodeIndex: 12
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 300
+        y: 81
+        width: 30
+        height: 31
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    - text: "N\xE3o, obrigado!"
+      extraData: ExtraData
+      inputSetIndex: 11
+      outputNodeIndex: 15
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 300
+        y: 113
+        width: 30
+        height: 21
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 11
+    rect:
+      serializedVersion: 2
+      x: 1130
+      y: 610
+      width: 348
+      height: 175
+    pTag: interativo
+    expand: 0
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 1
+  - commentCount: 2
+    s_comment:
+    - text: "Pra acessar a cole\xE7\xE3o aperta \"C\"."
+      extraData: ExtraData
+      inputSetIndex: 12
+      outputNodeIndex: 14
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 301
+        y: 59
+        width: 30
+        height: 21
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    - text: "E caso queira saber informa\xE7\xF5es sobre uma esp\xE9cie registrada
+        basta clicar sobre a imagem da esp\xE9cie."
+      extraData: ExtraData
+      inputSetIndex: 12
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 12
+    rect:
+      serializedVersion: 2
+      x: 1650
+      y: 710
+      width: 348
+      height: 179
+    pTag: 
+    expand: 0
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 0
+  - commentCount: 3
+    s_comment:
+    - text: "Aperta no bot\xE3o direito do mouse."
+      extraData: ExtraData
+      inputSetIndex: 13
+      outputNodeIndex: 14
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 301
+        y: 59
+        width: 30
+        height: 31
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    - text: "A\xED a tela vai escurescer e o visor vai mostrar a \xE1rea da foto."
+      extraData: ExtraData
+      inputSetIndex: 13
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    - text: "Ent\xE3o quando tiver uma esp\xE9cie no visor, aperta no bot\xE3o esquerdo
+        do mouse e pronto."
+      extraData: ExtraData
+      inputSetIndex: 13
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 13
+    rect:
+      serializedVersion: 2
+      x: 1640
+      y: 500
+      width: 348
+      height: 208
+    pTag: 
+    expand: 0
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 0
+  - commentCount: 1
+    s_comment:
+    - text: Obrigado!
+      extraData: ExtraData
+      inputSetIndex: 14
+      outputNodeIndex: 15
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 301
+        y: 59
+        width: 30
+        height: 21
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 14
+    rect:
+      serializedVersion: 2
+      x: 2080
+      y: 690
+      width: 348
+      height: 121
+    pTag: interativo
+    expand: 0
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 1
+  - commentCount: 1
+    s_comment:
+    - text: Que nada! :)
+      extraData: ExtraData
+      inputSetIndex: 15
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 15
+    rect:
+      serializedVersion: 2
+      x: 1790
+      y: 1080
+      width: 348
+      height: 121
+    pTag: 
+    expand: 0
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 0
+  - commentCount: 5
+    s_comment:
+    - text: Nossa... Valeu mesmo...
+      extraData: ExtraData
+      inputSetIndex: 16
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    - text: "Parece que voc\xEA leva jeito pra coisa."
+      extraData: ExtraData
+      inputSetIndex: 16
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    - text: "Isso \xE9 s\xF3 uma pequena amostra do que todo este ecossistema abriga.
+        Mas n\xE3o se preocupe."
+      extraData: ExtraData
+      inputSetIndex: 16
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    - text: "Ainda h\xE1 muito o que explorar... Por enquanto vou ficando por aqui."
+      extraData: ExtraData
+      inputSetIndex: 16
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    - text: "At\xE9 logo..."
+      extraData: ExtraData
+      inputSetIndex: 16
+      outputNodeIndex: -1
+      outActionIndex: -1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 16
+    rect:
+      serializedVersion: 2
+      x: 250
+      y: 1170
+      width: 348
+      height: 265
     pTag: 
     expand: 0
     sprite: {fileID: 0}

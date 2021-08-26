@@ -36,14 +36,26 @@ public class GerenciadorDeColecoes : Singleton<GerenciadorDeColecoes>
     }
 
     public void AbrirColecao() {
+
+        if(EstadoJogo.modoFotografia) {
+            return;
+        }
+
+        if(GerenciadorDeDialogos.DialogoAtivo) {
+            return;
+        }
+
+        evento_AbrirColecao.Ocorrido();
+
         EstadoJogo.colecaoAberta = true;
         AtualizarQtde();
-        evento_AbrirColecao.Ocorrido();
+        
     }
 
     public void FecharColecao() {
-        EstadoJogo.colecaoAberta = false;
+        
         evento_FecharColecao.Ocorrido();
+        EstadoJogo.colecaoAberta = false;
     }
 
     public void MostrarPainelDeInformacoes(Especie sp) {
@@ -54,7 +66,9 @@ public class GerenciadorDeColecoes : Singleton<GerenciadorDeColecoes>
         letreiroRisco.text = sp.GrauDeAmeaca.ToString();
         letreiroFrase.text = sp.Frase;
         imagemNatureza.sprite = sp.ImagemNaNatureza;
-        imagemJogo.sprite = null;
+        imagemNatureza.preserveAspect = true;
+        imagemJogo.sprite = sp.ImagemNoJogo;
+        imagemJogo.preserveAspect = true;
     }
 
     public void AtualizarQtde() {

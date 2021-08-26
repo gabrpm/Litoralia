@@ -8,6 +8,7 @@ public class InteracaoJogador : MonoBehaviour
     [SerializeField] VIDE_Assign interlocutorAss = null;
 
     public void Interagir() {
+        
         if(!interacaoHabilitada) {
             return;
         }

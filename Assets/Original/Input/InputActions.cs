@@ -65,6 +65,22 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""FecharJogo"",
+                    ""type"": ""Button"",
+                    ""id"": ""6c713de8-a2a0-4edc-8eb5-5cab61a2beda"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""MoverPara"",
+                    ""type"": ""Button"",
+                    ""id"": ""be16f7f2-6ae7-459a-9946-9424371d5bb3"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -334,23 +350,34 @@ public class @InputActions : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""b84b113b-48a7-41c4-9033-5d5345d3e1af"",
-                    ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": ""Press"",
-                    ""processors"": """",
-                    ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""Interagir"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""a2f03882-d0cd-416b-b0ab-028a27f31a4a"",
                     ""path"": ""<Keyboard>/enter"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Interagir"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""54d5aa21-acc8-4508-86e9-cecbba13c8fc"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""FecharJogo"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ace8c728-fd7f-4f41-8558-176d7f5c9f75"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": ""Press(behavior=1)"",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""MoverPara"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -709,7 +736,18 @@ public class @InputActions : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""9e92bb26-7e3b-4ec4-b06b-3c8f8e498ddc"",
-                    ""path"": ""*/{Submit}"",
+                    ""path"": ""<Keyboard>/enter"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Submit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""cf718b59-58b3-49a7-801b-5c671aa91296"",
+                    ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -730,7 +768,7 @@ public class @InputActions : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""c52c8e0b-8179-41d3-b8a1-d149033bbe86"",
+                    ""id"": ""65b1dc5b-d366-42c4-bac5-206b728f9c16"",
                     ""path"": ""<Mouse>/position"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -934,6 +972,8 @@ public class @InputActions : IInputActionCollection, IDisposable
         m_Jogador_Interagir = m_Jogador.FindAction("Interagir", throwIfNotFound: true);
         m_Jogador_ModoFotografia = m_Jogador.FindAction("ModoFotografia", throwIfNotFound: true);
         m_Jogador_Colecao = m_Jogador.FindAction("Colecao", throwIfNotFound: true);
+        m_Jogador_FecharJogo = m_Jogador.FindAction("FecharJogo", throwIfNotFound: true);
+        m_Jogador_MoverPara = m_Jogador.FindAction("MoverPara", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1001,6 +1041,8 @@ public class @InputActions : IInputActionCollection, IDisposable
     private readonly InputAction m_Jogador_Interagir;
     private readonly InputAction m_Jogador_ModoFotografia;
     private readonly InputAction m_Jogador_Colecao;
+    private readonly InputAction m_Jogador_FecharJogo;
+    private readonly InputAction m_Jogador_MoverPara;
     public struct JogadorActions
     {
         private @InputActions m_Wrapper;
@@ -1011,6 +1053,8 @@ public class @InputActions : IInputActionCollection, IDisposable
         public InputAction @Interagir => m_Wrapper.m_Jogador_Interagir;
         public InputAction @ModoFotografia => m_Wrapper.m_Jogador_ModoFotografia;
         public InputAction @Colecao => m_Wrapper.m_Jogador_Colecao;
+        public InputAction @FecharJogo => m_Wrapper.m_Jogador_FecharJogo;
+        public InputAction @MoverPara => m_Wrapper.m_Jogador_MoverPara;
         public InputActionMap Get() { return m_Wrapper.m_Jogador; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1038,6 +1082,12 @@ public class @InputActions : IInputActionCollection, IDisposable
                 @Colecao.started -= m_Wrapper.m_JogadorActionsCallbackInterface.OnColecao;
                 @Colecao.performed -= m_Wrapper.m_JogadorActionsCallbackInterface.OnColecao;
                 @Colecao.canceled -= m_Wrapper.m_JogadorActionsCallbackInterface.OnColecao;
+                @FecharJogo.started -= m_Wrapper.m_JogadorActionsCallbackInterface.OnFecharJogo;
+                @FecharJogo.performed -= m_Wrapper.m_JogadorActionsCallbackInterface.OnFecharJogo;
+                @FecharJogo.canceled -= m_Wrapper.m_JogadorActionsCallbackInterface.OnFecharJogo;
+                @MoverPara.started -= m_Wrapper.m_JogadorActionsCallbackInterface.OnMoverPara;
+                @MoverPara.performed -= m_Wrapper.m_JogadorActionsCallbackInterface.OnMoverPara;
+                @MoverPara.canceled -= m_Wrapper.m_JogadorActionsCallbackInterface.OnMoverPara;
             }
             m_Wrapper.m_JogadorActionsCallbackInterface = instance;
             if (instance != null)
@@ -1060,6 +1110,12 @@ public class @InputActions : IInputActionCollection, IDisposable
                 @Colecao.started += instance.OnColecao;
                 @Colecao.performed += instance.OnColecao;
                 @Colecao.canceled += instance.OnColecao;
+                @FecharJogo.started += instance.OnFecharJogo;
+                @FecharJogo.performed += instance.OnFecharJogo;
+                @FecharJogo.canceled += instance.OnFecharJogo;
+                @MoverPara.started += instance.OnMoverPara;
+                @MoverPara.performed += instance.OnMoverPara;
+                @MoverPara.canceled += instance.OnMoverPara;
             }
         }
     }
@@ -1222,6 +1278,8 @@ public class @InputActions : IInputActionCollection, IDisposable
         void OnInteragir(InputAction.CallbackContext context);
         void OnModoFotografia(InputAction.CallbackContext context);
         void OnColecao(InputAction.CallbackContext context);
+        void OnFecharJogo(InputAction.CallbackContext context);
+        void OnMoverPara(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {
