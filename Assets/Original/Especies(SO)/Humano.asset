@@ -21,4 +21,7 @@ MonoBehaviour:
     \xE9 adverso: \xE9-lhe indiferente.\" Carl Sagan"
   imagemNaNatureza: {fileID: 21300000, guid: 9c7dfef07015a4b42b6677b0a677394d, type: 3}
   imagemNoJogo: {fileID: 21300000, guid: 144280cf06edaed4cafbff9195b0ecd9, type: 3}
+  ocorreNoMar: 1
+  ocorreNaCosta: 1
+  ocorreNoEstuario: 1
   disponivelNaColecao: 1

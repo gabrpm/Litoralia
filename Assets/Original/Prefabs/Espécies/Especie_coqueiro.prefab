@@ -114,6 +114,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -5210989878416093546, guid: 2da22e9010a2c5940b1d22df3d427116, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5210989878416093546, guid: 2da22e9010a2c5940b1d22df3d427116, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
       value: 0.5
       objectReference: {fileID: 0}
@@ -209,6 +213,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: -2840408308769277898, guid: 2da22e9010a2c5940b1d22df3d427116, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1628857606959368485, guid: 2da22e9010a2c5940b1d22df3d427116, type: 3}
       propertyPath: dadosEspecie
       value: 
@@ -216,6 +224,18 @@ PrefabInstance:
     - target: {fileID: 5611135002909317162, guid: 2da22e9010a2c5940b1d22df3d427116, type: 3}
       propertyPath: m_Name
       value: Especie_coqueiro
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100766916107012384, guid: 2da22e9010a2c5940b1d22df3d427116, type: 3}
+      propertyPath: m_Size.y
+      value: 0.43748993
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100766916107012384, guid: 2da22e9010a2c5940b1d22df3d427116, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.28125504
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417341398056511388, guid: 2da22e9010a2c5940b1d22df3d427116, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7136026901258259160, guid: 2da22e9010a2c5940b1d22df3d427116, type: 3}
       propertyPath: m_RootOrder

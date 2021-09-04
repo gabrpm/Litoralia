@@ -10,4 +10,5 @@ static class EstadoJogo
     public static bool colecaoAberta;
     public static int quantidadeTotalSp;
     public static int quantidadeRegistradaSp;
+    public static Ecossistema ecossitemaAtual = Ecossistema.COSTA;
 }

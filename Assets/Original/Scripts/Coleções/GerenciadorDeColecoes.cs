@@ -21,10 +21,12 @@ public class GerenciadorDeColecoes : Singleton<GerenciadorDeColecoes>
     [SerializeField] Image imagemJogo;
 
     private void Awake() {
+        DontDestroyOnLoad(this.gameObject);
         EstadoJogo.quantidadeTotalSp = colecaoDeEspecies.ListaDeEspecies.Count;
     }
 
     public void DisponibilizarNaColecao(Especie sp) {
+        Debug.Log("GColecoes sendo chamado");
         foreach (Especie especie in colecaoDeEspecies.ListaDeEspecies)
         {
             if(especie.NomeComum == sp.NomeComum) {
@@ -83,6 +85,26 @@ public class GerenciadorDeColecoes : Singleton<GerenciadorDeColecoes>
                 i++;
             }
         }
+        //Debug.Log("Todos" + i.ToString());
+        return i;
+    }
+    public int QtdeDeSpRegistradas(Ecossistema eco) {
+
+        if(eco == Ecossistema.TODOS) return QtdeDeSpRegistradas();
+        
+        int i = 0;
+        foreach (Especie sp in colecaoDeEspecies.ListaDeEspecies) {
+            if(sp.disponivelNaColecao) {
+                if(eco == Ecossistema.MAR && sp.OcorreNoMar) {
+                    i++;
+                } else if (eco == Ecossistema.COSTA && sp.OcorreNaCosta) {
+                    i++;
+                } else if (eco == Ecossistema.ESTUARIO && sp.OcorreNoEstuario) {
+                    i++;
+                }
+            }
+        }
+        //Debug.Log(eco.ToString() + i.ToString());
         return i;
     }
 

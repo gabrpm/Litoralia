@@ -8,7 +8,7 @@ public class VisorCamera : MonoBehaviour
     [SerializeField] Especie especieVista = null;
     [SerializeField] SpriteRenderer flash;
     
-    private void OnCollisionEnter2D(Collision2D other) {
+    private void OnTriggerStay2D(Collider2D other) {
         if(other.gameObject.GetComponent<EspecieInfo>()) {
             if(!other.gameObject.GetComponent<EspecieInfo>().DadosEspecie.disponivelNaColecao) {
                 cruz.color = Color.green;
@@ -19,7 +19,7 @@ public class VisorCamera : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit2D(Collision2D other) {
+    private void OnTriggerExit2D(Collider2D other) {
         if(other.gameObject.GetComponent<EspecieInfo>()) {
             cruz.color = Color.white;
             especieVista = null;

@@ -13,13 +13,16 @@ public class MovimentacaoJogador : MonoBehaviour
     [SerializeField] Vector2 direcaoMouse;
     Rigidbody2D rb;
     public bool mouse;
-    public bool habilitar = true;
+    public bool habilitar;
 
     void Awake() {
         rb = GetComponent<Rigidbody2D>();
+        direcaoMouse = transform.position;
     }
     private void FixedUpdate() {
-            Mover();        
+
+        Mover();   
+             
     }
     
     public void DefinirDirecaoMouse(Vector2 para) {
@@ -48,6 +51,7 @@ public class MovimentacaoJogador : MonoBehaviour
     }
 
     public void HabilitarMovimentacao(bool habil) {
+        DefinirDirecaoMouse(transform.position);
         habilitar = habil;
     }
 }

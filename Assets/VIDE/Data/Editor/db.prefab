@@ -169,16 +169,12 @@ MonoBehaviour:
       x: 600
       y: -70
       width: 348
-      height: 269
-    pTag: limitado
+      height: 225
+    pTag: 
     expand: 1
     sprite: {fileID: 0}
-    vars:
-    - 1
-    - 10
-    varKeys:
-    - limite
-    - trocarPara
+    vars: []
+    varKeys: []
     isPlayer: 0
   - commentCount: 1
     s_comment:
@@ -230,8 +226,8 @@ MonoBehaviour:
     - text: Posso sim!
       extraData: ExtraData
       inputSetIndex: 4
-      outputNodeIndex: 9
-      outActionIndex: -1
+      outputNodeIndex: -1
+      outActionIndex: 1
       showmore: 0
       outRect:
         serializedVersion: 2
@@ -428,8 +424,8 @@ MonoBehaviour:
     - text: "T\xE1 bom. J\xE1 j\xE1 volto com suas fotos!"
       extraData: ExtraData
       inputSetIndex: 8
-      outputNodeIndex: 9
-      outActionIndex: -1
+      outputNodeIndex: -1
+      outActionIndex: 1
       showmore: 0
       outRect:
         serializedVersion: 2
@@ -459,14 +455,14 @@ MonoBehaviour:
       extraData: ExtraData
       inputSetIndex: 9
       outputNodeIndex: -1
-      outActionIndex: -1
+      outActionIndex: 0
       showmore: 0
       outRect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
+        x: 301
+        y: 59
+        width: 30
+        height: 21
       sprites: {fileID: 0}
       audios: {fileID: 0}
       visible: 1
@@ -518,8 +514,8 @@ MonoBehaviour:
     ID: 10
     rect:
       serializedVersion: 2
-      x: 360
-      y: 640
+      x: -350
+      y: 520
       width: 348
       height: 176
     pTag: 
@@ -578,7 +574,7 @@ MonoBehaviour:
     ID: 11
     rect:
       serializedVersion: 2
-      x: 1130
+      x: 260
       y: 610
       width: 348
       height: 175
@@ -624,8 +620,8 @@ MonoBehaviour:
     ID: 12
     rect:
       serializedVersion: 2
-      x: 1650
-      y: 710
+      x: 1040
+      y: 750
       width: 348
       height: 179
     pTag: 
@@ -685,8 +681,8 @@ MonoBehaviour:
     ID: 13
     rect:
       serializedVersion: 2
-      x: 1640
-      y: 500
+      x: 1040
+      y: 480
       width: 348
       height: 208
     pTag: 
@@ -715,8 +711,8 @@ MonoBehaviour:
     ID: 14
     rect:
       serializedVersion: 2
-      x: 2080
-      y: 690
+      x: 1840
+      y: 740
       width: 348
       height: 121
     pTag: interativo
@@ -745,8 +741,8 @@ MonoBehaviour:
     ID: 15
     rect:
       serializedVersion: 2
-      x: 1790
-      y: 1080
+      x: 1290
+      y: 1190
       width: 348
       height: 121
     pTag: 
@@ -772,7 +768,7 @@ MonoBehaviour:
       sprites: {fileID: 0}
       audios: {fileID: 0}
       visible: 1
-    - text: "Parece que voc\xEA leva jeito pra coisa."
+    - text: "Parece que voc\xEA leva jeito pra coisa..."
       extraData: ExtraData
       inputSetIndex: 16
       outputNodeIndex: -1
@@ -833,11 +829,11 @@ MonoBehaviour:
       sprites: {fileID: 0}
       audios: {fileID: 0}
       visible: 1
-    ID: 16
+    ID: 17
     rect:
       serializedVersion: 2
-      x: 250
-      y: 1170
+      x: -380
+      y: 1030
       width: 348
       height: 265
     pTag: 
@@ -846,5 +842,99 @@ MonoBehaviour:
     vars: []
     varKeys: []
     isPlayer: 0
-  S_actionNodes: []
+  S_actionNodes:
+  - pauseHere: 0
+    gameObjectName: '[No object]'
+    methodName: '[No method]'
+    nameIndex: 0
+    methodIndex: 0
+    paramIndex: -1
+    opts:
+    - '[No method]'
+    nameOpts:
+    - '[No object]'
+    - OuvirEventos
+    - Text (TMP)
+    - Text (TMP)
+    - Foto
+    - CameraPersonagem
+    - CinemachinesPadrao
+    - GerenciadorDeColecoes
+    - OuvirEventos
+    - GameManager
+    - NPC
+    - OuvirEventos
+    - CameraFotografica
+    - RegiaoDeInteracao
+    - Personagem
+    - Main Camera
+    - GerenciadorDeDialogos
+    param_bool: 0
+    param_string: 
+    param_int: 0
+    param_float: 0
+    rect:
+      serializedVersion: 2
+      x: 3070
+      y: 540
+      width: 200
+      height: 160
+    ID: 16
+    outPlayerIndex: -1
+    outActionIndex: -1
+    more: 1
+    ovrStartNode: 10
+    renameDialogue: 
+  - pauseHere: 0
+    gameObjectName: NPC
+    methodName: LancarMissao
+    nameIndex: 11
+    methodIndex: 2
+    paramIndex: 0
+    opts:
+    - '[No method]'
+    - get_DadosEspecie
+    - LancarMissao
+    - GetAssigned
+    - AssignNew
+    - SaveState
+    - LoadState
+    - OnBeforeSerialize
+    - OnAfterDeserialize
+    nameOpts:
+    - '[No object]'
+    - GerenciadorDeDialogos
+    - Foto
+    - CameraPersonagem
+    - CinemachinesPadrao
+    - OuvirEventos
+    - Canvas_colecao
+    - GameManager
+    - OuvirEventos
+    - Text (TMP)
+    - Text (TMP)
+    - NPC
+    - OuvirEventos
+    - CameraFotografica
+    - RegiaoDeInteracao
+    - Personagem
+    - Text (TMP)
+    - Main Camera
+    - Info
+    param_bool: 0
+    param_string: 
+    param_int: 0
+    param_float: 0
+    rect:
+      serializedVersion: 2
+      x: 1940
+      y: 360
+      width: 200
+      height: 162
+    ID: 18
+    outPlayerIndex: 9
+    outActionIndex: -1
+    more: 0
+    ovrStartNode: -1
+    renameDialogue: 
   S_selNodes: []

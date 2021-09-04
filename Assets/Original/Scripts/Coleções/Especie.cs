@@ -1,7 +1,7 @@
 using UnityEngine;
 
 public enum RiscoDeExtincao {POUCO_PREOCUPANTE, QUASE_AMEACADA, VULNERAVEL, EM_PERIGO, CRITICAMENTE_AMEACADA, EXTINTA_NA_NATUREZA, EXTINTA}
-
+public enum Ecossistema {MAR, COSTA, ESTUARIO, TODOS}
 
 [CreateAssetMenu(fileName = "Especie", menuName = "Biodiversidade em jogo/Especie", order = 0)]
 public class Especie : ScriptableObject {
@@ -18,6 +18,9 @@ public class Especie : ScriptableObject {
     [SerializeField] string frase;
     [SerializeField] Sprite imagemNaNatureza;
     [SerializeField] Sprite imagemNoJogo;
+    [SerializeField] bool ocorreNoMar;
+    [SerializeField] bool ocorreNaCosta;
+    [SerializeField] bool ocorreNoEstuario;
     public bool disponivelNaColecao;
 
     public string NomeComum {get {return nomeComum;}}
@@ -28,6 +31,9 @@ public class Especie : ScriptableObject {
     public RiscoDeExtincao GrauDeAmeaca {get {return grauDeAmeaca;}}
     public Sprite ImagemNaNatureza {get {return imagemNaNatureza;}}
     public Sprite ImagemNoJogo {get {return imagemNoJogo;}}
+    public bool OcorreNoMar {get{return ocorreNoMar;}}
+    public bool OcorreNaCosta {get{return ocorreNaCosta;}}
+    public bool OcorreNoEstuario {get{return ocorreNoEstuario;}}
 
     private void OnEnable() {
         disponivelNaColecao = false;

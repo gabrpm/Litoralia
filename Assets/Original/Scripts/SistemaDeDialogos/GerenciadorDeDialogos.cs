@@ -14,6 +14,7 @@ public class GerenciadorDeDialogos : Singleton<GerenciadorDeDialogos>
     [SerializeField] GameObject caixaDeDialogo;
     [SerializeField] GameObject containerNPC;
     [SerializeField] GameObject containerJogador;
+    [SerializeField] GameObject botaoAvancar;
     [SerializeField] TextMeshProUGUI textoNPC;
     [SerializeField] TextMeshProUGUI textoJogador;
     [SerializeField] TextMeshProUGUI[] opcoesJogador;
@@ -60,35 +61,44 @@ public class GerenciadorDeDialogos : Singleton<GerenciadorDeDialogos>
         
         containerJogador.SetActive(false);
         containerNPC.SetActive(false);
+        botaoAvancar.SetActive(false);
 
         AjustarImagem();
 
         if(dadosDoNo.isPlayer) {
             containerJogador.SetActive(true);
             if(dadosDoNo.tag == "interativo") {
+                botaoAvancar.gameObject.SetActive(false);
                 textoJogador.gameObject.SetActive(false);
-            } else {
-                textoJogador.gameObject.SetActive(true);
-            }
-            
-            for(int i = 0; i < opcoesJogador.Length; i++) {
-                if(i < dadosDoNo.comments.Length) {
-                    opcoesJogador[i].transform.parent.gameObject.SetActive(true);
-                    opcoesJogador[i].text = dadosDoNo.comments[i];
-                    if(i == 0) {
-                        proxFalaHabilitada = false;
-                        opcoesJogador[i].transform.parent.GetComponent<Selectable>().Select();
+
+                for(int i = 0; i < opcoesJogador.Length; i++) {
+                    if(i < dadosDoNo.comments.Length) {
+                        opcoesJogador[i].transform.parent.gameObject.SetActive(true);
+                        opcoesJogador[i].text = dadosDoNo.comments[i];
+                        if(i == 0) {
+                            proxFalaHabilitada = false;
+                            opcoesJogador[i].transform.parent.GetComponent<Selectable>().Select();
+                        }
+                    } else {
+                        opcoesJogador[i].transform.parent.gameObject.SetActive(false);
                     }
-                } else {
+                }
+
+            } else {
+                for (int i = 0; i < opcoesJogador.Length; i++)
+                {
                     opcoesJogador[i].transform.parent.gameObject.SetActive(false);
                 }
-            }
+                textoJogador.gameObject.SetActive(true);
+                botaoAvancar.gameObject.SetActive(true);
 
+                textoJogador.text = dadosDoNo.comments[dadosDoNo.commentIndex];
+            }
         } else {
             containerNPC.SetActive(true);
+            botaoAvancar.gameObject.SetActive(true);
 
-            textoNPC.text = dadosDoNo.comments[dadosDoNo.commentIndex];
-            
+            textoNPC.text = dadosDoNo.comments[dadosDoNo.commentIndex];   
         }
     }
 
@@ -130,6 +140,7 @@ public class GerenciadorDeDialogos : Singleton<GerenciadorDeDialogos>
     public void AjustarImagem() {
         if(!VD.nodeData.isPlayer) {
             imagemDialogo.color =  new Color(255,0,151);
+            imagemDialogo.color =  VD.assigned.gameObject.GetComponent<SpriteRenderer>().color;
         } else if(VD.nodeData.isPlayer) {
             imagemDialogo.color = DadosDoJogador.cor;
         }

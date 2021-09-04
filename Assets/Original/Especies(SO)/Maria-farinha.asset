@@ -20,4 +20,7 @@ MonoBehaviour:
   frase: "Esses crust\xE1ceos se entocam nas suas tocas quando se sentem amea\xE7ados."
   imagemNaNatureza: {fileID: 21300000, guid: fcdf92cdaf8295c4bbcb6ac979e529e4, type: 3}
   imagemNoJogo: {fileID: 21300000, guid: 8fce7f55e31310945bec09ddecac61da, type: 3}
+  ocorreNoMar: 0
+  ocorreNaCosta: 1
+  ocorreNoEstuario: 0
   disponivelNaColecao: 1
