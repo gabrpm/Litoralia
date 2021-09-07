@@ -1,46 +1,44 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.InputSystem;
 
-public class LancadorDeMissao : MonoBehaviour, IPointerDownHandler
+[System.Serializable]
+public class MissaoEProximoNo {
+    public Missao missao;
+    public TextAsset proxConversa;
+}
+public class LancadorDeMissao : Conversador, IPointerDownHandler
 {
-    [SerializeField] Missao missaoASerLancada = null;
-    [SerializeField] VIDE_Assign videAss;
-    [SerializeField] int especies;
-    [SerializeField] int nodeDeConversaFinal;
-    [SerializeField] bool lancador;
-
-    private void Awake() {
-        videAss = GetComponent<VIDE_Assign>();
-    }
-
-
-    private void Update() {
-
-        if(!lancador) {
-            return;
-        }
-        
-        if(missaoASerLancada.Concluida) {
-            videAss.overrideStartNode = nodeDeConversaFinal;
-        }
-    }
+    [SerializeField] MissaoEProximoNo[] missoesALancar = null;
+    int missaoAtual = 0;
 
     public void LancarMissao() {
-        GerenciadorDeMissoes.instancia.AdicionarMissao(missaoASerLancada);
+        GerenciadorDeMissoes.instancia.AdicionarMissao(missoesALancar[missaoAtual].missao);
         Debug.Log("Missão lançada.");
-        StartCoroutine(GerenciadorDeMissoes.instancia.ExibirPopUpMissao(missaoASerLancada));
+        Debug.Log(dialogo.assignedDialogue);
+        StartCoroutine(GerenciadorDeMissoes.instancia.ExibirPopUpMissao(missoesALancar[missaoAtual].missao));
         GerenciadorDeMissoes.instancia.ChecarMissoesAtivas();
     }
 
+    public void VerificarRealizacaoDaMissao() {
+        if(missoesALancar[missaoAtual].missao.Concluida) {
+            //videAss.overrideStartNode = missoesALancar[missaoAtual].proxNo;
+            dialogo.overrideStartNode = -1;
+            dialogo.AssignNew(missoesALancar[missaoAtual].proxConversa.name);
+            if(missaoAtual < missoesALancar.Length -1) {
+                missaoAtual++;
+            }
+        }
+    }
 
-    public void OnPointerDown (PointerEventData eventData) {
+    override public void OnPointerDown (PointerEventData eventData) {
         if(eventData.button.ToString() == "Right") {
             return;
         }
-        if(!EstadoJogo.modoFotografia)
-            GerenciadorDeDialogos.instancia.IniciarDialogo(videAss);
+        if(!EstadoJogo.modoFotografia){
+            
+            GetComponent<LancadorDeMissao>().VerificarRealizacaoDaMissao();
+            GerenciadorDeDialogos.instancia.IniciarDialogo(dialogo);
+        }
     }
+
 }

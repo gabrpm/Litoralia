@@ -17,6 +17,10 @@ public abstract class Missao : ScriptableObject {
     public bool Concluida {get{return concluida;}}
     public float Progresso {get{return progresso;}}
 
+    private void OnEnable() {
+        concluida = false;
+    }
+
     public void ConcluirMissao() {
         concluida = true;
         progresso = 1;

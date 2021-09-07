@@ -93,6 +93,7 @@ public class GerenciadorDeDialogos : Singleton<GerenciadorDeDialogos>
                 botaoAvancar.gameObject.SetActive(true);
 
                 textoJogador.text = dadosDoNo.comments[dadosDoNo.commentIndex];
+
             }
         } else {
             containerNPC.SetActive(true);
@@ -132,8 +133,17 @@ public class GerenciadorDeDialogos : Singleton<GerenciadorDeDialogos>
         if(VD.nodeData.tag == "limitado") {
             ChecarInteracoes((int)VD.nodeData.extraVars["limite"],(int)VD.nodeData.extraVars["trocarPara"]);
         }
-        
-        VD.Next();
+
+        if(VD.nodeData.isPlayer && VD.nodeData.tag != "interativo") {
+            if(VD.nodeData.comments.Length - 1 > VD.nodeData.commentIndex) {
+                VD.nodeData.commentIndex++;
+                AtualizarUI(VD.nodeData);
+            } else {
+                VD.Next();
+            }
+        } else{
+            VD.Next();
+        }
         
     }
 

@@ -1,0 +1,216 @@
+Edit the dialogue on the go.
+You can edit and add comments, edit the tags, and set node type.
+Do not attempt to add more nodes: the number of nodes must match when importing the text file.
+Do not modify the IDs.
+Do not add or remove empty lines.
+Do not restructure the data.
+
+Dialogue name: QuadradoRosa_01
+---------------------------------
+#NODEID#
+0
+#TAG#
+
+#ISPLAYER#
+False
+---
+#COMMENT#
+Olá! Você pode fazer um favor pra mim?
+---------------------------------
+#NODEID#
+1
+#TAG#
+interativo
+#ISPLAYER#
+True
+---
+#COMMENT#
+Claro! O quê?
+#COMMENT#
+Depende... O quê?
+#COMMENT#
+Hoje não. Fica com Deus...
+---------------------------------
+#NODEID#
+2
+#TAG#
+
+#ISPLAYER#
+False
+---
+#COMMENT#
+Pode tirar fotos de todas as espécies dessa praia?
+---------------------------------
+#NODEID#
+3
+#TAG#
+
+#ISPLAYER#
+False
+---
+#COMMENT#
+...
+---------------------------------
+#NODEID#
+4
+#TAG#
+interativo
+#ISPLAYER#
+True
+---
+#COMMENT#
+E como faço isso?
+#COMMENT#
+Posso sim!
+---------------------------------
+#NODEID#
+5
+#TAG#
+
+#ISPLAYER#
+False
+---
+#COMMENT#
+Aperta no botão direito do mouse.
+#COMMENT#
+Aí a tela vai escurescer e o visor vai mostrar a área da foto.
+#COMMENT#
+Então quando tiver uma espécie no visor, aperta no botão esquerdo do mouse e pronto.
+---------------------------------
+#NODEID#
+6
+#TAG#
+interativo
+#ISPLAYER#
+True
+---
+#COMMENT#
+Só isso?
+---------------------------------
+#NODEID#
+7
+#TAG#
+
+#ISPLAYER#
+False
+---
+#COMMENT#
+Só.
+#COMMENT#
+Aí sempre que você registrar uma espécie nova, ela vai aparecer na coleção.	
+#COMMENT#
+Pra acessar a coleção aperta "C". 
+#COMMENT#
+E caso queira saber informações sobre uma espécie registrada basta clicar sobre a imagem da espécie.
+---------------------------------
+#NODEID#
+8
+#TAG#
+interativo
+#ISPLAYER#
+True
+---
+#COMMENT#
+Tá bom. Já já volto com suas fotos!
+---------------------------------
+#NODEID#
+9
+#TAG#
+
+#ISPLAYER#
+False
+---
+#COMMENT#
+Obrigado! ;)
+---------------------------------
+#NODEID#
+10
+#TAG#
+
+#ISPLAYER#
+False
+---
+#COMMENT#
+Eu vou estar aqui quando você terminar de registrar todas as espécies.
+#COMMENT#
+Quer ouvir novamente alguma informação?
+---------------------------------
+#NODEID#
+11
+#TAG#
+interativo
+#ISPLAYER#
+True
+---
+#COMMENT#
+Como eu tiro fotos mesmo??
+#COMMENT#
+Como abro a coleção de espécies registradas??
+#COMMENT#
+Não, obrigado!
+---------------------------------
+#NODEID#
+12
+#TAG#
+
+#ISPLAYER#
+False
+---
+#COMMENT#
+Pra acessar a coleção aperta "C".
+#COMMENT#
+E caso queira saber informações sobre uma espécie registrada basta clicar sobre a imagem da espécie.
+---------------------------------
+#NODEID#
+13
+#TAG#
+
+#ISPLAYER#
+False
+---
+#COMMENT#
+Aperta no botão direito do mouse.
+#COMMENT#
+Aí a tela vai escurescer e o visor vai mostrar a área da foto.
+#COMMENT#
+Então quando tiver uma espécie no visor, aperta no botão esquerdo do mouse e pronto.
+---------------------------------
+#NODEID#
+14
+#TAG#
+interativo
+#ISPLAYER#
+True
+---
+#COMMENT#
+Obrigado!
+---------------------------------
+#NODEID#
+15
+#TAG#
+
+#ISPLAYER#
+False
+---
+#COMMENT#
+Que nada! :)
+---------------------------------
+#NODEID#
+17
+#TAG#
+
+#ISPLAYER#
+False
+---
+#COMMENT#
+Nossa... Valeu mesmo...
+#COMMENT#
+Parece que você leva jeito pra coisa...
+#COMMENT#
+Isso é só uma pequena amostra do que todo este ecossistema abriga. Mas não se preocupe.
+#COMMENT#
+Ainda há muito o que explorar... Por enquanto vou ficando por aqui.
+#COMMENT#
+Até logo...
+---------------------------------
+#END#

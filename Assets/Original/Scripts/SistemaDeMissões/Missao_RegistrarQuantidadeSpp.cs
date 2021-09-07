@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Missao_RegistrarQuantidadeSpp", menuName = "Biodiversidade em jogo/Missao/RegistrarQuantidadeSpp", order = 0)]
+[CreateAssetMenu(fileName = "Missao_RegistrarQuantidadeSpp", menuName = "Biodiversidade em jogo/Missao/RegistrarQuantidadeSpp", order = 1)]
 public class Missao_RegistrarQuantidadeSpp : Missao {
 
     [SerializeField] private int quantidadeDeEspecies;

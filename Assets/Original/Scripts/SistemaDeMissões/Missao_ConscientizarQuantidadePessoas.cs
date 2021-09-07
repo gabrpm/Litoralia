@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Missao_ConscientizarQuantidadePessoas", menuName = "Biodiversidade em jogo/Missao/ConscientizarQuantidadePessoas", order = 0)]
+[CreateAssetMenu(fileName = "Missao_ConscientizarQuantidadePessoas", menuName = "Biodiversidade em jogo/Missao/ConscientizarQuantidadePessoas", order = 3)]
 public class Missao_ConscientizarQuantidadePessoas : Missao {
     [SerializeField] private int quantidadeDePessoas;
 
