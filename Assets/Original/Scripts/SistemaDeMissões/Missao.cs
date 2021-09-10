@@ -8,8 +8,9 @@ public abstract class Missao : ScriptableObject {
     [SerializeField] protected string descricao;
     [SerializeField] protected string textoMissaoFinalizada;
     [SerializeField] protected bool concluida = false;
+    
     [Range(0,1)]
-    protected float progresso = 0;
+    [SerializeField] protected float progresso = 0;
 
     public string Nome {get{return nome;}}
     public string Descricao {get{return descricao;}}
@@ -19,6 +20,7 @@ public abstract class Missao : ScriptableObject {
 
     private void OnEnable() {
         concluida = false;
+        progresso = 0;
     }
 
     public void ConcluirMissao() {

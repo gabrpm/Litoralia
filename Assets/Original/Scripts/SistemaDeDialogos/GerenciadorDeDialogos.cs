@@ -37,6 +37,10 @@ public class GerenciadorDeDialogos : Singleton<GerenciadorDeDialogos>
             return;
         }
 
+        VD.localizationEnabledSET = true;
+        VD.SetCurrentLanguage(EstadoJogo.localizacao);
+        //Debug.Log(VD.currentLanguage);
+
         evento_InicioDialogo.Ocorrido();
         
         //Esta checagem garante que um diálogo não seja iniciado se um já estiver sendo executado.
@@ -130,6 +134,9 @@ public class GerenciadorDeDialogos : Singleton<GerenciadorDeDialogos>
 
     public void ProximaFala() {
 
+        VD.SetCurrentLanguage(EstadoJogo.localizacao);
+        Debug.Log(VD.currentLanguage);
+        
         if(VD.nodeData.tag == "limitado") {
             ChecarInteracoes((int)VD.nodeData.extraVars["limite"],(int)VD.nodeData.extraVars["trocarPara"]);
         }
@@ -162,4 +169,10 @@ public class GerenciadorDeDialogos : Singleton<GerenciadorDeDialogos>
         }
     }
 
+    public void AlterarLocalizacao(string loc) {
+        
+        EstadoJogo.localizacao = loc;
+        //Debug.Log(VD.GetLanguages().Length);
+        //Debug.Log(VD.GetLanguages()); 
+    }
 }

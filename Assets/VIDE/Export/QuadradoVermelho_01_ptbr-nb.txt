@@ -1,0 +1,276 @@
+Edit the dialogue on the go.
+You can edit and add comments, edit the tags, and set node type.
+Do not attempt to add more nodes: the number of nodes must match when importing the text file.
+Do not modify the IDs.
+Do not add or remove empty lines.
+Do not restructure the data.
+
+Dialogue name: QuadradoVermelho_01
+---------------------------------
+#NODEID#
+0
+#TAG#
+interativo
+#ISPLAYER#
+False
+---
+#COMMENT#
+A moça lá disse que não era pra eu jogar lixo no chão.
+#COMMENT#
+Ela devia era cuidar da vida dela.
+#COMMENT#
+É cada uma...
+---------------------------------
+#NODEID#
+1
+#TAG#
+interativo
+#ISPLAYER#
+True
+---
+#COMMENT#
+É isso aí, falou tudo!
+#COMMENT#
+Bom, cada um tem sua opinião, temos que respeitar a de todos.
+#COMMENT#
+Já parou pra pensar se todo mundo jogasse seu lixo no chão?
+---------------------------------
+#NODEID#
+2
+#TAG#
+
+#ISPLAYER#
+False
+---
+#COMMENT#
+Se ela não quer jogar lixo no chão, o problema é dela! Eu faço o que eu quiser!!
+---------------------------------
+#NODEID#
+3
+#TAG#
+
+#ISPLAYER#
+False
+---
+#COMMENT#
+Não tenho tempo pra isso!
+---------------------------------
+#NODEID#
+4
+#TAG#
+
+#ISPLAYER#
+False
+---
+#COMMENT#
+Aí sim! Hehehe
+---------------------------------
+#NODEID#
+5
+#TAG#
+interativo
+#ISPLAYER#
+True
+---
+#COMMENT#
+Imagina a tua rua toda suja, você saindo de casa e sentindo aquele fedor de podre.
+#COMMENT#
+Não tem tempo pra isso mas tem tempo de ficar fumando aí intoxicando o ar de todo mundo.
+#COMMENT#
+Ah, desculpa, senhor...
+---------------------------------
+#NODEID#
+6
+#TAG#
+
+#ISPLAYER#
+False
+---
+#COMMENT#
+Chega! Vai encher o saco de outro. Tenho mais o que fazer!
+---------------------------------
+#NODEID#
+7
+#TAG#
+
+#ISPLAYER#
+False
+---
+#COMMENT#
+Hmm... Bom ponto, mas nada com que o nossos narizes não se acostumem, né? Hehehehehe
+---------------------------------
+#NODEID#
+8
+#TAG#
+interativo
+#ISPLAYER#
+True
+---
+#COMMENT#
+Agora já pensou se o peixe que o senhor come viva na água poluída?
+#COMMENT#
+Verdade! KKKKK
+---------------------------------
+#NODEID#
+9
+#TAG#
+interativo
+#ISPLAYER#
+True
+---
+#COMMENT#
+Maaas nesse caso pode ser diferente.
+#COMMENT#
+Pode crer!
+---------------------------------
+#NODEID#
+10
+#TAG#
+
+#ISPLAYER#
+False
+---
+#COMMENT#
+Hãn?
+---------------------------------
+#NODEID#
+11
+#TAG#
+interativo
+#ISPLAYER#
+True
+---
+#COMMENT#
+Imagina a tua rua toda suja, você saindo de casa e sentindo aquele fedor de podre.
+#COMMENT#
+Esquece, nada não...
+---------------------------------
+#NODEID#
+12
+#TAG#
+
+#ISPLAYER#
+False
+---
+#COMMENT#
+Qual o problema?
+---------------------------------
+#NODEID#
+13
+#TAG#
+
+#ISPLAYER#
+True
+---
+#COMMENT#
+O problema é que alguns peixes vão comendo outros peixes menores ou outros organismos que já estão contaminados com metais pesados de ambientes poluídos.
+#COMMENT#
+E quanto mais esses animais comem, mais metal se acumula no seu corpo.
+#COMMENT#
+Aí vem um peixe maior e come esse peixe já cheio de metal nele.
+#COMMENT#
+Mas ele não come só um... Ele come vários.
+#COMMENT#
+E aí a gente pesca esse peixe maior e come ele.
+---------------------------------
+#NODEID#
+14
+#TAG#
+
+#ISPLAYER#
+False
+---
+#COMMENT#
+Mas acho que não faz mal...
+#COMMENT#
+Minha mulher cozinha eles antes de eu comer.
+---------------------------------
+#NODEID#
+15
+#TAG#
+
+#ISPLAYER#
+True
+---
+#COMMENT#
+Pois é. Mas metais pesados não saem do peixe no cozimento.
+#COMMENT#
+E eles podem eventualmente causar alguns problemas agudos nos rins e no fígado.
+#COMMENT#
+Mas o problema mesmo é que eles aumentam consideravelmente a chance de câncer.
+---------------------------------
+#NODEID#
+16
+#TAG#
+
+#ISPLAYER#
+False
+---
+#COMMENT#
+Hmm...
+#COMMENT#
+Câncer...
+#COMMENT#
+Minha mãe teve câncer...
+#COMMENT#
+Talvez você não esteja tão errado... É importante saber essas coisas.
+#COMMENT#
+Vou trabalhar pra mudar esse meu péssimo hábito.
+#COMMENT#
+Obrigado...
+---------------------------------
+#NODEID#
+19
+#TAG#
+
+#ISPLAYER#
+False
+---
+#COMMENT#
+É, estou tentando melhorar...
+---------------------------------
+#NODEID#
+20
+#TAG#
+
+#ISPLAYER#
+False
+---
+#COMMENT#
+E aí, criança?
+---------------------------------
+#NODEID#
+21
+#TAG#
+interativo
+#ISPLAYER#
+True
+---
+#COMMENT#
+Eu pensei melhor sobre uma coisa.
+#COMMENT#
+Nada não.
+---------------------------------
+#NODEID#
+22
+#TAG#
+
+#ISPLAYER#
+True
+---
+#COMMENT#
+Acho que o senhor não deveria ficar jogando lixo por aí.
+#COMMENT#
+Por exemplo: já pensou se o peixe que o senhor come viva na água poluída?
+---------------------------------
+#NODEID#
+23
+#TAG#
+
+#ISPLAYER#
+False
+---
+#COMMENT#
+Ah é, o quê?
+---------------------------------
+#END#

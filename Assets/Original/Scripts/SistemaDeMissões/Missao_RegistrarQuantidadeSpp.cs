@@ -17,7 +17,7 @@ public class Missao_RegistrarQuantidadeSpp : Missao {
 
     override public void ChecarMissao() {
         quantidadeAtual = GerenciadorDeColecoes.instancia.QtdeDeSpRegistradas(emQueEcossistema);
-        ProgredirMissao(quantidadeAtual/quantidadeDeEspecies);
+        progresso = (float)quantidadeAtual/(float)quantidadeDeEspecies;
         if(quantidadeAtual >= quantidadeDeEspecies) {
             ConcluirMissao();
         }

@@ -12,6 +12,9 @@ public class GerenciadorDeMissoes : Singleton<GerenciadorDeMissoes>
     [SerializeField] TextMeshProUGUI letreiroNovaOuConcluida;
     [SerializeField] TextMeshProUGUI letreiroTitulo;
     [SerializeField] TextMeshProUGUI letreiroDescricao;
+    [SerializeField] GameObject containerMissoes;
+    [SerializeField] GameObject conjuntoPaineisDeMissao;
+    [SerializeField] GameObject prefabPainelDeMissao;
 
     private void Awake() {
         DontDestroyOnLoad(this.gameObject);
@@ -23,6 +26,8 @@ public class GerenciadorDeMissoes : Singleton<GerenciadorDeMissoes>
 
     public void AdicionarMissao(Missao m) {
         missoesAtivas.Add(m);
+        GameObject novoPainel = Instantiate(prefabPainelDeMissao,conjuntoPaineisDeMissao.transform);
+        novoPainel.GetComponent<PainelDeMissao>().AtribuirMissao(m);
     }
 
     public void ChecarMissoesAtivas() {
@@ -55,5 +60,11 @@ public class GerenciadorDeMissoes : Singleton<GerenciadorDeMissoes>
         yield return new WaitForSeconds(8f);
         LeanTween.moveY(painelNovaMissao.GetComponent<RectTransform>(), 183f, 1f);
 
+    }
+
+    public void ExibirEsconderMissoesAtivas(bool e) {
+
+        containerMissoes.SetActive(e);
+        
     }
 }
