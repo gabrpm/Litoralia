@@ -19,7 +19,7 @@ public class GerenciadorDeDialogos : Singleton<GerenciadorDeDialogos>
     [SerializeField] TextMeshProUGUI textoJogador;
     [SerializeField] TextMeshProUGUI[] opcoesJogador;
     [SerializeField] Image imagemDialogo;
-    bool proxFalaHabilitada = false;
+    [SerializeField]bool proxFalaHabilitada = false;
 
     // Start is called before the first frame update
 
@@ -37,8 +37,8 @@ public class GerenciadorDeDialogos : Singleton<GerenciadorDeDialogos>
             return;
         }
 
-        VD.localizationEnabledSET = true;
-        VD.SetCurrentLanguage(EstadoJogo.localizacao);
+        //VD.localizationEnabledSET = true;
+        //VD.SetCurrentLanguage(EstadoJogo.localizacao);
         //Debug.Log(VD.currentLanguage);
 
         evento_InicioDialogo.Ocorrido();
@@ -46,7 +46,7 @@ public class GerenciadorDeDialogos : Singleton<GerenciadorDeDialogos>
         //Esta checagem garante que um diálogo não seja iniciado se um já estiver sendo executado.
         if(VD.isActive) {
 
-            if(!VD.nodeData.isPlayer) {
+            if(!VD.nodeData.isPlayer || VD.nodeData.tag != "interativo") {
                 ProximaFala();
             }
             return;

@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 1952685924}
   - component: {fileID: 1952685925}
   - component: {fileID: 1952685926}
+  - component: {fileID: 355546730}
+  - component: {fileID: 355546731}
   m_Layer: 0
   m_Name: OuvirEventos
   m_TagString: Untagged
@@ -164,6 +166,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2244118237017570650}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &162932953
 MonoBehaviour:
@@ -316,6 +330,62 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &355546730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637964024117770366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 892aab95605a324489b35212bbe4083d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  evento: {fileID: 11400000, guid: a8ea108b7499fca4ba8ee968066a6da9, type: 2}
+  resposta:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6346370533381910946}
+        m_TargetAssemblyTypeName: MovimentacaoJogador, Assembly-CSharp
+        m_MethodName: HabilitarMovimentacao
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &355546731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637964024117770366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 892aab95605a324489b35212bbe4083d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  evento: {fileID: 11400000, guid: 5328052baf64ad945b458b1169037323, type: 2}
+  resposta:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6346370533381910946}
+        m_TargetAssemblyTypeName: MovimentacaoJogador, Assembly-CSharp
+        m_MethodName: HabilitarMovimentacao
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &2173377487355669453
 GameObject:
@@ -495,7 +565,7 @@ MonoBehaviour:
   direcaoTeclado: {x: 0, y: 0}
   direcaoMouse: {x: 0, y: 0}
   mouse: 0
-  habilitar: 1
+  habilitar: 0
 --- !u!61 &8854694119975675199
 BoxCollider2D:
   m_ObjectHideFlags: 0

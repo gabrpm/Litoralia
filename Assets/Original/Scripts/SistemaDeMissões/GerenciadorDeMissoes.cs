@@ -28,6 +28,7 @@ public class GerenciadorDeMissoes : Singleton<GerenciadorDeMissoes>
         missoesAtivas.Add(m);
         GameObject novoPainel = Instantiate(prefabPainelDeMissao,conjuntoPaineisDeMissao.transform);
         novoPainel.GetComponent<PainelDeMissao>().AtribuirMissao(m);
+        novoPainel.transform.SetSiblingIndex(0);
     }
 
     public void ChecarMissoesAtivas() {
@@ -57,7 +58,7 @@ public class GerenciadorDeMissoes : Singleton<GerenciadorDeMissoes>
         }
 
         LeanTween.moveY(painelNovaMissao.GetComponent<RectTransform>(), -183f, 1f);
-        yield return new WaitForSeconds(8f);
+        yield return new WaitForSeconds(6f);
         LeanTween.moveY(painelNovaMissao.GetComponent<RectTransform>(), 183f, 1f);
 
     }

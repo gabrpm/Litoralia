@@ -19,6 +19,7 @@ public class GerenciadorDeColecoes : Singleton<GerenciadorDeColecoes>
     [SerializeField] TextMeshProUGUI letreiroFrase;
     [SerializeField] Image imagemNatureza;
     [SerializeField] Image imagemJogo;
+    [SerializeField] DisplayNovaSp displayNovaSp;
 
     private void Awake() {
         DontDestroyOnLoad(this.gameObject);
@@ -31,6 +32,7 @@ public class GerenciadorDeColecoes : Singleton<GerenciadorDeColecoes>
         {
             if(especie.NomeComum == sp.NomeComum) {
                 especie.disponivelNaColecao = true;
+                displayNovaSp.IniciarCorotinaNovaSp(especie);
                 return;
             }
         }

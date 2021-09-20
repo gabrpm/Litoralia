@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using VIDE_Data;
 
 public class InteracaoJogador : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class InteracaoJogador : MonoBehaviour
             return;
         }
         
-        if (interlocutorAss != null) {
+        if (interlocutorAss != null || VD.isActive) {
             GerenciadorDeDialogos.instancia.IniciarDialogo(interlocutorAss);
             Debug.Log("Interagindo");
         }

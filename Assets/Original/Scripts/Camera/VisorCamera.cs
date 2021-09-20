@@ -41,4 +41,8 @@ public class VisorCamera : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         flash.gameObject.SetActive(false);
     }
+
+    public void DesligarFlash() {
+        flash.gameObject.SetActive(false);
+    }
 }
