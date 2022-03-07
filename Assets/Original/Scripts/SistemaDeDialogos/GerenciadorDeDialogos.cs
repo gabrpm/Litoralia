@@ -159,7 +159,7 @@ public class GerenciadorDeDialogos : Singleton<GerenciadorDeDialogos>
             imagemDialogo.color =  new Color(255,0,151);
             imagemDialogo.color =  VD.assigned.gameObject.GetComponent<SpriteRenderer>().color;
         } else if(VD.nodeData.isPlayer) {
-            imagemDialogo.color = DadosDoJogador.cor;
+            imagemDialogo.color = DadosDoJogador.instancia.Cor;
         }
     }
 

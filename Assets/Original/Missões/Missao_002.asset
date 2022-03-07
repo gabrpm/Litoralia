@@ -15,7 +15,8 @@ MonoBehaviour:
   nome: "N\xE3o jogue lixo na \xE1gua!"
   descricao: Encontre o quadrado vermelho e o conscientize a fazer o certo.
   textoMissaoFinalizada: Relate para o quadrado rosa o ocorrido.
-  concluida: 1
-  progresso: 1
+  concluida: 0
+  xpGanha: 50
+  progresso: 0
   pessoasObjetivo:
   - {fileID: 11400000, guid: 6f1acf8af16f0134ba52d36cdade26fd, type: 2}

@@ -16,6 +16,7 @@ MonoBehaviour:
   descricao: "Registre todas as esp\xE9cies da costa."
   textoMissaoFinalizada: Fale com o quadrado rosa para relatar os registros.
   concluida: 0
+  xpGanha: 50
   progresso: 1
   quantidadeDeEspecies: 3
   quantidadeAtual: 0
