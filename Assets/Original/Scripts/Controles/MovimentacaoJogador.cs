@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEditor;
 
 public class MovimentacaoJogador : MonoBehaviour
@@ -14,14 +15,22 @@ public class MovimentacaoJogador : MonoBehaviour
     Rigidbody2D rb;
     public bool mouse;
     public bool habilitar;
+    public bool holdMovimento;
 
     void Awake() {
         rb = GetComponent<Rigidbody2D>();
         direcaoMouse = transform.position;
     }
     private void FixedUpdate() {
-
-        Mover();   
+        
+        if(holdMovimento)
+        {
+            HoldMover();
+        }
+        else
+        {
+            Mover();
+        }
              
     }
     
@@ -53,5 +62,11 @@ public class MovimentacaoJogador : MonoBehaviour
     public void HabilitarMovimentacao(bool habil) {
         DefinirDirecaoMouse(transform.position);
         habilitar = habil;
+    }
+
+    public void HoldMover()
+    {
+        DefinirDirecaoMouse(Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()));
+        transform.position = Vector2.MoveTowards(transform.position, direcaoMouse, (velocidade - 2) * Time.fixedDeltaTime);
     }
 }

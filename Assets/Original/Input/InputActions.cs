@@ -98,6 +98,15 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""HoldMovimento"",
+                    ""type"": ""Button"",
+                    ""id"": ""1e38b0f4-0357-44fa-8437-fcbc83ad6ea6"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -402,10 +411,21 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""ace8c728-fd7f-4f41-8558-176d7f5c9f75"",
                     ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": ""Press(behavior=1)"",
+                    ""interactions"": ""Hold,Press(behavior=1)"",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
                     ""action"": ""MoverPara"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""df075147-fd57-40c0-95c0-44249b0bd74b"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": ""Hold"",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""HoldMovimento"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1012,6 +1032,7 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
         m_Jogador_Colecao = m_Jogador.FindAction("Colecao", throwIfNotFound: true);
         m_Jogador_FecharJogo = m_Jogador.FindAction("FecharJogo", throwIfNotFound: true);
         m_Jogador_MoverPara = m_Jogador.FindAction("MoverPara", throwIfNotFound: true);
+        m_Jogador_HoldMovimento = m_Jogador.FindAction("HoldMovimento", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1091,6 +1112,7 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
     private readonly InputAction m_Jogador_Colecao;
     private readonly InputAction m_Jogador_FecharJogo;
     private readonly InputAction m_Jogador_MoverPara;
+    private readonly InputAction m_Jogador_HoldMovimento;
     public struct JogadorActions
     {
         private @InputActions m_Wrapper;
@@ -1103,6 +1125,7 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
         public InputAction @Colecao => m_Wrapper.m_Jogador_Colecao;
         public InputAction @FecharJogo => m_Wrapper.m_Jogador_FecharJogo;
         public InputAction @MoverPara => m_Wrapper.m_Jogador_MoverPara;
+        public InputAction @HoldMovimento => m_Wrapper.m_Jogador_HoldMovimento;
         public InputActionMap Get() { return m_Wrapper.m_Jogador; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1136,6 +1159,9 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                 @MoverPara.started -= m_Wrapper.m_JogadorActionsCallbackInterface.OnMoverPara;
                 @MoverPara.performed -= m_Wrapper.m_JogadorActionsCallbackInterface.OnMoverPara;
                 @MoverPara.canceled -= m_Wrapper.m_JogadorActionsCallbackInterface.OnMoverPara;
+                @HoldMovimento.started -= m_Wrapper.m_JogadorActionsCallbackInterface.OnHoldMovimento;
+                @HoldMovimento.performed -= m_Wrapper.m_JogadorActionsCallbackInterface.OnHoldMovimento;
+                @HoldMovimento.canceled -= m_Wrapper.m_JogadorActionsCallbackInterface.OnHoldMovimento;
             }
             m_Wrapper.m_JogadorActionsCallbackInterface = instance;
             if (instance != null)
@@ -1164,6 +1190,9 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                 @MoverPara.started += instance.OnMoverPara;
                 @MoverPara.performed += instance.OnMoverPara;
                 @MoverPara.canceled += instance.OnMoverPara;
+                @HoldMovimento.started += instance.OnHoldMovimento;
+                @HoldMovimento.performed += instance.OnHoldMovimento;
+                @HoldMovimento.canceled += instance.OnHoldMovimento;
             }
         }
     }
@@ -1328,6 +1357,7 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
         void OnColecao(InputAction.CallbackContext context);
         void OnFecharJogo(InputAction.CallbackContext context);
         void OnMoverPara(InputAction.CallbackContext context);
+        void OnHoldMovimento(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

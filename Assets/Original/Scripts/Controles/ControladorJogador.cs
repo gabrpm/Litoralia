@@ -42,8 +42,22 @@ public class ControladorJogador : MonoBehaviour
             scriptCamera.AjustarPosicaoMouse(obj.ReadValue<Vector2>());
         }
 
+        if (obj.action.name == controles.Jogador.HoldMovimento.name)
+        {
+            if (obj.started)
+            {
+                scriptMovimentacao.holdMovimento = true;
+                Debug.Log("pressed");
+            }
+            else if (obj.canceled)
+            {
+                scriptMovimentacao.holdMovimento = false;
+                Debug.Log("released");
+            }
+        }
+
         //Esta checagem impede que os comandos sejam lidos mais de uma vez.
-        if(!obj.performed) {
+        if (!obj.performed) {
             return;
         }
 
@@ -78,5 +92,7 @@ public class ControladorJogador : MonoBehaviour
         if(obj.action.name == controles.Jogador.FecharJogo.name) {
             Application.Quit();
         }
+
+        
     }
 }
