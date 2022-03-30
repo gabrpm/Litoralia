@@ -14,7 +14,8 @@ public class ElementoDeColecao : MonoBehaviour
         button = GetComponent<Button>();
     }
     public void Atualizar() {
-        image.sprite = item.ImagemNaNatureza;
+        image.sprite = item.ImagemNoJogo;
+        image.preserveAspect = true;
         
         if(!item.disponivelNaColecao) {
             image.color = Color.black;

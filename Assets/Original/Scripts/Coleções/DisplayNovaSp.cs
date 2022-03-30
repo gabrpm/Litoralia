@@ -13,7 +13,7 @@ public class DisplayNovaSp : MonoBehaviour
     public IEnumerator ExibirPopUpNovaSp(Especie novaSp) {
         letreiroNomeComum.text = novaSp.NomeComum;
         letreiroBinomio.text = novaSp.NomeCientifico;
-        imagemSp.sprite = novaSp.ImagemNaNatureza;
+        imagemSp.sprite = novaSp.ImagemNoJogo;
         imagemSp.preserveAspect = true;
 
         LeanTween.moveY(GetComponent<RectTransform>(), 138f, 1f);

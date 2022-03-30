@@ -12,6 +12,7 @@ public class MovimentacaoJogador : MonoBehaviour
     [SerializeField] float velocidade = 5;
     [SerializeField] Vector2 direcaoTeclado;
     [SerializeField] Vector2 direcaoMouse;
+    [SerializeField] Animator animador;
     Rigidbody2D rb;
     public bool mouse;
     public bool habilitar;
@@ -22,8 +23,8 @@ public class MovimentacaoJogador : MonoBehaviour
         direcaoMouse = transform.position;
     }
     private void FixedUpdate() {
-        
-        if(holdMovimento)
+
+        if (holdMovimento)
         {
             HoldMover();
         }
@@ -31,7 +32,15 @@ public class MovimentacaoJogador : MonoBehaviour
         {
             Mover();
         }
-             
+
+        if (direcaoMouse == rb.position && direcaoTeclado.magnitude==0)
+        {
+            animador.SetFloat("velocidade", 0);
+        }
+        else
+        {
+            animador.SetFloat("velocidade", 1);
+        }
     }
     
     public void DefinirDirecaoMouse(Vector2 para) {
@@ -67,6 +76,15 @@ public class MovimentacaoJogador : MonoBehaviour
     public void HoldMover()
     {
         DefinirDirecaoMouse(Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()));
-        transform.position = Vector2.MoveTowards(transform.position, direcaoMouse, (velocidade - 2) * Time.fixedDeltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, direcaoMouse, (velocidade) * Time.fixedDeltaTime);
+    }
+
+    public void AtivarHold(bool torf)
+    {
+        holdMovimento = torf;
+        if(!torf)
+        {
+            
+        }
     }
 }

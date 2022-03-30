@@ -1576,6 +1576,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3193927906511232023}
     m_Modifications:
+    - target: {fileID: 2007576974592539600, guid: 7d075c1255d3f0944b366240e588826b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -538.97
+      objectReference: {fileID: 0}
     - target: {fileID: 3384310536646617517, guid: 7d075c1255d3f0944b366240e588826b, type: 3}
       propertyPath: m_Name
       value: PainelDeInfo
@@ -1663,6 +1667,10 @@ PrefabInstance:
     - target: {fileID: 4396378650313875495, guid: 7d075c1255d3f0944b366240e588826b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598098572174941653, guid: 7d075c1255d3f0944b366240e588826b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 362.23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d075c1255d3f0944b366240e588826b, type: 3}

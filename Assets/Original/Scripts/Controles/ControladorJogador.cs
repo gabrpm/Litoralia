@@ -44,14 +44,16 @@ public class ControladorJogador : MonoBehaviour
 
         if (obj.action.name == controles.Jogador.HoldMovimento.name)
         {
-            if (obj.started)
+            if (obj.performed)
             {
                 scriptMovimentacao.holdMovimento = true;
                 Debug.Log("pressed");
             }
             else if (obj.canceled)
             {
+                if (!scriptMovimentacao.holdMovimento) return;
                 scriptMovimentacao.holdMovimento = false;
+                scriptMovimentacao.DefinirDirecaoMouse(transform.position);
                 Debug.Log("released");
             }
         }
