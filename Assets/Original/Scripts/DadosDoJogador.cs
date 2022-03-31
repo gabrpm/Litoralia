@@ -31,7 +31,7 @@ public class DadosDoJogador : Singleton<DadosDoJogador>
     public void AlterarNomeAPartirDeTMPro(TextMeshProUGUI texto)
     {
         nome = texto.text;
-        Debug.Log(nome);
+        
     }
     
 }

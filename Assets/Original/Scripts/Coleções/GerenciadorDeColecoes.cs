@@ -8,9 +8,22 @@ public class GerenciadorDeColecoes : Singleton<GerenciadorDeColecoes>
 {
 
     public ColecaoDeEspecies colecaoDeEspecies;
+    [SerializeField] List<PainelDeColecao> listaDePaineis = new List<PainelDeColecao>();
+    [SerializeField] int indicePainelAtual = 0;
+
+    [Header("Parâmetros")]
+    [SerializeField] int elementosPorPagina = 15;
+
+    [Header("Eventos")]
     [SerializeField] Evento evento_AbrirColecao;
     [SerializeField] Evento evento_FecharColecao;
+
+    [Header("GOs referenciados")]
     [SerializeField] GameObject painelDeInfo;
+    [SerializeField] GameObject colecao;
+    [SerializeField] DisplayNovaSp displayNovaSp;
+
+    [Header("Letreiros e imagens")]
     [SerializeField] TextMeshProUGUI letreiroQtde;
     [SerializeField] TextMeshProUGUI letreiroNomeComum;
     [SerializeField] TextMeshProUGUI letreiroNomeCientifico;
@@ -19,11 +32,17 @@ public class GerenciadorDeColecoes : Singleton<GerenciadorDeColecoes>
     [SerializeField] TextMeshProUGUI letreiroFrase;
     [SerializeField] Image imagemNatureza;
     [SerializeField] Image imagemJogo;
-    [SerializeField] DisplayNovaSp displayNovaSp;
+
+    [Header("Prefabs")]
+    [SerializeField] GameObject painelItens_pfab;
+    [SerializeField] GameObject elementoDeColecao_pfab;
+    
 
     private void Awake() {
         DontDestroyOnLoad(this.gameObject);
         EstadoJogo.quantidadeTotalSp = colecaoDeEspecies.ListaDeEspecies.Count;
+        AjustarPaineisAColecao();
+        colecao.SetActive(false);
     }
 
     public void DisponibilizarNaColecao(Especie sp) {
@@ -48,11 +67,14 @@ public class GerenciadorDeColecoes : Singleton<GerenciadorDeColecoes>
         if(GerenciadorDeDialogos.DialogoAtivo) {
             return;
         }
-
         evento_AbrirColecao.Ocorrido();
+
+        colecao.SetActive(true);
+        listaDePaineis[indicePainelAtual].gameObject.SetActive(true);
 
         EstadoJogo.colecaoAberta = true;
         AtualizarQtde();
+        
         
     }
 
@@ -108,6 +130,51 @@ public class GerenciadorDeColecoes : Singleton<GerenciadorDeColecoes>
         }
         //Debug.Log(eco.ToString() + i.ToString());
         return i;
+    }
+
+    public void AjustarPaineisAColecao()
+    {
+        GameObject go_pItens = Instantiate(painelItens_pfab,colecao.transform);
+        listaDePaineis.Add(go_pItens.GetComponent<PainelDeColecao>());
+        GameObject go_elemento;
+        foreach (Especie sp in colecaoDeEspecies.ListaDeEspecies)
+        {
+            if(go_pItens.transform.childCount >= elementosPorPagina)
+            {
+                go_pItens.SetActive(false);
+                go_pItens = Instantiate(painelItens_pfab, colecao.transform);
+                listaDePaineis.Add(go_pItens.GetComponent<PainelDeColecao>());
+            }
+
+            go_elemento = Instantiate(elementoDeColecao_pfab, go_pItens.transform);
+            go_elemento.GetComponent<ElementoDeColecao>().item = sp;
+            go_elemento.GetComponent<ElementoDeColecao>().Atualizar();
+            go_pItens.transform.SetSiblingIndex(0);
+        }
+        go_pItens.SetActive(false);
+        
+    }
+
+    public void PassarPg(int para) 
+    {
+        if (para > 0)
+        {
+            if (indicePainelAtual >= listaDePaineis.Count - 1) return;
+            listaDePaineis[indicePainelAtual+1].gameObject.SetActive(true);
+            listaDePaineis[indicePainelAtual+1].MoverPara(1800f, 0);
+            listaDePaineis[indicePainelAtual+1].MoverPara(0, 0.5f);
+            listaDePaineis[indicePainelAtual].MoverPara(-1800f, 0.5f);
+            indicePainelAtual++;
+            
+
+        } else if (para < 0) {
+            if (indicePainelAtual == 0) return;
+            listaDePaineis[indicePainelAtual - 1].gameObject.SetActive(true);
+            listaDePaineis[indicePainelAtual - 1].MoverPara(0, 0.5f);
+            listaDePaineis[indicePainelAtual].MoverPara(1800f, 0.5f);
+            
+            indicePainelAtual--;
+        }
     }
 
 }

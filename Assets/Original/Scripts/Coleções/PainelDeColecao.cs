@@ -7,12 +7,13 @@ public class PainelDeColecao : MonoBehaviour
 {
     [SerializeField] GameObject elementoDeColecao;
     ElementoDeColecao[] elementosFilhos;
+    [SerializeField] int capacidade = 15;
     bool jaCarregado = false;
 
     private void OnEnable() {
 
         if(!jaCarregado) {
-            AjustarPainelAColecao();
+            //AjustarPainelAColecao();
             jaCarregado = true;
         }
         elementosFilhos = GetComponentsInChildren<ElementoDeColecao>();
@@ -21,8 +22,9 @@ public class PainelDeColecao : MonoBehaviour
 
     public void AjustarPainelAColecao() {
 
-        GameObject go = null;
+        GameObject go;
         foreach (Especie sp in GerenciadorDeColecoes.instancia.colecaoDeEspecies.ListaDeEspecies) {
+            if (Cheio()) return;
             go = Instantiate(elementoDeColecao,transform);
             go.GetComponent<ElementoDeColecao>().item = sp;
             go.GetComponent<ElementoDeColecao>().Atualizar();
@@ -35,6 +37,23 @@ public class PainelDeColecao : MonoBehaviour
         {
             el.Atualizar();
         }
+    }
+
+    public bool Cheio()
+    {
+        if(transform.childCount < capacidade)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+
+    public void MoverPara(float aonde, float tempo)
+    {
+        LeanTween.moveX(GetComponent<RectTransform>(), aonde, tempo);
     }
 
 }

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3e4a0e24b106f0499445345fe2339b2, type: 3}
+  m_Name: Caravela-portuguesa
+  m_EditorClassIdentifier: 
+  nomeComum: Caravela-portuguesa
+  nomeCientifico: Physalia physalis
+  classificacao: Cnidaria
+  ocorrenciaNaNatureza: 
+  grauDeAmeaca: 0
+  frase: "Em caso de queimaduras desses bichos, passe muita \xE1gua salgada e retire
+    cuidadosamente os tent\xE1culos da pele."
+  imagemNaNatureza: {fileID: 21300000, guid: b376a6a03eba45646973177193fe2fac, type: 3}
+  imagemNoJogo: {fileID: 21300000, guid: c55c01ef80337f0419f92aaee4baf1b8, type: 3}
+  ocorreNoMar: 1
+  ocorreNaCosta: 1
+  ocorreNoEstuario: 0
+  disponivelNaColecao: 0

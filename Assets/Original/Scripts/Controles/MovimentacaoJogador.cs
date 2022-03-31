@@ -24,16 +24,7 @@ public class MovimentacaoJogador : MonoBehaviour
     }
     private void FixedUpdate() {
 
-        if (holdMovimento)
-        {
-            HoldMover();
-        }
-        else
-        {
-            Mover();
-        }
-
-        if (direcaoMouse == rb.position && direcaoTeclado.magnitude==0)
+        if (direcaoMouse == rb.position && direcaoTeclado.magnitude == 0)
         {
             animador.SetFloat("velocidade", 0);
         }
@@ -41,6 +32,16 @@ public class MovimentacaoJogador : MonoBehaviour
         {
             animador.SetFloat("velocidade", 1);
         }
+
+        if (holdMovimento) 
+        {
+            HoldMover();
+        }
+        else
+        {
+            Mover();
+        }
+        
     }
     
     public void DefinirDirecaoMouse(Vector2 para) {
@@ -86,5 +87,11 @@ public class MovimentacaoJogador : MonoBehaviour
         {
             
         }
+    }
+
+    public void Parar()
+    {
+        DefinirDirecaoMouse(transform.position);
+        direcaoTeclado = Vector2.zero;
     }
 }
