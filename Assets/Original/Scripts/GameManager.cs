@@ -30,9 +30,11 @@ public class GameManager : Singleton<GameManager>
         
         if(EstadoJogo.modoFotografia == true) {
             evento_SairFotografia.Ocorrido();
+            Cursor.visible = true;
             EstadoJogo.modoFotografia = false;
         } else {
             evento_EntrarFotografia.Ocorrido();
+            Cursor.visible = false;
             EstadoJogo.modoFotografia = true;
         }
     }

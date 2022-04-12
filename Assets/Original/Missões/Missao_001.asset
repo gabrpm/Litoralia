@@ -18,6 +18,6 @@ MonoBehaviour:
   concluida: 0
   xpGanha: 50
   progresso: 1
-  quantidadeDeEspecies: 3
+  quantidadeDeEspecies: 9
   quantidadeAtual: 0
-  emQueEcossistema: 3
+  emQueEcossistema: 1
