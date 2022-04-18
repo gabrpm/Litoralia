@@ -54,6 +54,9 @@ TagManager:
   - name: Jogador
     uniqueID: 3061011373
     locked: 0
+  - name: "\xC1gua"
+    uniqueID: 3946303991
+    locked: 0
   - name: Vegetacao
     uniqueID: 1405124603
     locked: 0

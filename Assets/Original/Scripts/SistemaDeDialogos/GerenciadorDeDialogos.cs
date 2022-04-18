@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using VIDE_Data;
 using UnityEngine.UI;
@@ -78,7 +76,7 @@ public class GerenciadorDeDialogos : Singleton<GerenciadorDeDialogos>
                 for(int i = 0; i < opcoesJogador.Length; i++) {
                     if(i < dadosDoNo.comments.Length) {
                         opcoesJogador[i].transform.parent.gameObject.SetActive(true);
-                        opcoesJogador[i].text = dadosDoNo.comments[i];
+                        opcoesJogador[i].text = ChecarEModificarNomes(dadosDoNo.comments[i]);
                         if(i == 0) {
                             proxFalaHabilitada = false;
                             opcoesJogador[i].transform.parent.GetComponent<Selectable>().Select();
@@ -96,14 +94,14 @@ public class GerenciadorDeDialogos : Singleton<GerenciadorDeDialogos>
                 textoJogador.gameObject.SetActive(true);
                 botaoAvancar.gameObject.SetActive(true);
 
-                textoJogador.text = dadosDoNo.comments[dadosDoNo.commentIndex];
+                textoJogador.text = ChecarEModificarNomes(dadosDoNo.comments[dadosDoNo.commentIndex]);
 
             }
         } else {
             containerNPC.SetActive(true);
             botaoAvancar.gameObject.SetActive(true);
 
-            textoNPC.text = dadosDoNo.comments[dadosDoNo.commentIndex];   
+            textoNPC.text = ChecarEModificarNomes(dadosDoNo.comments[dadosDoNo.commentIndex]);   
         }
     }
 
@@ -174,5 +172,16 @@ public class GerenciadorDeDialogos : Singleton<GerenciadorDeDialogos>
         EstadoJogo.localizacao = loc;
         //Debug.Log(VD.GetLanguages().Length);
         //Debug.Log(VD.GetLanguages()); 
+    }
+
+    public string ChecarEModificarNomes(string texto)
+    {
+        string textoMod = texto;
+        Debug.Log(texto);
+        if (texto.Contains("_nome_"))
+        {
+            textoMod = textoMod.Replace("_nome_", DadosDoJogador._instancia.Nome);
+        }
+        return textoMod;
     }
 }
