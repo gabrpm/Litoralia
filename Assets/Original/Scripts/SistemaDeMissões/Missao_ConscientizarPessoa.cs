@@ -10,6 +10,7 @@ public class Missao_ConscientizarPessoa : Missao
         for (int i = 0; i < pessoasObjetivo.Length; i++)
         {
             if(!pessoasObjetivo[i].Conscientizada) {
+                progresso = (float)pessoasObjetivo[i].PassoAtual / (float)pessoasObjetivo[i].PassosParaConsciencia;
                 return;
             }
         }

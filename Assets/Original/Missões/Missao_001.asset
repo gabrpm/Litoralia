@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nome: '"Pode me fazer um favor?"'
   descricao: "Registre todas as esp\xE9cies da costa."
-  textoMissaoFinalizada: Fale com o quadrado rosa para relatar os registros.
-  concluida: 0
+  textoMissaoFinalizada: "Fale com a mo\xE7a rosa para relatar os registros."
+  concluida: 1
   xpGanha: 50
   progresso: 1
-  quantidadeDeEspecies: 9
-  quantidadeAtual: 0
-  emQueEcossistema: 1
+  quantidadeDeEspecies: 12
+  quantidadeAtual: 12
+  emQueEcossistema: 3

@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f18b68874c0d7bd46bfd887d39f24fb8, type: 3}
-  m_Name: Missao_002
+  m_Name: Missao_003
   m_EditorClassIdentifier: 
-  nome: "N\xE3o jogue lixo na \xE1gua!"
-  descricao: Encontre o velho azul e o conscientize a fazer o certo.
-  textoMissaoFinalizada: "Relate para a mo\xE7a rosa o ocorrido."
-  concluida: 1
-  xpGanha: 50
-  progresso: 1
+  nome: Uma linda invasora
+  descricao: "Explique para a velha a import\xE2ncia da mata de restinga e os perigos
+    da introdu\xE7\xE3o de esp\xE9cies."
+  textoMissaoFinalizada: "A boa senhora entendeu o que voc\xEA explicou."
+  concluida: 0
+  xpGanha: 0
+  progresso: 0.5
   pessoasObjetivo:
-  - {fileID: 11400000, guid: 6f1acf8af16f0134ba52d36cdade26fd, type: 2}
+  - {fileID: 11400000, guid: ec398ea42e36f2a43889d8d015550c5f, type: 2}
