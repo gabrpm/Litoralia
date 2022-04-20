@@ -8,10 +8,12 @@ public class DadosDoJogador : Singleton<DadosDoJogador>
     private string nome;
     private int lvl;
     private Color cor = Color.white;
+    private string pronome;
 
     public Color Cor { get { return cor; } }
     public int Lvl { get { return lvl; } }
     public string Nome { get { return nome; } }
+    public string Pronome { get { return pronome; } }
 
 
     private void Awake() {
@@ -32,6 +34,11 @@ public class DadosDoJogador : Singleton<DadosDoJogador>
     {
         nome = texto.text;
         Debug.Log(nome);
+    }
+
+    public void AlterarPronome(string pn)
+    {
+        pronome = pn;
     }
     
 }

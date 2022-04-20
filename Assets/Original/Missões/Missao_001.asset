@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Missao_001
   m_EditorClassIdentifier: 
   nome: '"Pode me fazer um favor?"'
-  descricao: "Registre todas as esp\xE9cies da costa."
+  descricao: "Registre um total de 3 esp\xE9cies da costa."
   textoMissaoFinalizada: "Fale com a mo\xE7a rosa para relatar os registros."
   concluida: 1
   xpGanha: 50
   progresso: 1
-  quantidadeDeEspecies: 12
-  quantidadeAtual: 12
+  quantidadeDeEspecies: 3
+  quantidadeAtual: 3
   emQueEcossistema: 3

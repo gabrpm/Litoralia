@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Missao_003
   m_EditorClassIdentifier: 
   nome: Uma linda invasora
-  descricao: "Explique para a velha a import\xE2ncia da mata de restinga e os perigos
-    da introdu\xE7\xE3o de esp\xE9cies."
-  textoMissaoFinalizada: "A boa senhora entendeu o que voc\xEA explicou."
-  concluida: 0
+  descricao: "Encontre a velha e explique sobre a import\xE2ncia da mata de restinga
+    e os perigos da introdu\xE7\xE3o de esp\xE9cies ex\xF3ticas."
+  textoMissaoFinalizada: "A boa senhora entendeu o que voc\xEA explicou. Conte para
+    a professora."
+  concluida: 1
   xpGanha: 0
-  progresso: 0.5
+  progresso: 1
   pessoasObjetivo:
   - {fileID: 11400000, guid: ec398ea42e36f2a43889d8d015550c5f, type: 2}

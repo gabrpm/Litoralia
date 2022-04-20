@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nome: "N\xE3o jogue lixo na \xE1gua!"
   descricao: Encontre o velho azul e o conscientize a fazer o certo.
-  textoMissaoFinalizada: "Relate para a mo\xE7a rosa o ocorrido."
+  textoMissaoFinalizada: Relate para a professora verde o ocorrido.
   concluida: 1
   xpGanha: 50
   progresso: 1

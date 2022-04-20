@@ -182,6 +182,12 @@ public class GerenciadorDeDialogos : Singleton<GerenciadorDeDialogos>
         {
             textoMod = textoMod.Replace("_nome_", DadosDoJogador._instancia.Nome);
         }
+
+        if(texto.Contains("_x_"))
+        {
+            textoMod = textoMod.Replace("_x_", DadosDoJogador._instancia.Pronome);
+        }
+
         return textoMod;
     }
 }
