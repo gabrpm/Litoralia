@@ -14,13 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nomeComum: Abelha-europeia
   nomeCientifico: Apis mellifera
-  classificacao: Hymenoptera
+  reino: Animalia
+  filo: Arthropoda
+  classe: Insecta
+  ordem: Hymenoptera
+  familia: Apidae
+  genero: Apis
   ocorrenciaNaNatureza: 
-  grauDeAmeaca: 0
-  frase: "Faz um \xF3timo mel, mas \xE9 extremamente agressiva com as abelhas nativas."
+  grauDeAmeaca: 2
+  frase: 
+  info1: "Faz um \xF3timo mel, mas \xE9 extremamente agressiva com as abelhas nativas."
+  info2: 
+  info3: 
+  info4: 
   imagemNaNatureza: {fileID: 21300000, guid: fc7cc7e711cf35e4fb71f2f6574d8268, type: 3}
   imagemNoJogo: {fileID: 21300000, guid: 02367dbdc50b2574f87f37f58f12f97b, type: 3}
   ocorreNoMar: 0
   ocorreNaCosta: 1
   ocorreNoEstuario: 0
-  disponivelNaColecao: 1
+  disponivelNaColecao: 0

@@ -14,10 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nomeComum: Algas de arribada
   nomeCientifico: "V\xE1rias esp\xE9cies"
-  classificacao: 
+  reino: ND
+  filo: ND
+  classe: ND
+  ordem: ND
+  familia: ND
+  genero: ND
   ocorrenciaNaNatureza: 
   grauDeAmeaca: 0
-  frase: 'Formam este grupo de plantas:'
+  frase: "O que \xE9 alga? Essa \xE9 uma pergunta que cientistas sempre se dedicaram
+    a responder e ainda n\xE3o encontraram a resposta."
+  info1: 
+  info2: 
+  info3: 
+  info4: 
   imagemNaNatureza: {fileID: 21300000, guid: a42a892bb6a6a114b9f8184ecde46ab2, type: 3}
   imagemNoJogo: {fileID: 21300000, guid: 58a623f0516dc98408f977bc3fd09c40, type: 3}
   ocorreNoMar: 1

@@ -14,10 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nomeComum: Mandacaru-da-praia
   nomeCientifico: Cereus fernambucensis
-  classificacao: Cactaceae
+  reino: Plantae
+  filo: Tracheophyta
+  classe: Magnoliopsida
+  ordem: Caryophyllales
+  familia: Cactaceae
+  genero: Cereus
   ocorrenciaNaNatureza: 
-  grauDeAmeaca: 0
+  grauDeAmeaca: 3
   frase: 
+  info1: 
+  info2: 
+  info3: 
+  info4: 
   imagemNaNatureza: {fileID: 21300000, guid: 89856c2e0c0a03d40a835cf73dd3808e, type: 3}
   imagemNoJogo: {fileID: 21300000, guid: 294e86316b6992b429c3e9826823a54b, type: 3}
   ocorreNoMar: 0

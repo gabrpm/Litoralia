@@ -14,11 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nomeComum: Salsa-de-praia
   nomeCientifico: Ipomoea pes-caprae
-  classificacao: Convovulaceae
+  reino: Plantae
+  filo: Tracheophyta
+  classe: Magnoliopsida
+  ordem: Solanales
+  familia: Convlovulaceae
+  genero: Ipomea
   ocorrenciaNaNatureza: 
-  grauDeAmeaca: 0
-  frase: "\"O coqueiro coqueirando as manobras do vermelho no branqueado do azul...\" 
-    Guimar\xE3es Rosa"
+  grauDeAmeaca: 3
+  frase: "Todos se preparem para a dan\xE7a!"
+  info1: 
+  info2: 
+  info3: 
+  info4: 
   imagemNaNatureza: {fileID: 21300000, guid: 9c7be7dbd9a682c49b8b0c1b6a07cca9, type: 3}
   imagemNoJogo: {fileID: 21300000, guid: 3d2af40345c18a44abf69880c57fb412, type: 3}
   ocorreNoMar: 0

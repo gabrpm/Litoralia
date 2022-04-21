@@ -14,10 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nomeComum: Mangue-vermelho
   nomeCientifico: Rhizophora mangle
-  classificacao: 
+  reino: Plantae
+  filo: Tracheophyta
+  classe: Magnoliopsida
+  ordem: Malpighiales
+  familia: Rhizophoraceae
+  genero: Rizophora
   ocorrenciaNaNatureza: 
-  grauDeAmeaca: 0
+  grauDeAmeaca: 3
   frase: 
+  info1: 
+  info2: 
+  info3: 
+  info4: 
   imagemNaNatureza: {fileID: 0}
   imagemNoJogo: {fileID: 21300000, guid: 769f1e8b286944f41bc0ae5b2a366678, type: 3}
   ocorreNoMar: 0

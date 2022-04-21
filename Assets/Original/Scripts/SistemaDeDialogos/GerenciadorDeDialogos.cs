@@ -132,7 +132,7 @@ public class GerenciadorDeDialogos : Singleton<GerenciadorDeDialogos>
 
     public void ProximaFala() {
 
-        VD.SetCurrentLanguage(EstadoJogo.localizacao);
+        //VD.SetCurrentLanguage(EstadoJogo.localizacao);
         Debug.Log(VD.currentLanguage);
         
         if(VD.nodeData.tag == "limitado") {
@@ -180,12 +180,24 @@ public class GerenciadorDeDialogos : Singleton<GerenciadorDeDialogos>
         Debug.Log(texto);
         if (texto.Contains("_nome_"))
         {
-            textoMod = textoMod.Replace("_nome_", DadosDoJogador._instancia.Nome);
+            textoMod = textoMod.Replace("_nome_", DadosDoJogador.instancia.Nome);
         }
 
         if(texto.Contains("_x_"))
         {
-            textoMod = textoMod.Replace("_x_", DadosDoJogador._instancia.Pronome);
+            textoMod = textoMod.Replace("_x_", DadosDoJogador.instancia.Pronome);
+        }
+
+        if (texto.Contains("_meu/minha_"))
+        {
+            if (DadosDoJogador.instancia.Pronome == "a")
+            {
+                textoMod = textoMod.Replace("_meu/minha_", "minha");
+            } 
+            else if(DadosDoJogador.instancia.Pronome == "o")
+            {
+                textoMod = textoMod.Replace("_meu/minha", "meu");
+            }
         }
 
         return textoMod;

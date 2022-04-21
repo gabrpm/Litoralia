@@ -23,15 +23,27 @@ public class GerenciadorDeColecoes : Singleton<GerenciadorDeColecoes>
     [SerializeField] GameObject colecao;
     [SerializeField] DisplayNovaSp displayNovaSp;
 
-    [Header("Letreiros e imagens")]
+    [Header("Letreiros")]
     [SerializeField] TextMeshProUGUI letreiroQtde;
     [SerializeField] TextMeshProUGUI letreiroNomeComum;
     [SerializeField] TextMeshProUGUI letreiroNomeCientifico;
     [SerializeField] TextMeshProUGUI letreiroOcorrencia;
     [SerializeField] TextMeshProUGUI letreiroRisco;
     [SerializeField] TextMeshProUGUI letreiroFrase;
+    [SerializeField] TextMeshProUGUI letreiroReino;
+    [SerializeField] TextMeshProUGUI letreiroFilo;
+    [SerializeField] TextMeshProUGUI letreiroClasse;
+    [SerializeField] TextMeshProUGUI letreiroOrdem;
+    [SerializeField] TextMeshProUGUI letreiroFamilia;
+    [SerializeField] TextMeshProUGUI letreiroGenero;
+
+    [Header("ImagensUI")]
     [SerializeField] Image imagemNatureza;
     [SerializeField] Image imagemJogo;
+    [SerializeField] Image imagemAmeaca;
+
+    [Header("Sprites de Categorias")]
+    [SerializeField] List<Sprite> listaCategorias = new List<Sprite>();
 
     [Header("Prefabs")]
     [SerializeField] GameObject painelItens_pfab;
@@ -88,13 +100,36 @@ public class GerenciadorDeColecoes : Singleton<GerenciadorDeColecoes>
         painelDeInfo.SetActive(true);
         letreiroNomeComum.text = sp.NomeComum;
         letreiroNomeCientifico.text = sp.NomeCientifico;
+        letreiroReino.text = sp.Reino;
+        letreiroFilo.text = sp.Filo;
+        letreiroClasse.text = sp.Classe;
+        letreiroOrdem.text = sp.Ordem;
+        letreiroFamilia.text = sp.Familia;
+        letreiroGenero.text = sp.Genero;
         letreiroOcorrencia.text = sp.OcorrenciaNaNatureza;
-        letreiroRisco.text = sp.GrauDeAmeaca.ToString();
+        letreiroRisco.text = RetornarTextoDeCategoria(sp.GrauDeAmeaca);
+        imagemAmeaca.sprite = listaCategorias[(int)sp.GrauDeAmeaca];
         letreiroFrase.text = sp.Frase;
         imagemNatureza.sprite = sp.ImagemNaNatureza;
         imagemNatureza.preserveAspect = true;
         imagemJogo.sprite = sp.ImagemNoJogo;
         imagemJogo.preserveAspect = true;
+    }
+
+    public string RetornarTextoDeCategoria(RiscoDeExtincao categoria)
+    {
+        if (categoria == RiscoDeExtincao.N_AVALIADA) return "Não Avaliada (NE)";
+        else if (categoria == RiscoDeExtincao.N_APLICAVEL) return "Não Aplicável (NA)";
+        else if (categoria == RiscoDeExtincao.DADOS_INSUFICIENTES) return "Dados Insuficientes (DD)";
+        else if (categoria == RiscoDeExtincao.POUCO_PREOCUPANTE) return "Menos Preocupante (LC)";
+        else if (categoria == RiscoDeExtincao.QUASE_AMEACADA) return "Quase Ameaçada (NT)";
+        else if (categoria == RiscoDeExtincao.VULNERAVEL) return "Vulnerável (VU)";
+        else if (categoria == RiscoDeExtincao.EM_PERIGO) return "Em Perigo (EN)";
+        else if (categoria == RiscoDeExtincao.CRITICAMENTE_AMEACADA) return "Criticamente em Perigo (CR)";
+        else if (categoria == RiscoDeExtincao.REGIONALMENTE_EXTINTA) return "Regionalmente Extinta (RE)";
+        else if (categoria == RiscoDeExtincao.EXTINTA_NA_NATUREZA) return "Extinta na Natureza (EW)";
+        else return "Extinta (EX)";
+
     }
 
     public void AtualizarQtde() {

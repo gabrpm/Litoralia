@@ -14,10 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nomeComum: Mangue-preto
   nomeCientifico: Avicennia schaueriana
-  classificacao: 
+  reino: Plantae
+  filo: Tracheophyta
+  classe: Magnolipsida
+  ordem: Lamiales
+  familia: Acanthaceae
+  genero: Avicennia
   ocorrenciaNaNatureza: 
-  grauDeAmeaca: 0
+  grauDeAmeaca: 3
   frase: 
+  info1: 
+  info2: 
+  info3: 
+  info4: 
   imagemNaNatureza: {fileID: 0}
   imagemNoJogo: {fileID: 21300000, guid: 10c517c57088d964698f741768980071, type: 3}
   ocorreNoMar: 0

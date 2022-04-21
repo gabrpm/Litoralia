@@ -14,10 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nomeComum: Guajiru
   nomeCientifico: Chrysobalanus icaco
-  classificacao: Chrysobalanaceae
+  reino: Plantae
+  filo: Tracheophyta
+  classe: Magnoliopsida
+  ordem: Malpighiales
+  familia: Chrysobalanaceae
+  genero: Chrysobalanus
   ocorrenciaNaNatureza: 
-  grauDeAmeaca: 0
+  grauDeAmeaca: 3
   frase: 
+  info1: 
+  info2: 
+  info3: 
+  info4: 
   imagemNaNatureza: {fileID: 21300000, guid: 84766a80b8a4ee7498fb95501d89efe4, type: 3}
   imagemNoJogo: {fileID: 21300000, guid: ba33a90ecc7e93c43be2293b9cbecfa1, type: 3}
   ocorreNoMar: 0

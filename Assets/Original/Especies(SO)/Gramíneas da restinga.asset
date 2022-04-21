@@ -14,10 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nomeComum: "Gram\xEDneas da restinga"
   nomeCientifico: "V\xE1rias esp\xE9cies"
-  classificacao: Poaceae
+  reino: Plantae
+  filo: Tracheophyta
+  classe: Liliopsida
+  ordem: Poales
+  familia: Poaceae
+  genero: (...)
   ocorrenciaNaNatureza: 
   grauDeAmeaca: 0
   frase: 'Formam este grupo de plantas:'
+  info1: "Este conjunto de plantas pode ser formado por esp\xE9cies:"
+  info2: 
+  info3: 
+  info4: 
   imagemNaNatureza: {fileID: 21300000, guid: 82c1493da1aa6ac4fa43bd2e3e0ce63d, type: 3}
   imagemNoJogo: {fileID: 21300000, guid: ef7c95d3039968f4e9b05e73b5981924, type: 3}
   ocorreNoMar: 0

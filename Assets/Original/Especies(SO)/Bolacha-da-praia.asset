@@ -13,11 +13,20 @@ MonoBehaviour:
   m_Name: Bolacha-da-praia
   m_EditorClassIdentifier: 
   nomeComum: Bolacha-da-praia
-  nomeCientifico: Clypeasteroida sp.
-  classificacao: Echinodermata
+  nomeCientifico: Mellita sp.
+  reino: Animalia
+  filo: Echinodermata
+  classe: Echinoidea
+  ordem: Echinolampadacea
+  familia: Mellitidae
+  genero: Mellita
   ocorrenciaNaNatureza: Toda costa brasileira
   grauDeAmeaca: 0
   frase: 
+  info1: 
+  info2: 
+  info3: 
+  info4: 
   imagemNaNatureza: {fileID: 21300000, guid: 10a9d5c2e2569dc4f98e278109a65926, type: 3}
   imagemNoJogo: {fileID: 21300000, guid: d30443e8ae350b44b84d76a177bfdc69, type: 3}
   ocorreNoMar: 1

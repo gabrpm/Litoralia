@@ -14,11 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nomeComum: Caravela-portuguesa
   nomeCientifico: Physalia physalis
-  classificacao: Cnidaria
+  reino: Animalia
+  filo: Cnidaria
+  classe: Hydrozoa
+  ordem: Siphonophora
+  familia: Physaliidae
+  genero: Physalia
   ocorrenciaNaNatureza: 
   grauDeAmeaca: 0
   frase: "Em caso de queimaduras desses bichos, passe muita \xE1gua salgada e retire
     cuidadosamente os tent\xE1culos da pele."
+  info1: 
+  info2: 
+  info3: 
+  info4: 
   imagemNaNatureza: {fileID: 21300000, guid: b376a6a03eba45646973177193fe2fac, type: 3}
   imagemNoJogo: {fileID: 21300000, guid: c55c01ef80337f0419f92aaee4baf1b8, type: 3}
   ocorreNoMar: 1

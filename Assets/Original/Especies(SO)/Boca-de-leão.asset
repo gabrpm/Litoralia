@@ -14,11 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nomeComum: "Boca-de-le\xE3o"
   nomeCientifico: Cryptostegia madagascariensis
-  classificacao: Apocynaceae
+  reino: Plantae
+  filo: Tracheophyta
+  classe: Magnoliopsida
+  ordem: Gentianales
+  familia: Apocynaceae
+  genero: Cryptostegia
   ocorrenciaNaNatureza: Madagascar
   grauDeAmeaca: 0
   frase: "A boca-de-le\xE3o \xE9 uma trepadeira invasora que amea\xE7a a biodiversidade
     de v\xE1rios cantos do pa\xEDs."
+  info1: 
+  info2: 
+  info3: 
+  info4: 
   imagemNaNatureza: {fileID: 21300000, guid: a124d430c7560374e9f8d1b905cb050e, type: 3}
   imagemNoJogo: {fileID: 21300000, guid: 80b50078bd6ae874581189edf9e0578e, type: 3}
   ocorreNoMar: 0

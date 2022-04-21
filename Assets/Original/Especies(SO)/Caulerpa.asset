@@ -14,11 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nomeComum: Uvinha
   nomeCientifico: Caulerpa racemosa
-  classificacao: Clorophyta
+  reino: Plantae
+  filo: Chlorophyta
+  classe: Ulvophyceae
+  ordem: Bryopsidales
+  familia: Caulerpaceae
+  genero: Caulerpa
   ocorrenciaNaNatureza: 
   grauDeAmeaca: 0
   frase: "A uvinha serve de alimento para v\xE1rios peixes. E tamb\xE9m contra dores
     de cabe\xE7a (alto potencial farmacol\xF3gico). "
+  info1: 
+  info2: 
+  info3: 
+  info4: 
   imagemNaNatureza: {fileID: 21300000, guid: 93df78d7603ed7c4c98ad7c7b25d89f6, type: 3}
   imagemNoJogo: {fileID: 21300000, guid: e57959b118a7c0245abff41e67c39c4b, type: 3}
   ocorreNoMar: 1
