@@ -22,11 +22,21 @@ MonoBehaviour:
   genero: Mellita
   ocorrenciaNaNatureza: Toda costa brasileira
   grauDeAmeaca: 0
-  frase: 
-  info1: 
-  info2: 
-  info3: 
-  info4: 
+  frase: "\"Mas \xE9 biscoito-da-praia.\" \"N\xE3o! \xC9 bolacha!\" \"Biscoito!\"
+    \"Bolacha!!!\""
+  link: https://youtu.be/UX72mMraEjc
+  info1: "As bolachas-da-praia s\xE3o organismos muito pr\xF3ximos aos ouri\xE7os
+    e estrelas-do-mar."
+  info2: "Ao contr\xE1rio do que muita gente imagina, esses organismos n\xE3o ficam
+    parados. Ao inv\xE9s disso, ele possuem espinhos na parte inferior do corpo que
+    coordenam seu movimento lento na areia do mar."
+  info3: "Eles s\xE3o importantes para a limpeza do mar, j\xE1 que se alimentam principalmente
+    de part\xEDculas org\xE2nicas presas na areia do mar. Dessa forma, elas filtram
+    a \xE1gua marinha."
+  info4: "\xC9 comum encontrarmos esqueletos de bolachas-do-mar na areia das praias.
+    Isso acontece porque ao morrerem, esses animais s\xE3o arrastados para a areia
+    e decompostos. O esqueleto \xE9 exposto \xE0 radia\xE7\xE3o solar, que deixa
+    somente o c\xE1lcio esbranquecido."
   imagemNaNatureza: {fileID: 21300000, guid: 10a9d5c2e2569dc4f98e278109a65926, type: 3}
   imagemNoJogo: {fileID: 21300000, guid: d30443e8ae350b44b84d76a177bfdc69, type: 3}
   ocorreNoMar: 1

@@ -25,15 +25,16 @@ public class Especie : ScriptableObject {
     [SerializeField] RiscoDeExtincao grauDeAmeaca;
     
     [Header("Frase e infos")]
-    [TextArea]
+    [TextArea(1,2)]
     [SerializeField] string frase;
-    [TextArea]
+    [SerializeField] string link;
+    [TextArea(3,6)]
     [SerializeField] string info1;
-    [TextArea]
+    [TextArea(3, 6)]
     [SerializeField] string info2;
-    [TextArea]
+    [TextArea(3, 6)]
     [SerializeField] string info3;
-    [TextArea]
+    [TextArea(3, 6)]
     [SerializeField] string info4;
     
     [Header("Imagens")]
@@ -54,6 +55,7 @@ public class Especie : ScriptableObject {
     public string Genero {get {return genero;}}
     public string OcorrenciaNaNatureza {get {return ocorrenciaNaNatureza;}}
     public string Frase {get {return frase;}}
+    public string Link {get {return link;}}
     public RiscoDeExtincao GrauDeAmeaca {get {return grauDeAmeaca;}}
     public string Info1 { get { return info1; } }
     public string Info2 { get { return info2; } }

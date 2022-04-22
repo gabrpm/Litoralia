@@ -22,15 +22,26 @@ MonoBehaviour:
   genero: Physalia
   ocorrenciaNaNatureza: 
   grauDeAmeaca: 0
-  frase: "Em caso de queimaduras desses bichos, passe muita \xE1gua salgada e retire
-    cuidadosamente os tent\xE1culos da pele."
-  info1: 
-  info2: 
-  info3: 
-  info4: 
+  frase: "\"A minha caravela? Ela balan\xE7a mas n\xE3o para.\" Lu\xEDs de Cam\xF5es"
+  link: https://youtu.be/UTPnUgwVhPE
+  info1: "Uma caravela n\xE3o \xE9 um \xFAnico organismo. Ela \xE9 uma col\xF4nia
+    formada por v\xE1rios organismos conectados chamados de p\xF3lipos. Essas formas
+    de vida podem ser de 4 tipos diferentes, cada tipo desempenhando uma fun\xE7\xE3o
+    espec\xEDfica."
+  info2: "A flutua\xE7\xE3o \xE9 desempenhada pelo pneumat\xF3foro, que forma uma
+    grande ves\xEDcula de ar, os gonozooides produzem as c\xE9lulas reprodutivas,
+    os gastrozooides s\xE3o respons\xE1veis pela digest\xE3o do alimento e os dactilozooides
+    formam os tent\xE1culos que protegem a col\xF4nia e coletam o alimento."
+  info3: "Os tent\xE1culos, inclusive, possuem p\xF3lipos com c\xE9lulas urticantes,
+    que s\xE3o usadas para paralisar presas e se defender de predadores. Eles se
+    movem sempre levados pela corrente, o que explica a facilidade de encontrar essa
+    esp\xE9cie na areia da praia."
+  info4: "Apesar de causar alguns acidentes dolorosos em n\xF3s, seres humanos, as
+    caravelas s\xE3o fonte de alimento importante para algumas esp\xE9cies de tartarugas
+    marinhas, que s\xE3o resistentes aos seus tent\xE1culos."
   imagemNaNatureza: {fileID: 21300000, guid: b376a6a03eba45646973177193fe2fac, type: 3}
   imagemNoJogo: {fileID: 21300000, guid: c55c01ef80337f0419f92aaee4baf1b8, type: 3}
   ocorreNoMar: 1
   ocorreNaCosta: 1
   ocorreNoEstuario: 0
-  disponivelNaColecao: 0
+  disponivelNaColecao: 1

@@ -10,6 +10,7 @@ public class GerenciadorDeColecoes : Singleton<GerenciadorDeColecoes>
     public ColecaoDeEspecies colecaoDeEspecies;
     [SerializeField] List<PainelDeColecao> listaDePaineis = new List<PainelDeColecao>();
     [SerializeField] int indicePainelAtual = 0;
+    [SerializeField] Especie spAtual;
 
     [Header("Parâmetros")]
     [SerializeField] int elementosPorPagina = 15;
@@ -36,6 +37,10 @@ public class GerenciadorDeColecoes : Singleton<GerenciadorDeColecoes>
     [SerializeField] TextMeshProUGUI letreiroOrdem;
     [SerializeField] TextMeshProUGUI letreiroFamilia;
     [SerializeField] TextMeshProUGUI letreiroGenero;
+    [SerializeField] TextMeshProUGUI letreiroInfo1;
+    [SerializeField] TextMeshProUGUI letreiroInfo2;
+    [SerializeField] TextMeshProUGUI letreiroInfo3;
+    [SerializeField] TextMeshProUGUI letreiroInfo4;
 
     [Header("ImagensUI")]
     [SerializeField] Image imagemNatureza;
@@ -97,6 +102,7 @@ public class GerenciadorDeColecoes : Singleton<GerenciadorDeColecoes>
     }
 
     public void MostrarPainelDeInformacoes(Especie sp) {
+        spAtual = sp;
         painelDeInfo.SetActive(true);
         letreiroNomeComum.text = sp.NomeComum;
         letreiroNomeCientifico.text = sp.NomeCientifico;
@@ -114,6 +120,10 @@ public class GerenciadorDeColecoes : Singleton<GerenciadorDeColecoes>
         imagemNatureza.preserveAspect = true;
         imagemJogo.sprite = sp.ImagemNoJogo;
         imagemJogo.preserveAspect = true;
+        letreiroInfo1.text = sp.Info1;
+        letreiroInfo2.text = sp.Info2;
+        letreiroInfo3.text = sp.Info3;
+        letreiroInfo4.text = sp.Info4;
     }
 
     public string RetornarTextoDeCategoria(RiscoDeExtincao categoria)
@@ -210,6 +220,11 @@ public class GerenciadorDeColecoes : Singleton<GerenciadorDeColecoes>
             
             indicePainelAtual--;
         }
+    }
+
+    public void AbrirLink()
+    {
+        Application.OpenURL(spAtual.Link);
     }
 
 }

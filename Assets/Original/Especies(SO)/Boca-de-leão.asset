@@ -22,9 +22,10 @@ MonoBehaviour:
   genero: Cryptostegia
   ocorrenciaNaNatureza: Madagascar
   grauDeAmeaca: 0
-  frase: "A boca-de-le\xE3o \xE9 uma trepadeira invasora que amea\xE7a a biodiversidade
+  frase: 
+  link: 
+  info1: "A boca-de-le\xE3o \xE9 uma trepadeira invasora que amea\xE7a a biodiversidade
     de v\xE1rios cantos do pa\xEDs."
-  info1: 
   info2: 
   info3: 
   info4: 

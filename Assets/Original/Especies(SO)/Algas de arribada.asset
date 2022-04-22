@@ -21,16 +21,23 @@ MonoBehaviour:
   familia: ND
   genero: ND
   ocorrenciaNaNatureza: 
-  grauDeAmeaca: 0
+  grauDeAmeaca: 1
   frase: "O que \xE9 alga? Essa \xE9 uma pergunta que cientistas sempre se dedicaram
     a responder e ainda n\xE3o encontraram a resposta."
-  info1: 
-  info2: 
-  info3: 
-  info4: 
+  link: https://www.uc.pt/jardimbotanico/media/podcast/podcast_pdfs/todas_as_plantas_tem_nome_41
+  info1: "A arribada \xE9 um conjunto de algas que se acumulam na costa arrastadas
+    pelo mar. Muita gente as chamam de sarga\xE7o, mas na realidade, v\xE1rias esp\xE9cies
+    podem ser encontradas nesse grupo."
+  info2: "Algas dos g\xEAneros Gracilaria, Cryptonemia, Caulerpa e at\xE9 Sargassum
+    (o sarga\xE7o) s\xE3o algumas das mais vistas aqui."
+  info3: "Apesar de ser vista como \"nojenta\" por muitas pessoas, as algas de arribada
+    s\xE3o importantes para invertebrados e outros organismos por acumular mat\xE9ria
+    org\xE2nica que pode servir de alimento."
+  info4: "Al\xE9m disso, alguma dessas algas possuem um grande potencial biotecnol\xF3gico,
+    podendo ser usado como mat\xE9ria prima para fertilizantes na agricultura. "
   imagemNaNatureza: {fileID: 21300000, guid: a42a892bb6a6a114b9f8184ecde46ab2, type: 3}
   imagemNoJogo: {fileID: 21300000, guid: 58a623f0516dc98408f977bc3fd09c40, type: 3}
   ocorreNoMar: 1
   ocorreNaCosta: 1
   ocorreNoEstuario: 0
-  disponivelNaColecao: 0
+  disponivelNaColecao: 1

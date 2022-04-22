@@ -22,11 +22,20 @@ MonoBehaviour:
   genero: Apis
   ocorrenciaNaNatureza: 
   grauDeAmeaca: 2
-  frase: 
-  info1: "Faz um \xF3timo mel, mas \xE9 extremamente agressiva com as abelhas nativas."
-  info2: 
-  info3: 
-  info4: 
+  frase: "\"Quando o mel \xE9 bom, a abelha sempre volta.\""
+  link: https://youtu.be/CzrawN17pZQ
+  info1: "Coletam o n\xE9ctar das flores para produzir um doce mel que vai servir
+    de alimento para a col\xF4nia. \xC9 nessa coleta que as abelhas fazem a poliniza\xE7\xE3o
+    de muitas esp\xE9cies de plantas."
+  info2: "S\xE3o animais eussociais. Isto quer dizer que vivem em uma complexa sociedade
+    com divis\xE3o de castas. Em uma col\xF4nia dessa esp\xE9cie, podem ser encontrados:
+    abelhas oper\xE1rias, a rainha e os zang\xF5es."
+  info3: "As oper\xE1rias dividem as tarefas de manuten\xE7\xE3o, coleta de recursos
+    e alimenta\xE7\xE3o das larvas. A rainha passa a vida dedicada \xE0 p\xF4r os
+    ovos. O zang\xE3o tem uma vida muito curta voltada \xE0 reprodu\xE7\xE3o."
+  info4: "Esta esp\xE9cie foi introduzida da Europa aqui para a produ\xE7\xE3o de
+    mel, mas sua popula\xE7\xE3o se mostrou muito agressiva com as abelhas nativas,
+    o que contribuiu para a queda da abund\xE2ncia de abelhas nativas do Brasil."
   imagemNaNatureza: {fileID: 21300000, guid: fc7cc7e711cf35e4fb71f2f6574d8268, type: 3}
   imagemNoJogo: {fileID: 21300000, guid: 02367dbdc50b2574f87f37f58f12f97b, type: 3}
   ocorreNoMar: 0
