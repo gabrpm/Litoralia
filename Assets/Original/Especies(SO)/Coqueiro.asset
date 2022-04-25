@@ -22,12 +22,17 @@ MonoBehaviour:
   genero: Cocos
   ocorrenciaNaNatureza: "Regi\xF5es tropicais e temperadas"
   grauDeAmeaca: 3
-  frase: "\"O coqueiro coqueirando as manobras do vermelho no branqueado do azul...\" 
-    Guimar\xE3es Rosa"
-  info1: 
-  info2: 
-  info3: 
-  info4: 
+  frase: "\"O coqueiro coqueirando as manobras do vermelho no branqueado do azul...\"
+    \nGuimar\xE3es Rosa"
+  link: https://www.artesanatopassoapassoja.com.br/artesanato-com-coco/
+  info1: "O coqueiro \xE9 uma planta muito importante n\xE3o s\xF3 para milh\xF5es
+    de brasileiros, mas para pessoas no mundo todo. "
+  info2: "Alguns pesquisadores defendem que esta planta se originou na costa da \xCDndia,
+    enquanto outros dizem que foi nas praias da Am\xE9rica do Sul."
+  info3: "O que \xE9 consenso \xE9 que ao longo do tempo passou a ser largamente
+    cultivada por humanos, fazendo com que a mesma fosse dispersa ao longo do globo."
+  info4: "Hoje em dia, o coqueiro move diversos setores da economia, como o setor
+    aliment\xEDcio, o de artesanato e o cosm\xE9tico."
   imagemNaNatureza: {fileID: 21300000, guid: 79c3dc60404aa7345938fa1d4ea91cc1, type: 3}
   imagemNoJogo: {fileID: 21300000, guid: 98d76d9a506ed46479cde894ad34933e, type: 3}
   ocorreNoMar: 0

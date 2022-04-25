@@ -23,14 +23,22 @@ MonoBehaviour:
   ocorrenciaNaNatureza: Cosmopolita
   grauDeAmeaca: 0
   frase: "\"O universo n\xE3o foi feito \xE0 medida do ser humano, mas tampouco lhe
-    \xE9 adverso: \xE9-lhe indiferente.\" Carl Sagan"
-  info1: 
-  info2: 
-  info3: 
-  info4: 
+    \xE9 adverso: \xE9-lhe indiferente.\"\nCarl Sagan"
+  link: https://youtu.be/oBLYb636tFA
+  info1: "A popula\xE7\xE3o mundial de seres humanos \xE9 de quase 8 bilh\xF5es de
+    indiv\xEDduos. "
+  info2: "Por ter desenvolvido um sistema econ\xF4mico e tecnologias dependentes
+    do consumo acelerado de recursos naturais, o ser humano \xE9 a esp\xE9cie que
+    tem mais impacto nos ecossitemas, influenciando fortemente na din\xE2mica clim\xE1tica
+    global."
+  info3: "Devido a isso, estima-se que precisemos de cerca de 1,7 planetas Terra
+    para poder nos sustentarmos no mesmo padr\xF5es de hoje."
+  info4: "Para melhorar a situa\xE7\xE3o ambiental do planeta Terra, n\xE3o s\xF3
+    a\xE7\xF5es individuais s\xE3o necess\xE1rias, mas tamb\xE9m pol\xEDticas p\xFAblicas
+    de escala mundial devem ser implementadas em car\xE1ter de urg\xEAncia."
   imagemNaNatureza: {fileID: 21300000, guid: 9c7dfef07015a4b42b6677b0a677394d, type: 3}
   imagemNoJogo: {fileID: 21300000, guid: 8780e61f6b4e14c47ad61ebd0a9fd46c, type: 3}
   ocorreNoMar: 1
   ocorreNaCosta: 1
   ocorreNoEstuario: 1
-  disponivelNaColecao: 0
+  disponivelNaColecao: 1

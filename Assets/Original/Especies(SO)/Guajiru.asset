@@ -22,11 +22,16 @@ MonoBehaviour:
   genero: Chrysobalanus
   ocorrenciaNaNatureza: 
   grauDeAmeaca: 3
-  frase: 
-  info1: 
-  info2: 
-  info3: 
-  info4: 
+  frase: '"Que frutinha linda!", disse a velha enquanto pegava uma tesoura de jardinagem
+    na sua bolsa.'
+  link: http://www.usp.br/agen/?p=213165
+  info1: "O guajiru \xE9 uma esp\xE9cies comum das matas de restinga e de regi\xF5es
+    da Amaz\xF4nia."
+  info2: "Apesar de n\xE3o ser muito conhecido, alguns estudos sugerem que ele possui
+    efeito anti-inflamat\xF3rio na luta contra o c\xE2ncer."
+  info3: "Ele pode ser utilizado na fabrica\xE7\xE3o de doces, geleias ou bebidas,
+    al\xE9m de ser comest\xEDvel <i>in natura</i>, ou seja, do jeito que for encontrada."
+  info4: ' '
   imagemNaNatureza: {fileID: 21300000, guid: 84766a80b8a4ee7498fb95501d89efe4, type: 3}
   imagemNoJogo: {fileID: 21300000, guid: ba33a90ecc7e93c43be2293b9cbecfa1, type: 3}
   ocorreNoMar: 0

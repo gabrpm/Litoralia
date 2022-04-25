@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e4a0e24b106f0499445345fe2339b2, type: 3}
   m_Name: Salsa-de-praia
   m_EditorClassIdentifier: 
-  nomeComum: Salsa-de-praia
+  nomeComum: "P\xE9-de-cabra"
   nomeCientifico: Ipomoea pes-caprae
   reino: Plantae
   filo: Tracheophyta
@@ -22,14 +22,21 @@ MonoBehaviour:
   genero: Ipomea
   ocorrenciaNaNatureza: 
   grauDeAmeaca: 3
-  frase: "Todos se preparem para a dan\xE7a!"
-  info1: 
-  info2: 
-  info3: 
-  info4: 
+  frase: "\"Olha, teu p\xE9 t\xE1 verde!\""
+  link: http://ecologia.ib.usp.br/curso/2015/pdf/PI_DIANA.pdf
+  info1: "Esta erva \xE9 nativa do Brasil, mas n\xE3o \xE9 exclusiva daqui. Ela ocorre
+    em tr\xEAs biomas brasileiros: Mata Atl\xE2ntica, Amaz\xF4nia e Pampas."
+  info2: "Suas sementes s\xE3o flutuantes e n\xE3o s\xE3o danificadas pela a\xE7\xE3o
+    dos mares, o que possibilita a dispers\xE3o oce\xE2nica. Contudo, algumas larvas
+    de insetos podem pred\xE1-las."
+  info3: "Suas folhas ficam em posi\xE7\xE3o vertical, com a finalidade de evitar
+    contato direto com o solo quente, diminuindo a perda de \xE1gua."
+  info4: "Uma estrat\xE9gia usada por essa esp\xE9cie para eliminar o excesso de
+    sal \xE9 direcion\xE1-lo para algumas folhas espec\xEDficas, que ficam amareladas,
+    sofrem abscis\xE3o (bloqueio de recursos) e posteriormente, caem."
   imagemNaNatureza: {fileID: 21300000, guid: 9c7be7dbd9a682c49b8b0c1b6a07cca9, type: 3}
   imagemNoJogo: {fileID: 21300000, guid: 3d2af40345c18a44abf69880c57fb412, type: 3}
   ocorreNoMar: 0
   ocorreNaCosta: 1
   ocorreNoEstuario: 0
-  disponivelNaColecao: 1
+  disponivelNaColecao: 0

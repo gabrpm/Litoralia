@@ -22,14 +22,21 @@ MonoBehaviour:
   genero: Rizophora
   ocorrenciaNaNatureza: 
   grauDeAmeaca: 3
-  frase: 
-  info1: 
-  info2: 
-  info3: 
-  info4: 
+  frase: "\"Da lama ao caos, do caos \xE0 lama, um homem roubado nunca se engana.\"\nChico
+    Science"
+  link: 
+  info1: "O manguezal \xE9 um termo frequentemente usado para designar a comunidades
+    de esp\xE9cies de um ambiente de transi\xE7\xE3o entre o mar e o rio, marcado
+    pela \xE1gua salobra e uma grande quantidade de lama."
+  info2: "Os manguezais s\xE3o ecossistemas pobres em oxig\xEAnio, por isso, as esp\xE9cies
+    ab\xF3reas do manguezal possuem uma modifica\xE7\xE3o de ra\xEDzes chamada <b>pneumat\xF3foro</b>."
+  info3: "Os pneumat\xF3foros funcionam como respiradores, subindo da de dentro da
+    terra para fora, fornecendo mais oxig\xEAnio para a planta."
+  info4: "O mangue-vermelho \xE9 chamado assim pois possui os tecidos mais internos
+    com colora\xE7\xE3o avermelhada."
   imagemNaNatureza: {fileID: 0}
   imagemNoJogo: {fileID: 21300000, guid: 769f1e8b286944f41bc0ae5b2a366678, type: 3}
   ocorreNoMar: 0
   ocorreNaCosta: 0
   ocorreNoEstuario: 1
-  disponivelNaColecao: 0
+  disponivelNaColecao: 1

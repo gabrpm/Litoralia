@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3e4a0e24b106f0499445345fe2339b2, type: 3}
+  m_Name: "Vegeta\xE7\xE3o de praia da restinga"
+  m_EditorClassIdentifier: 
+  nomeComum: "Vegeta\xE7\xE3o de praia da restinga"
+  nomeCientifico: ---
+  reino: Plantae
+  filo: Tracheophyta
+  classe: ND
+  ordem: ND
+  familia: ND
+  genero: ND
+  ocorrenciaNaNatureza: 
+  grauDeAmeaca: 0
+  frase: "Um dia na praia... Um m\xEAs na praia... A vida na praia."
+  link: https://sigam.ambiente.sp.gov.br/sigam3/Repositorio/511/Documentos/APAM_LN/APAMLN_Restinga_final.pdf
+  info1: "A mata de restinga \xE9 um ecossistema pertencente \xE0 Mata Atl\xE2ntica.
+    A restinga \xE9 caracterizada por estar entre o ambiente continental e o marinho."
+  info2: "A vegeta\xE7\xE3o de praia ocorre logo ao lado das areias da costa. Sendo
+    predominada por ervas resistentes a altas temperaturas e forte a\xE7\xF5es do
+    vento."
+  info3: "Algumas das princpais esp\xE9cies deste ambiente s\xE3o:"
+  info4: <i>Blutaparon portulacoides, Ipomoea pes-caprae, Hydrocotyle bonariensis,
+    Centella asiatica, Remirea maritima, Panicum spp., Spartina spp., Paspalum spp.,
+    Stenotaphrum secundatum </i> e <i>Dalbergia ecastaphyllum</i>.
+  imagemNaNatureza: {fileID: 21300000, guid: 82c1493da1aa6ac4fa43bd2e3e0ce63d, type: 3}
+  imagemNoJogo: {fileID: 21300000, guid: ef7c95d3039968f4e9b05e73b5981924, type: 3}
+  ocorreNoMar: 0
+  ocorreNaCosta: 1
+  ocorreNoEstuario: 0
+  disponivelNaColecao: 1

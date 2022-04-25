@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e4a0e24b106f0499445345fe2339b2, type: 3}
   m_Name: "Boca-de-le\xE3o"
   m_EditorClassIdentifier: 
-  nomeComum: "Boca-de-le\xE3o"
+  nomeComum: "Unha-do-c\xE3o"
   nomeCientifico: Cryptostegia madagascariensis
   reino: Plantae
   filo: Tracheophyta
@@ -22,13 +22,19 @@ MonoBehaviour:
   genero: Cryptostegia
   ocorrenciaNaNatureza: Madagascar
   grauDeAmeaca: 0
-  frase: 
-  link: 
-  info1: "A boca-de-le\xE3o \xE9 uma trepadeira invasora que amea\xE7a a biodiversidade
-    de v\xE1rios cantos do pa\xEDs."
-  info2: 
-  info3: 
-  info4: 
+  frase: "T\xE3o afiada quanto a unha do gato."
+  link: https://youtu.be/VR2gX1TaSGg
+  info1: "A unha-do-c\xE3o \xE9 uma trepadeira nativa da ilha de Madagascar que foi
+    introduzida aqui e que amea\xE7a a biodiversidade de v\xE1rios cantos do pa\xEDs,
+    agindo como uma esp\xE9cie invasora."
+  info2: "Veio para c\xE1 com um intuito meramente est\xE9tico, j\xE1 que possui
+    belas flores de colora\xE7\xE3o rosa. Entretanto, v\xE1rios ambientes silvestres
+    passaram a registrar grandes popula\xE7\xF5es dessa esp\xE9cie."
+  info3: "Ela \xE9 uma planta arbustiva, mas que desenvolve galhos trepadores que
+    podem esgueirar-se em outras plantas por at\xE9 3 metros de altura, o que pode
+    sombrear esp\xE9cies mais baixas, limitando a disponibilidade de luz."
+  info4: "Um dos ambientes mais afetados \xE9 a caatinga, onde amea\xE7a uma planta
+    muito popular e importante do bioma: a Carna\xFAba."
   imagemNaNatureza: {fileID: 21300000, guid: a124d430c7560374e9f8d1b905cb050e, type: 3}
   imagemNoJogo: {fileID: 21300000, guid: 80b50078bd6ae874581189edf9e0578e, type: 3}
   ocorreNoMar: 0

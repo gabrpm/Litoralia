@@ -22,7 +22,7 @@ MonoBehaviour:
   genero: Physalia
   ocorrenciaNaNatureza: 
   grauDeAmeaca: 0
-  frase: "\"A minha caravela? Ela balan\xE7a mas n\xE3o para.\" Lu\xEDs de Cam\xF5es"
+  frase: "\"A minha caravela? Ela balan\xE7a mas n\xE3o para.\"\nLu\xEDs de Cam\xF5es"
   link: https://youtu.be/UTPnUgwVhPE
   info1: "Uma caravela n\xE3o \xE9 um \xFAnico organismo. Ela \xE9 uma col\xF4nia
     formada por v\xE1rios organismos conectados chamados de p\xF3lipos. Essas formas

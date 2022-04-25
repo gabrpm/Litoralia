@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e4a0e24b106f0499445345fe2339b2, type: 3}
   m_Name: Caulerpa
   m_EditorClassIdentifier: 
-  nomeComum: Uvinha
+  nomeComum: Uva-do-mar
   nomeCientifico: Caulerpa racemosa
   reino: Plantae
   filo: Chlorophyta
@@ -22,12 +22,22 @@ MonoBehaviour:
   genero: Caulerpa
   ocorrenciaNaNatureza: 
   grauDeAmeaca: 0
-  frase: "A uvinha serve de alimento para v\xE1rios peixes. E tamb\xE9m contra dores
-    de cabe\xE7a (alto potencial farmacol\xF3gico). "
-  info1: 
-  info2: 
-  info3: 
-  info4: 
+  frase: "\"Voc\xEAs t\xEAm vinho de uva verde?\" \"Dessa uva s\xF3 temos salada,
+    senhor.\""
+  link: https://youtu.be/akEcrydEWdg
+  info1: "Caulerpa \xE9 um g\xEAnero de algas verdes formado por um talo cenoc\xEDtico.
+    Mas o que isso quer dizer? Por incr\xEDvel que pare\xE7a, significa que essa
+    alga s\xF3 possui uma c\xE9lula, mas com v\xE1rios n\xFAcleos."
+  info2: "Estima-se que este g\xEAnero possua o organismo com a maior c\xE9lula do
+    mundo, tendo uma esp\xE9cie que pode chegar at\xE9 a 3 metros de c\xE9lula, no
+    Mar Mediterr\xE2neo."
+  info3: "Algumas esp\xE9cies de Caulerpa, como a <i>Caulerpa taxifolia</i>, s\xE3o
+    invasoras em alguns locais do mundo, podendo, inclusive, destruir grandes estruturas
+    de madeira nos mares, como diques, p\xEDeres ou barcos."
+  info4: "Por sua f\xE1cil reprodu\xE7\xE3o, a Caulerpa \xE9 cultivada em diferentes
+    partes do mundo. Na \xC1sia ela \xE9 comumente consumida como alimento em saladas
+    e outros pratos, \xE9 at\xE9 chamada de Caviar Verde. Al\xE9m disso, dela \xE9
+    extra\xEDda a caulerpina, composto que tem um alto potencial farmacol\xF3gico."
   imagemNaNatureza: {fileID: 21300000, guid: 93df78d7603ed7c4c98ad7c7b25d89f6, type: 3}
   imagemNoJogo: {fileID: 21300000, guid: e57959b118a7c0245abff41e67c39c4b, type: 3}
   ocorreNoMar: 1

@@ -22,11 +22,18 @@ MonoBehaviour:
   genero: Cereus
   ocorrenciaNaNatureza: 
   grauDeAmeaca: 3
-  frase: 
-  info1: 
-  info2: 
-  info3: 
-  info4: 
+  frase: "Mandacaru quando fulora na seca, \xE9 o sinal que a chuva chega no litoral."
+  link: https://youtu.be/SoybVzCw-rc?t=220
+  info1: "\xC9 uma esp\xE9cie end\xEAmica do Brasil, ocorrendo tanto na restinga
+    como na Mata Atl\xE2ntica."
+  info2: "Sendo uma cact\xE1cea, tem a caracter\xEDstica comum de possuir espinhos.
+    Ao contr\xE1rio do que a maioria pensa, eles n\xE3o possuem a fun\xE7\xE3o \xFAnica
+    de prote\xE7\xE3o. Claro que eles protegem, mas n\xE3o s\xF3 isso!"
+  info3: "Os espinhos s\xE3o uma adapta\xE7\xE3o a locais secos. Eles s\xE3o folhas
+    modificadas cheias de fibra, mas sem tecidos vascularizados."
+  info4: "Isso sombreia os tecidos vascularizados do caule que fazem a fotoss\xEDntese,
+    o que diminui a perda de \xE1gua para o ambiente, auxiliando na sobreviv\xEAncia
+    do Cacto."
   imagemNaNatureza: {fileID: 21300000, guid: 89856c2e0c0a03d40a835cf73dd3808e, type: 3}
   imagemNoJogo: {fileID: 21300000, guid: 294e86316b6992b429c3e9826823a54b, type: 3}
   ocorreNoMar: 0
