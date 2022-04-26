@@ -20,14 +20,20 @@ MonoBehaviour:
   ordem: Lamiales
   familia: Acanthaceae
   genero: Avicennia
-  ocorrenciaNaNatureza: 
+  ocorrenciaNaNatureza: "Nas costas do tropical Atl\xE2ntico da Am\xE9rica e \xC1frica."
   grauDeAmeaca: 3
-  frase: 
-  info1: 
-  info2: 
-  info3: 
-  info4: 
-  imagemNaNatureza: {fileID: 0}
+  frase: "N\xE3o mangue de mim."
+  link: https://youtu.be/RnUpXdKt3rM
+  info1: "Os manguezais s\xE3o ecossistemas pobres em oxig\xEAnio, por isso, as esp\xE9cies
+    ab\xF3reas do manguezal possuem uma modifica\xE7\xE3o de ra\xEDzes chamada <b>pneumat\xF3foro</b>."
+  info2: "Os pneumat\xF3foros funcionam como respiradores, subindo da de dentro da
+    terra para fora, fornecendo mais oxig\xEAnio para a planta."
+  info3: "Algumas esp\xE9cies arb\xF3reas de manguezais possuem \"ra\xEDzes-escora\"
+    para manter o caule e as folhas da planta longe do substrato lama\xE7ento."
+  info4: "O mangue-preto possui tronco com colora\xE7\xE3o castanho-clara e possui
+    um sistema de ra\xEDzes que cresce horizontalmente ao substrato, formando uma
+    esp\xE9cie de \"cama\" para o crescimento da planta fora do sedimento."
+  imagemNaNatureza: {fileID: 21300000, guid: 76ff642139abd7647a55fa01db4af680, type: 3}
   imagemNoJogo: {fileID: 21300000, guid: 10c517c57088d964698f741768980071, type: 3}
   ocorreNoMar: 0
   ocorreNaCosta: 0

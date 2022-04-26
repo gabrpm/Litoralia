@@ -20,7 +20,7 @@ MonoBehaviour:
   ordem: Primates
   familia: Hominidae
   genero: Homo
-  ocorrenciaNaNatureza: Cosmopolita
+  ocorrenciaNaNatureza: Em todo o planeta Terra.
   grauDeAmeaca: 0
   frase: "\"O universo n\xE3o foi feito \xE0 medida do ser humano, mas tampouco lhe
     \xE9 adverso: \xE9-lhe indiferente.\"\nCarl Sagan"
@@ -41,4 +41,4 @@ MonoBehaviour:
   ocorreNoMar: 1
   ocorreNaCosta: 1
   ocorreNoEstuario: 1
-  disponivelNaColecao: 1
+  disponivelNaColecao: 0

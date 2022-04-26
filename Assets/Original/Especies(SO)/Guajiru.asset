@@ -20,7 +20,8 @@ MonoBehaviour:
   ordem: Malpighiales
   familia: Chrysobalanaceae
   genero: Chrysobalanus
-  ocorrenciaNaNatureza: 
+  ocorrenciaNaNatureza: "Ocorre na Amaz\xF4nia e em matas de Restinga pela costa
+    brasileira."
   grauDeAmeaca: 3
   frase: '"Que frutinha linda!", disse a velha enquanto pegava uma tesoura de jardinagem
     na sua bolsa.'

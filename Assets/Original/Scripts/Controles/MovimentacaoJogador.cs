@@ -20,9 +20,12 @@ public class MovimentacaoJogador : MonoBehaviour
 
     void Awake() {
         rb = GetComponent<Rigidbody2D>();
-        direcaoMouse = transform.position;
+        direcaoMouse = rb.position;
     }
+
     private void FixedUpdate() {
+
+        if (!habilitar) { return; }
 
         if (direcaoMouse == rb.position && direcaoTeclado.magnitude == 0)
         {

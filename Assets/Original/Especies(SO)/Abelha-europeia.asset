@@ -20,7 +20,8 @@ MonoBehaviour:
   ordem: Hymenoptera
   familia: Apidae
   genero: Apis
-  ocorrenciaNaNatureza: 
+  ocorrenciaNaNatureza: Por ser frequentemente domesticada para produzir mel, ela
+    ocorre em todo o mundo.
   grauDeAmeaca: 2
   frase: "\"Quando o mel \xE9 bom, a abelha sempre volta.\""
   link: https://youtu.be/CzrawN17pZQ

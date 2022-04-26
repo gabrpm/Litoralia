@@ -8,6 +8,8 @@ public class Conversador : MonoBehaviour, IPointerDownHandler
     [SerializeReference] protected VIDE_Assign dialogo;
     [SerializeField] protected Pessoa dialogador;
     [SerializeField] protected TextAsset conversaPadrao;
+
+    public Pessoa Dialogador { get { return dialogador; } }
     void Awake()
     {
         dialogo = GetComponent<VIDE_Assign>();

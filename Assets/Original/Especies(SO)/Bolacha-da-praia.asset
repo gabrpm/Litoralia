@@ -20,7 +20,7 @@ MonoBehaviour:
   ordem: Echinolampadacea
   familia: Mellitidae
   genero: Mellita
-  ocorrenciaNaNatureza: Toda costa brasileira
+  ocorrenciaNaNatureza: Toda costa brasileira.
   grauDeAmeaca: 0
   frase: "\"Mas \xE9 biscoito-da-praia.\" \"N\xE3o! \xC9 bolacha!\" \"Biscoito!\"
     \"Bolacha!!!\""

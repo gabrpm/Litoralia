@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28d66f0f0150b3b4ca85d510a0463ea2, type: 3}
   m_Name: Professora
   m_EditorClassIdentifier: 
-  nome: 
+  nome: Professora
   idade: 0

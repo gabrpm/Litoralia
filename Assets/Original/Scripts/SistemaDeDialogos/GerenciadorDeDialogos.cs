@@ -6,17 +6,24 @@ using TMPro;
 
 public class GerenciadorDeDialogos : Singleton<GerenciadorDeDialogos>
 {
+    [Header("Diálogo")]
     static public bool DialogoAtivo = false;
+    [Header("Eventos")]
     [SerializeField] Evento evento_InicioDialogo;
     [SerializeField] Evento evento_FinalDialogo;
+    [Header("GOs")]
     [SerializeField] GameObject caixaDeDialogo;
     [SerializeField] GameObject containerNPC;
     [SerializeField] GameObject containerJogador;
     [SerializeField] GameObject botaoAvancar;
+    [Header("Letreiros e Imagens")]
     [SerializeField] TextMeshProUGUI textoNPC;
     [SerializeField] TextMeshProUGUI textoJogador;
     [SerializeField] TextMeshProUGUI[] opcoesJogador;
+    [SerializeField] TextMeshProUGUI letreiroNome;
     [SerializeField] Image imagemDialogo;
+    [Header("Pessoa")]
+    [SerializeField] Pessoa pessoaDialogadora;
     [SerializeField]bool proxFalaHabilitada = false;
 
     // Start is called before the first frame update
@@ -38,6 +45,8 @@ public class GerenciadorDeDialogos : Singleton<GerenciadorDeDialogos>
         //VD.localizationEnabledSET = true;
         //VD.SetCurrentLanguage(EstadoJogo.localizacao);
         //Debug.Log(VD.currentLanguage);
+
+        pessoaDialogadora = videAss.gameObject.GetComponent<Conversador>().Dialogador;
 
         evento_InicioDialogo.Ocorrido();
         
@@ -119,7 +128,7 @@ public class GerenciadorDeDialogos : Singleton<GerenciadorDeDialogos>
     }
 
     public void EscolherOpcao(int indice) {
-        
+        Debug.Log("Escolhida:" + indice.ToString());
         VD.nodeData.commentIndex = indice;
 
         if(proxFalaHabilitada) {
@@ -154,10 +163,12 @@ public class GerenciadorDeDialogos : Singleton<GerenciadorDeDialogos>
 
     public void AjustarImagem() {
         if(!VD.nodeData.isPlayer) {
-            imagemDialogo.color =  new Color(255,0,151);
+            imagemDialogo.color =  DadosDoJogador.instancia.Cor;
             imagemDialogo.color =  VD.assigned.gameObject.GetComponent<SpriteRenderer>().color;
+            letreiroNome.text = pessoaDialogadora.Nome;
         } else if(VD.nodeData.isPlayer) {
             imagemDialogo.color = DadosDoJogador.instancia.Cor;
+            letreiroNome.text = DadosDoJogador.instancia.Nome;
         }
     }
 

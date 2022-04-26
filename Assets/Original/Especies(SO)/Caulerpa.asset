@@ -20,7 +20,7 @@ MonoBehaviour:
   ordem: Bryopsidales
   familia: Caulerpaceae
   genero: Caulerpa
-  ocorrenciaNaNatureza: 
+  ocorrenciaNaNatureza: "Ocorre em \xE1guas tropicais e temperadas de todo o mundo."
   grauDeAmeaca: 0
   frase: "\"Voc\xEAs t\xEAm vinho de uva verde?\" \"Dessa uva s\xF3 temos salada,
     senhor.\""

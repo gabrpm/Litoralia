@@ -20,7 +20,7 @@ MonoBehaviour:
   ordem: Siphonophora
   familia: Physaliidae
   genero: Physalia
-  ocorrenciaNaNatureza: 
+  ocorrenciaNaNatureza: "Ocorre em \xE1guas tropicais e temperadas de todo o mundo."
   grauDeAmeaca: 0
   frase: "\"A minha caravela? Ela balan\xE7a mas n\xE3o para.\"\nLu\xEDs de Cam\xF5es"
   link: https://youtu.be/UTPnUgwVhPE
@@ -44,4 +44,4 @@ MonoBehaviour:
   ocorreNoMar: 1
   ocorreNaCosta: 1
   ocorreNoEstuario: 0
-  disponivelNaColecao: 1
+  disponivelNaColecao: 0

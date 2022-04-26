@@ -20,7 +20,7 @@ MonoBehaviour:
   ordem: Solanales
   familia: Convlovulaceae
   genero: Ipomea
-  ocorrenciaNaNatureza: 
+  ocorrenciaNaNatureza: "Ocorre em regi\xF5es tropicais de todo planeta."
   grauDeAmeaca: 3
   frase: "\"Olha, teu p\xE9 t\xE1 verde!\""
   link: http://ecologia.ib.usp.br/curso/2015/pdf/PI_DIANA.pdf

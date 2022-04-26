@@ -20,7 +20,7 @@ MonoBehaviour:
   ordem: ND
   familia: ND
   genero: ND
-  ocorrenciaNaNatureza: 
+  ocorrenciaNaNatureza: '-'
   grauDeAmeaca: 0
   frase: "Um dia na praia... Um m\xEAs na praia... A vida na praia."
   link: https://sigam.ambiente.sp.gov.br/sigam3/Repositorio/511/Documentos/APAM_LN/APAMLN_Restinga_final.pdf
@@ -38,4 +38,4 @@ MonoBehaviour:
   ocorreNoMar: 0
   ocorreNaCosta: 1
   ocorreNoEstuario: 0
-  disponivelNaColecao: 1
+  disponivelNaColecao: 0

@@ -47,14 +47,14 @@ public class ControladorJogador : MonoBehaviour
             if (obj.performed)
             {
                 scriptMovimentacao.holdMovimento = true;
-                Debug.Log("pressed");
+                //Debug.Log("pressed");
             }
             else if (obj.canceled)
             {
                 if (!scriptMovimentacao.holdMovimento) return;
                 scriptMovimentacao.holdMovimento = false;
                 scriptMovimentacao.DefinirDirecaoMouse(transform.position);
-                Debug.Log("released");
+                //Debug.Log("released");
             }
         }
 
@@ -88,7 +88,7 @@ public class ControladorJogador : MonoBehaviour
         }
 
         if(obj.action.name == controles.Jogador.Interagir.name) {
-            scriptInteracao.Interagir();
+            //scriptInteracao.Interagir();
         }
 
         if(obj.action.name == controles.Jogador.FecharJogo.name) {

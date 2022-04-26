@@ -20,7 +20,7 @@ MonoBehaviour:
   ordem: ND
   familia: ND
   genero: ND
-  ocorrenciaNaNatureza: 
+  ocorrenciaNaNatureza: "Em todas as regi\xF5es costeiras, ap\xF3s mar\xE9s fortes."
   grauDeAmeaca: 1
   frase: "O que \xE9 alga? Essa \xE9 uma pergunta que cientistas sempre se dedicaram
     a responder e ainda n\xE3o encontraram a resposta."
@@ -40,4 +40,4 @@ MonoBehaviour:
   ocorreNoMar: 1
   ocorreNaCosta: 1
   ocorreNoEstuario: 0
-  disponivelNaColecao: 1
+  disponivelNaColecao: 0

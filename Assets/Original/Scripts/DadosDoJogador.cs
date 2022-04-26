@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class DadosDoJogador : Singleton<DadosDoJogador>
 {
     private string nome;
     private int lvl;
     private Color cor = Color.white;
+    [SerializeField] private SpriteRenderer[] spritesPersonagem = new SpriteRenderer[3];
     private string pronome;
 
     public Color Cor { get { return cor; } }
@@ -39,6 +41,15 @@ public class DadosDoJogador : Singleton<DadosDoJogador>
     public void AlterarPronome(string pn)
     {
         pronome = pn;
+    }
+
+    public void AlterarCor(Image img)
+    {
+        cor = img.color;
+        for (int i = 0; i<spritesPersonagem.Length; i++)
+        {
+            spritesPersonagem[i].color = cor;
+        }
     }
     
 }

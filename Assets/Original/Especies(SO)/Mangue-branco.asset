@@ -20,14 +20,23 @@ MonoBehaviour:
   ordem: Myrtales
   familia: Combretaceae
   genero: Laguncularia
-  ocorrenciaNaNatureza: 
+  ocorrenciaNaNatureza: "Nas costas do tropical Atl\xE2ntico da Am\xE9rica e \xC1frica."
   grauDeAmeaca: 3
-  frase: 
-  info1: 
-  info2: 
-  info3: 
-  info4: 
-  imagemNaNatureza: {fileID: 0}
+  frase: Somos todos filhos do carbono.
+  link: https://youtu.be/8lgTakSenSA
+  info1: "Ecologicamente, os manguezais desempenham um papel muito importante. Eles
+    s\xE3o os ecossistemas terrestres que mais ajudam a absorver o g\xE1s carb\xF4nico
+    da atmosfera, diminuindo os impactos do efeito estufa."
+  info2: "Economicamente, eles s\xE3o fonte de renda pelas comunidades locais, que
+    se beneficiam de v\xE1rias atividades extrativistas sustent\xE1veis, como a pesca
+    e a mariscagem."
+  info3: "Apesar de sua import\xE2ncia, o manguezal vem sendo crescentemente destru\xEDdo.
+    Estima-se que 40% do que era manguezal hoje n\xE3o existe mais. Por isso medidas
+    de conserva\xE7\xE3o devem ser mais comuns nesses ambientes."
+  info4: "O mangue-branco possui gl\xE2ndulas vestigiais na base de suas folhas,
+    que em seus ancestrais funcionava como nect\xE1rios mel\xEDferos que atra\xEDam
+    polinizadores. Hoje elas n\xE3o s\xE3o funcionais."
+  imagemNaNatureza: {fileID: 21300000, guid: 7e934bf99b1c481469f07da7551f4cb1, type: 3}
   imagemNoJogo: {fileID: 21300000, guid: 9c06e819387a7054d89f9fb887d9ebbe, type: 3}
   ocorreNoMar: 0
   ocorreNaCosta: 0
