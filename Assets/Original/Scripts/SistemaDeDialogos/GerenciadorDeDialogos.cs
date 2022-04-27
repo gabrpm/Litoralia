@@ -24,7 +24,10 @@ public class GerenciadorDeDialogos : Singleton<GerenciadorDeDialogos>
     [SerializeField] Image imagemDialogo;
     [Header("Pessoa")]
     [SerializeField] Pessoa pessoaDialogadora;
+    [SerializeField] int pessoasConversadas = 0;
     [SerializeField]bool proxFalaHabilitada = false;
+
+    public int PessoasConversadas { get { return pessoasConversadas; } }
 
     // Start is called before the first frame update
 
@@ -47,6 +50,11 @@ public class GerenciadorDeDialogos : Singleton<GerenciadorDeDialogos>
         //Debug.Log(VD.currentLanguage);
 
         pessoaDialogadora = videAss.gameObject.GetComponent<Conversador>().Dialogador;
+        if (!pessoaDialogadora.Encontrada)
+        {
+            pessoaDialogadora.Encontrar();
+            pessoasConversadas++;
+        }
 
         evento_InicioDialogo.Ocorrido();
         

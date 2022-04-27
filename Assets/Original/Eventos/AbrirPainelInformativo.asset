@@ -9,9 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28d66f0f0150b3b4ca85d510a0463ea2, type: 3}
-  m_Name: QuadradoRosa
+  m_Script: {fileID: 11500000, guid: 0184b4676f67eff4d8760b154fa8ef54, type: 3}
+  m_Name: AbrirPainelInformativo
   m_EditorClassIdentifier: 
-  nome: Rosinha
-  idade: 0
-  encontrada: 0

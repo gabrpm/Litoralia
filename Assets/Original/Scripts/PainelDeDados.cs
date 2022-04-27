@@ -7,18 +7,21 @@ using TMPro;
 public class PainelDeDados : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI letreiroNome;
-    [SerializeField] TextMeshProUGUI letreiroLvl;
+    [SerializeField] TextMeshProUGUI letreiroQtdPessoas;
+    [SerializeField] TextMeshProUGUI letreiroQtdSpp;
     [SerializeField] Image sprite;
 
     private void Update()
     {
+
         AtualizarPainel();
     }
 
     public void AtualizarPainel()
     {
         letreiroNome.text = DadosDoJogador.instancia.Nome;
-        letreiroLvl.text = DadosDoJogador.instancia.Lvl.ToString();
+        letreiroQtdPessoas.text = GerenciadorDeDialogos.instancia.PessoasConversadas.ToString();
+        letreiroQtdSpp.text = GerenciadorDeColecoes.instancia.QtdeDeSpRegistradas().ToString();
         sprite.color = DadosDoJogador.instancia.Cor;
     }
 }

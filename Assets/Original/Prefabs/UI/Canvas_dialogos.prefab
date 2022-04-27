@@ -55,7 +55,9 @@ MonoBehaviour:
   - {fileID: 8479998593664733865}
   - {fileID: 7178882045568006380}
   - {fileID: 7178882044710946811}
+  letreiroNome: {fileID: 6477727520414606229}
   imagemDialogo: {fileID: 8479998592821103601}
+  pessoaDialogadora: {fileID: 0}
   proxFalaHabilitada: 0
 --- !u!1 &3927923691955885190
 GameObject:
@@ -169,8 +171,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 468.6017, y: -115.55964}
-  m_SizeDelta: {x: 71.9966, y: 47.6007}
+  m_AnchoredPosition: {x: 497, y: 0.00000057415}
+  m_SizeDelta: {x: 31.8317, y: 78.84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7029301043780940571
 CanvasRenderer:
@@ -200,7 +202,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3209248041227131298, guid: 4b859b9fe9d1dfa48b7c46623911151b, type: 3}
+  m_Sprite: {fileID: 759159404652473168, guid: 4b859b9fe9d1dfa48b7c46623911151b, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -451,8 +453,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -11.733808}
-  m_SizeDelta: {x: 0, y: -23.4676}
+  m_AnchoredPosition: {x: -14.52301, y: -11.73381}
+  m_SizeDelta: {x: -29.046, y: -23.4676}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8479998592742097943
 CanvasRenderer:
@@ -548,7 +550,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &8479998592821103603
@@ -1020,8 +1022,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -519.484, y: 0.45251465}
-  m_SizeDelta: {x: 1009.19995, y: 278.719}
+  m_AnchoredPosition: {x: -525.167, y: 0.45251465}
+  m_SizeDelta: {x: 1008.1, y: 278.719}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8479998594431854767
 CanvasRenderer:
@@ -1095,8 +1097,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -11.7338}
-  m_SizeDelta: {x: 0, y: -23.4677}
+  m_AnchoredPosition: {x: -13.946106, y: -11.733795}
+  m_SizeDelta: {x: -27.892, y: -23.4677}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8479998594626628534
 CanvasRenderer:
@@ -1192,7 +1194,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1001 &7178882045537282619
@@ -1300,7 +1302,7 @@ PrefabInstance:
       objectReference: {fileID: -9174027285513892822, guid: 4dc7e80b395870449be99070b80cb51e, type: 2}
     - target: {fileID: 1589633117295949970, guid: 263a5240646a20243933d34478faf811, type: 3}
       propertyPath: m_hasFontAssetChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2414565562655027563, guid: 263a5240646a20243933d34478faf811, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1606,7 +1608,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1589633117295949970, guid: 263a5240646a20243933d34478faf811, type: 3}
       propertyPath: m_hasFontAssetChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2414565562655027563, guid: 263a5240646a20243933d34478faf811, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1828,7 +1830,7 @@ PrefabInstance:
       objectReference: {fileID: -9174027285513892822, guid: 4dc7e80b395870449be99070b80cb51e, type: 2}
     - target: {fileID: 1589633117295949970, guid: 263a5240646a20243933d34478faf811, type: 3}
       propertyPath: m_hasFontAssetChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2414565562655027563, guid: 263a5240646a20243933d34478faf811, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

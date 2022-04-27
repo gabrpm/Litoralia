@@ -7,13 +7,15 @@ using UnityEngine.UI;
 public class DadosDoJogador : Singleton<DadosDoJogador>
 {
     private string nome;
-    private int lvl;
+    private int pessoasEncontradas;
+    private int sppEncontradas;
     private Color cor = Color.white;
     [SerializeField] private SpriteRenderer[] spritesPersonagem = new SpriteRenderer[3];
     private string pronome;
 
     public Color Cor { get { return cor; } }
-    public int Lvl { get { return lvl; } }
+    public int SppEncontradas { get { return sppEncontradas; } }
+    public int PessoasEncontradas { get { return pessoasEncontradas; } }
     public string Nome { get { return nome; } }
     public string Pronome { get { return pronome; } }
 

@@ -102,9 +102,9 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_characterSpacing: -5
+  m_wordSpacing: 2
+  m_lineSpacing: 10
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -468,8 +468,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 71.9, y: -13.3}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 70.651054, y: -13.3}
+  m_SizeDelta: {x: 102.4979, y: 139.9675}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1869189082246823609
 CanvasRenderer:
@@ -543,8 +543,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -126.09, y: 18.349983}
-  m_SizeDelta: {x: 214.174, y: 36.7}
+  m_AnchoredPosition: {x: -126.09, y: 39.2592}
+  m_SizeDelta: {x: 214.174, y: 28.5816}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4858149718140148460
 CanvasRenderer:
@@ -601,19 +601,19 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
+  m_fontSize: 30
   m_fontSizeBase: 25
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 30
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_characterSpacing: -5
+  m_wordSpacing: 2
+  m_lineSpacing: 10
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -680,8 +680,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -86, y: -82.206}
-  m_SizeDelta: {x: 97.534, y: 98.752}
+  m_AnchoredPosition: {x: -83.144, y: -78.907}
+  m_SizeDelta: {x: 103.012, y: 70.1665}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4088262734897007743
 CanvasRenderer:
@@ -1057,8 +1057,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -126.09, y: -51.113}
-  m_SizeDelta: {x: 200, y: 66.777}
+  m_AnchoredPosition: {x: -126.09, y: -34.757088}
+  m_SizeDelta: {x: 214.17, y: 99.4888}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8238559100445883151
 CanvasRenderer:
@@ -1118,16 +1118,16 @@ MonoBehaviour:
   m_fontSize: 25
   m_fontSizeBase: 25
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 25
   m_fontStyle: 2
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_characterSpacing: -5
+  m_wordSpacing: 2
+  m_lineSpacing: 10
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -1418,9 +1418,9 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_characterSpacing: -5
+  m_wordSpacing: 2
+  m_lineSpacing: 10
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -1484,8 +1484,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.0000033974648, y: -36.8}
-  m_SizeDelta: {x: 345.676, y: 32.769}
+  m_AnchoredPosition: {x: -0.0000033974648, y: -22.428589}
+  m_SizeDelta: {x: 345.676, y: 24.0261}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &292129266220660473
 CanvasRenderer:
@@ -1552,9 +1552,9 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_characterSpacing: -5
+  m_wordSpacing: 2
+  m_lineSpacing: 10
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -1884,6 +1884,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2332297627040856234, guid: 7d075c1255d3f0944b366240e588826b, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 2332297627040856234, guid: 7d075c1255d3f0944b366240e588826b, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2551378778918889681, guid: 7d075c1255d3f0944b366240e588826b, type: 3}
       propertyPath: m_lineSpacing
       value: 10
@@ -2076,6 +2084,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 224.99998
       objectReference: {fileID: 0}
+    - target: {fileID: 7259021653109837482, guid: 7d075c1255d3f0944b366240e588826b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1247.7627
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259021653109837482, guid: 7d075c1255d3f0944b366240e588826b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 465.664
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259021653109837482, guid: 7d075c1255d3f0944b366240e588826b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259021653109837482, guid: 7d075c1255d3f0944b366240e588826b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 193.2434
+      objectReference: {fileID: 0}
     - target: {fileID: 8140529601503649521, guid: 7d075c1255d3f0944b366240e588826b, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 8.021118
@@ -2102,7 +2126,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8141730203987489971, guid: 7d075c1255d3f0944b366240e588826b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -42.157898
+      value: -31.4356
       objectReference: {fileID: 0}
     - target: {fileID: 8141861842137625465, guid: 7d075c1255d3f0944b366240e588826b, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2126,7 +2150,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8141861842137625465, guid: 7d075c1255d3f0944b366240e588826b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -42.157898
+      value: -31.4356
       objectReference: {fileID: 0}
     - target: {fileID: 8142063982038862653, guid: 7d075c1255d3f0944b366240e588826b, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2154,7 +2178,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8142289022548556527, guid: 7d075c1255d3f0944b366240e588826b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -42.157898
+      value: -31.4356
       objectReference: {fileID: 0}
     - target: {fileID: 8294636083538154825, guid: 7d075c1255d3f0944b366240e588826b, type: 3}
       propertyPath: m_lineSpacing
@@ -2168,6 +2192,10 @@ PrefabInstance:
       propertyPath: m_characterSpacing
       value: -5
       objectReference: {fileID: 0}
+    - target: {fileID: 8351873918960973347, guid: 7d075c1255d3f0944b366240e588826b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8379174969559378300, guid: 7d075c1255d3f0944b366240e588826b, type: 3}
       propertyPath: m_lineSpacing
       value: 10
@@ -2179,6 +2207,10 @@ PrefabInstance:
     - target: {fileID: 8379174969559378300, guid: 7d075c1255d3f0944b366240e588826b, type: 3}
       propertyPath: m_characterSpacing
       value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664084890481530921, guid: 7d075c1255d3f0944b366240e588826b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8801576761889648656, guid: 7d075c1255d3f0944b366240e588826b, type: 3}
       propertyPath: m_lineSpacing

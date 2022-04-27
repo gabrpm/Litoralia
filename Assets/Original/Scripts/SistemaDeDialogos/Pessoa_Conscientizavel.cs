@@ -16,6 +16,7 @@ public class Pessoa_Conscientizavel : Pessoa
 
     private void OnEnable() {
         conscientizada = false;
+        encontrada = false;
         passoAtual = 0;
     }
 
