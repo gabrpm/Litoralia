@@ -376,17 +376,6 @@ public partial class @InputActions : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""a0a9bae7-5ede-41ab-9f52-3906fbe33975"",
-                    ""path"": ""<Keyboard>/c"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Colecao"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""f6df6ce3-0c01-4e50-a66e-6ef389346db6"",
                     ""path"": ""<Gamepad>/select"",
                     ""interactions"": """",

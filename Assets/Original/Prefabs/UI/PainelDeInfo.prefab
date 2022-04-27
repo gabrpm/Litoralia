@@ -697,16 +697,15 @@ RectTransform:
   m_GameObject: {fileID: 1142951979717525166}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9998001, y: 0.9998001, z: 0.9998001}
-  m_Children:
-  - {fileID: 1108070236902633103}
-  m_Father: {fileID: 8141992402620971633}
-  m_RootOrder: 3
+  m_LocalScale: {x: 0.9998, y: 0.9998, z: 0.9998}
+  m_Children: []
+  m_Father: {fileID: 1108070236902633103}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -3.0628, y: 16.242798}
-  m_SizeDelta: {x: 1262.8, y: 166.4016}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0.0000076293945}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &3436929778779350842
 CanvasRenderer:
@@ -1600,15 +1599,16 @@ RectTransform:
   m_GameObject: {fileID: 3643336178164813823}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0002, y: 1.0002, z: 1.0002}
-  m_Children: []
-  m_Father: {fileID: 341444311283643265}
-  m_RootOrder: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 341444311283643265}
+  m_Father: {fileID: 8141992402620971633}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 128}
+  m_SizeDelta: {x: 1262.8, y: 166.40161}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4023081464628920948
 CanvasRenderer:
@@ -1691,19 +1691,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8801576761889648656}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: WebLink, Assembly-CSharp
-        m_MethodName: OpenLinkFromSp
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: Especie, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &3649173631685068077
 GameObject:
   m_ObjectHideFlags: 0
@@ -3881,7 +3869,7 @@ RectTransform:
   - {fileID: 3409173535001119266}
   - {fileID: 1996690420046770282}
   - {fileID: 3306557968461495642}
-  - {fileID: 341444311283643265}
+  - {fileID: 1108070236902633103}
   - {fileID: 7866772193182157907}
   - {fileID: 2287267551101817565}
   - {fileID: 2847070005813547473}
