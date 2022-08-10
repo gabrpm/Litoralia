@@ -10,5 +10,9 @@ public class WebLink : MonoBehaviour
         Application.OpenURL(sp.Link);
     }
 
+    public void OpenLinkFromThis(string url)
+    {
+        Application.OpenURL(url);
+    }
 
 }
