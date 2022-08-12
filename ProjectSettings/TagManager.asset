@@ -48,6 +48,9 @@ TagManager:
   - name: Cenario
     uniqueID: 455854103
     locked: 0
+  - name: Ondas
+    uniqueID: 3974118173
+    locked: 0
   - name: Especies
     uniqueID: 324717833
     locked: 0
