@@ -57,6 +57,7 @@ public class GerenciadorDeColecoes : Singleton<GerenciadorDeColecoes>
 
     private void Awake() {
         DontDestroyOnLoad(this.gameObject);
+        IndisponibilizarTodasSpp();
         EstadoJogo.quantidadeTotalSp = colecaoDeEspecies.ListaDeEspecies.Count;
         AjustarPaineisAColecao();
         colecao.SetActive(false);
@@ -225,6 +226,15 @@ public class GerenciadorDeColecoes : Singleton<GerenciadorDeColecoes>
     public void AbrirLink()
     {
         Application.OpenURL(spAtual.Link);
+    }
+
+
+    public void IndisponibilizarTodasSpp()
+    {
+        foreach (Especie especie in colecaoDeEspecies.ListaDeEspecies)
+        {
+            especie.disponivelNaColecao = false;
+        }
     }
 
 }
