@@ -34554,6 +34554,26 @@ PrefabInstance:
       propertyPath: spritesPersonagem.Array.data[2]
       value: 
       objectReference: {fileID: 610833721}
+    - target: {fileID: 3661404843681971415, guid: 3b228f94ddd7db4488daed11b49a7732, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 261ab49502c5fe145aaa68d5cc7adce6, type: 3}
+    - target: {fileID: 3661404843681971415, guid: 3b228f94ddd7db4488daed11b49a7732, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3661404843681971415, guid: 3b228f94ddd7db4488daed11b49a7732, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3661404843681971415, guid: 3b228f94ddd7db4488daed11b49a7732, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3661404843681971415, guid: 3b228f94ddd7db4488daed11b49a7732, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3819142026988429567, guid: 3b228f94ddd7db4488daed11b49a7732, type: 3}
       propertyPath: m_Color.b
       value: 0

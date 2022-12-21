@@ -56,7 +56,7 @@ public class ComportamentoCamera : MonoBehaviour
         if (!b) {
            sr.color = new Color (0,0,0,0);
         } else {
-            sr.color = Color.black;
+            sr.color = Color.white;
         }
     }
 
