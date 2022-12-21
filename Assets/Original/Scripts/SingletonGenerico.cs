@@ -7,16 +7,8 @@ public class Singleton<T> : MonoBehaviour  where T : MonoBehaviour {
     // elementos externos
     protected static T _instancia;
 
-    // Controla o acesso em situações onde o objeto está em processo de ser destruído ou ja foi destruído
-    private static bool desligando;
-
     public static T instancia { 
         get {
-            // Verifica se o obejto foi destruído e avisa caso tenha acontecido
-            if(desligando) {
-                Debug.LogWarning("A instância do objeto " + typeof(T) + " já foi destruída");
-                return null;
-            }
             // Verifica se já há, em algum lugar, uma instância do singleton
             if(_instancia == null) {
                 _instancia = (T) FindObjectOfType(typeof(T));
@@ -35,15 +27,6 @@ public class Singleton<T> : MonoBehaviour  where T : MonoBehaviour {
             }
     }
     
-    protected Singleton() {
-        desligando = false;
-    }
+    protected Singleton() { }
 
-    private void OnApplicationQuit() {
-        desligando = true;
-    }
-
-    private void OnDestroy() {
-        desligando = true;
-    }
 }
