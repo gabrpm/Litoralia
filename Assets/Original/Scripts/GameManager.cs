@@ -7,6 +7,7 @@ static class EstadoJogo
 {
     public static bool modoFotografia = false;
     public static string nomePersonagem;
+    public static bool habilitarTrocaDeModo = false;
     public static bool colecaoAberta;
     public static int quantidadeTotalSp;
     public static int quantidadeRegistradaSp;
@@ -19,24 +20,40 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] Evento evento_EntrarFotografia;
     [SerializeField] Evento evento_SairFotografia;
 
-    public void AlterarModo() {
-        if(GerenciadorDeDialogos.DialogoAtivo) {
+    public void AlterarModo()
+    {
+        if (EstadoJogo.habilitarTrocaDeModo)
+        {
+
+            if (GerenciadorDeDialogos.DialogoAtivo)
+        {
             return;
         }
 
-        if(EstadoJogo.colecaoAberta) {
+        if (EstadoJogo.colecaoAberta)
+        {
             return;
         }
-        
-        if(EstadoJogo.modoFotografia == true) {
-            evento_SairFotografia.Ocorrido();
-            Cursor.visible = true;
-            EstadoJogo.modoFotografia = false;
-        } else {
-            evento_EntrarFotografia.Ocorrido();
-            Cursor.visible = false;
-            EstadoJogo.modoFotografia = true;
+
+         
+            if (EstadoJogo.modoFotografia == true)
+            {
+                evento_SairFotografia.Ocorrido();
+                Cursor.visible = true;
+                EstadoJogo.modoFotografia = false;
+            }
+            else
+            {
+                evento_EntrarFotografia.Ocorrido();
+                Cursor.visible = false;
+                EstadoJogo.modoFotografia = true;
+            }
         }
+    }
+
+    public void HabilitarTrocaDeModo(bool vouf)
+    {
+        EstadoJogo.habilitarTrocaDeModo = vouf;
     }
 
     public void ExibirNoCelular(GameObject go)

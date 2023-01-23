@@ -14713,7 +14713,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8766716075064302900, guid: ac28e512ca647ac42afaa4bf99d6327e, type: 3}
   m_PrefabInstance: {fileID: 6024078757932307348}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 6024078757932307349}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d0e69d23d941f34f97b1a68eacc150c, type: 3}
@@ -23208,6 +23208,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1567180276}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 864654532}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: HabilitarTrocaDeModo
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -39247,6 +39259,202 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 210578537}
     m_Modifications:
+    - target: {fileID: 408296017, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 408296017, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 408296017, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 864654532}
+    - target: {fileID: 408296017, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 408296017, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: HabilitarTrocaDeModo
+      objectReference: {fileID: 0}
+    - target: {fileID: 408296017, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 408296017, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 408296017, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 408296018, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 408296018, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 408296018, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 864654532}
+    - target: {fileID: 408296018, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 408296018, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: HabilitarTrocaDeModo
+      objectReference: {fileID: 0}
+    - target: {fileID: 408296018, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 408296018, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 408296021, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 408296021, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 408296021, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 408296021, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 864654532}
+    - target: {fileID: 408296021, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 408296021, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 408296021, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: HabilitarTrocaDeModo
+      objectReference: {fileID: 0}
+    - target: {fileID: 408296021, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 408296021, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 408296021, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 408296021, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 408296021, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 408296022, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 408296022, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 408296022, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 864654532}
+    - target: {fileID: 408296022, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 408296022, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: HabilitarTrocaDeModo
+      objectReference: {fileID: 0}
+    - target: {fileID: 408296022, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 408296022, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805852759, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805852759, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805852759, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 864654532}
+    - target: {fileID: 1805852759, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805852759, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: HabilitarTrocaDeModo
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805852759, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805852759, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805852759, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805852760, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805852760, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805852760, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 864654532}
+    - target: {fileID: 1805852760, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805852760, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: HabilitarTrocaDeModo
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805852760, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805852760, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: resposta.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1690031865501226475, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -39401,26 +39609,54 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5131349937293476788, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5131349937293476788, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5131349937293476788, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131349937293476788, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 11400000, guid: 886d89959f3ba7e4396c16cd4599d697, type: 2}
     - target: {fileID: 5131349937293476788, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 864654532}
+    - target: {fileID: 5131349937293476788, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131349937293476788, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: Ocorrido
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131349937293476788, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: HabilitarTrocaDeModo
       objectReference: {fileID: 0}
     - target: {fileID: 5131349937293476788, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: Evento, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5131349937293476788, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131349937293476788, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131349937293476788, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131349937293476788, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6264965216477297051, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
@@ -39437,31 +39673,31 @@ PrefabInstance:
       objectReference: {fileID: 864654532}
     - target: {fileID: 8274845728397907555, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8274845728397907555, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8274845728397907555, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 11400000, guid: 886d89959f3ba7e4396c16cd4599d697, type: 2}
+      objectReference: {fileID: 864654532}
     - target: {fileID: 8274845728397907555, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8274845728397907555, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: Ocorrido
+      value: HabilitarTrocaDeModo
       objectReference: {fileID: 0}
     - target: {fileID: 8274845728397907555, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: Evento, Assembly-CSharp
+      value: GameManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8274845728397907555, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8274845728397907555, guid: 5b0f5fa64918bdb498cc1ce1710826ed, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -39534,6 +39770,67 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 31a219009d527134ea8e9f9b6a5b78a8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac28e512ca647ac42afaa4bf99d6327e, type: 3}
+--- !u!1 &6024078757932307349 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3486350701602002358, guid: ac28e512ca647ac42afaa4bf99d6327e, type: 3}
+  m_PrefabInstance: {fileID: 6024078757932307348}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6024078757932307350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6024078757932307349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 892aab95605a324489b35212bbe4083d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  evento: {fileID: 11400000, guid: 72479f41a82ebe14ba7ad1021165c7ed, type: 2}
+  resposta:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 864654532}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: HabilitarTrocaDeModo
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &6024078757932307351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6024078757932307349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 892aab95605a324489b35212bbe4083d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  evento: {fileID: 11400000, guid: 8e048aee7e890dd4798e72caa53501bb, type: 2}
+  resposta:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 864654532}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: HabilitarTrocaDeModo
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &6200894265434759817
 PrefabInstance:
   m_ObjectHideFlags: 0
